@@ -1,0 +1,24 @@
+---
+layout: post
+title: Design, CMS, Webentwickler Blogs
+enki_id: 18
+categories: [css, design]
+---
+Um CSS-Technisch auf dem Laufenden zu bleiben, erstklassige Free-Icons abzugrasen und aktuelle Trends und Technologien nicht zu verpassen, habe ich einige interessante Blogs aggregiert, die mir zu dem Thema über den Weg gelaufen sind.
+
+Im Einzelnen sind das:
+
+* "http://webdesignledger.com/":http://webdesignledger.com/
+* "Webdesign mit CSS":http://webdesign-mit-css.blogspot.com/feeds/posts/default?alt=rss
+*  "Smashing Magazine":http://rss1.smashingmagazine.com/feed/ <--!
+* "Six Revisions":http://feeds.feedburner.com/SixRevisions
+* "MyInkBlog":http://www.myinkblog.com/feed/
+* "Noupe":http://feeds.feedburner.com/Noupe
+* "grafixx.at":http://www.grafixx.at/
+* "Webstandard":http://webstandard.kulando.de
+* "nettuts+":http://net.tutsplus.com/
+
+Ich habe das ganze als "Yahoo Pipe":http://pipes.yahoo.com/pipes/ verpackt. Unter "http://pipes.yahoo.com/pipes...":http://pipes.yahoo.com/pipes/pipe.info?_id=9b5698f7783bc6f3c24c8a9f9c32412f könnt ihr die Pipe anschauen, abonnieren oder forken :)
+
+Falls ihr noch interessante Blogs kennt, oder ein paar kreativere Yahoo Pipes kennt, dann könnt ihr mir die gerne mitteilen! :)
+

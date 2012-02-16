@@ -1,0 +1,13 @@
+---
+layout: post
+title: Code Katas - Training für den Software-Entwickler
+enki_id: 20
+categories: [ruby, screencast, vim, tdd]
+---
+Unter "http://katas.softwarecraftsmanship.org/":http://katas.softwarecraftsmanship.org/ habe ich ein paar interessante Kata-Screencasts, vornehmlich in Ruby, aber auch in "Exoten" wir Erlang oder Lua gefunden.
+
+Was ist ein Kata? Schonmal einen "Speedrun" von einem Computerspiel gesehen?
+
+Hierbei geht es darum, ein bestimmtes (meist akademisches) Softwareproblem, unter Zeitdruck zu schaffen, und sich durch Wiederholung zu verbessern.  Bei softwarecraftsmannship habe ich bisher nur Test-driven-development gesehen, d.h. es wird immer erst der Test geschrieben, und dann der minimale Code, der den Test erfüllt. Nachdem der Test erfolgreich war, wird refaktorisiert. Das ganze wird iterativ solange wiederholt, bis alle Features erfüllt sind.
+
+Sehr interessant sind "String Calculator" in Ruby und Erlang unter vim mit rspec als Testframework :>.

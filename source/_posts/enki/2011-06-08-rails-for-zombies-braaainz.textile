@@ -1,0 +1,16 @@
+---
+layout: post
+title: Rails for Zombies - Braaainz
+enki_id: 70
+categories: [ruby, screencast]
+---
+Wer schon immer mal Ruby on Rails lernen wollte, aber nie den Einstieg oder die Zeit gefunden hatte, für den gibt es jetzt *Rails for Zombies*.
+
+Didaktik mal total anders. Statt drögen nie endenden Tutorials, gibt es eine mit vielen Videos angereichtere "Lern-Experience". Dabei haben die Macher neben den Lektionen direkt jeweils eine Aufgabe, die es in einer Ruby-artigen Live-
+Console zu lösen gibt!
+
+Achja, umsonst ist das auch noch! Geld verdienen wollen die Macher envylabs mit Folgetutorials in derselben Güte, die in der selben Qualität ausfallen dürften.
+
+Free from PHP now! Let's go ;)
+
+"railsforzombies.org":http://railsforzombies.org/

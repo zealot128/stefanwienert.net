@@ -1,0 +1,17 @@
+---
+layout: post
+title: Gedit Addon für Drupal + Issue [SOLVED]
+enki_id: 8
+categories: [drupal, gedit]
+---
+Wer viel mit drupal arbeitet und gerne gedit nehmen möchte, sollte sich mal diese Snippet und Mimitype Collection "auf github anschauen":http://github.com/mavimo/gedit-drupal.
+
+Einfach z.B. "hook" eingeben, &lt;tab&gt; und schon hat man eine Auswahl aller hooks, welche nach Auswahl gleich eine ordentliche Portion Quelltext mitbringen - UND - gleich den Modulnamen beinhalten (abgeleitet aus dem Datennamen). 
+Fazit: Massig Zeit gespart :)
+
+Wermutstropfen: Seit dem Upgrade von "Ubuntu Jaunty auf Karmic Koala":http://ikhaya.ubuntuusers.de/2009/10/29/ubuntu-9-10-karmic-koala-ist-erschienen/ geht das mit dem Modulnamen nicht mehr. Ich Habe beim Autor auf github mal einen "Bugreport":http://github.com/mavimo/gedit-drupal/issues#issue/6 verfasst, in der Zwischenzeit kann man folgende Shellkommandos ausführen um die Snippets dennoch lauffähig zu bekommen. (Ich gehe davon aus, dass die Snippets bereits importiert sind, ansonsten das sed Kommando auf die "drupal.xml" im git-Verzeichnis ausführen)
+
+--- bash
+cd ~/.gnome2/gedit/snippets/
+sed -i 's/\$GEDIT_BASENAME/\$GEDIT_CURRENT_DOCUMENT_NAME/g' drupal.xml
+---

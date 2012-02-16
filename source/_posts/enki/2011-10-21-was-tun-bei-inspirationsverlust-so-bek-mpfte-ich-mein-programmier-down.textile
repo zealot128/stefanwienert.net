@@ -1,0 +1,19 @@
+---
+layout: post
+title: Was tun bei Inspirationsverlust? So bekämpfte ich mein Programmier-Down
+enki_id: 74
+categories: [coding]
+---
+Wer kennt das nicht? Man sitzt vor dem Bildschirm und will eigentlich etwas arbeiten, aber irgendwie kann man sich nicht aufraffen. Sei es nun ein *Flash*-Spielchen (I hate you, dear kongregate!) oder *Facebook/Twitter/G+*, irgendetwas ist immer interessanter. Und es wird immer schlimmer: Je länger man das Arbeiten duch Ablenkungen verzögert, desto eher bekommt man ein schlechtes Gewissen und verliert sich immer mehr in die Ablenkungen... Auch mir geht es alle Tage wieder so. Mit der Weile habe ich ein paar Tätigkeiten gefunden, mit denen ich diesen Teufelskreis anscheinend stoppen kann.
+
+h2. Aktivitäten
+
+* technische Filmchen schauen: Wenn ich einen Konferenz-Talk oder Screencast schau, der technisch mit der Arbeit relevant ist, dann passiert es nicht selten, dass etwas von dem berüchtigten und benötigten Geek-Spieltrieb zurückkommt. Dies passiert besonders, wenn das Video interessant und kurzweilig gestaltet ist. Lightning-Talks z.B. Eine gute Quelle (für Ruby oder Agile Programmierer) ist "Confreaks":http://confreaks.net, welches Mitschnitte zu nahezu allen Ruby-Konferenzen anbietet, oder natürlich die fantastischen Screencasts von "Railscasts":http://railscasts.com. Für Programmierer aller Gattung kann ich das Anschauen (und selbermachen!) von Code-Katas, also sehr kurzen Programmieraufgaben, empfehlen, z.B. "Katacasts":http://vimeo.com/channels/katacasts
+* Ein Buch lesen. Beim Lesen von "The Passionate Programmer" oder "The Pragmatic Programmer" kamen mir viele neue Ideen, die ich gleich umsetzen musste.
+* Make a little change: Keine Lust, gerade am Legacy-System einen größeren Eingriff vorzunehmen? Dann erstmal einen kleinen Bug fixen. Oder ein Styling verbessern. Oder ein Codestück refaktorisieren. Oder ein kleines CLI-Tool schreiben, welches ein Stück Arbeit erleichtert, oder oder oder...
+* Linux booten: Es gehen wenige Spiele, Flash ruckelt... Nur FB,Twitter und co. sind noch erreichbar. Im Einzelfall noch das Internet abdrehen und die Langeweile verselbstständigt sich in Form von Code.
+* Ehm.. Rausgehen :) Menschen treffen, Sport treiben. Für den Vollblut-Informatiker natürlich nur die Ultima ratio. Soll aber helfen... habe ich gehört :)
+
+h2. Neu gewonnene Aktivität in Produktivität pipen
+
+Einmal angefangen mit "rumgeeken" ist es ein leichtes den Arbeitsenthusiasmus in die gewünschte Richtung zu lenken, um z.B. die leicht ins Hintertreffen geratene Diplomarbeit mal ein Stück vorran zu bringen, oder dieses sehr sehr lange offene Ticket mal anzugehen (welches dann wesentlich kurzer als gedacht gedauert hat -- *aus-Erfahrung-sprech)

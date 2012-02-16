@@ -1,0 +1,32 @@
+---
+layout: post
+title: ! 'Mencoder: MP3 Spur aus Video Datei extrahieren'
+enki_id: 50
+categories: [screencast]
+---
+Ich kam grad in die Verlegenheit, ein Audiofile für meinen MP3-Player zu generieren. Konkret ging es um eine Vorlesungsaufzeichnung vom HPI, die man teilweise auch nur in Audio "genießen" kann :).
+
+
+
+Folgendes Shellskript genügt,
+--- bash
+#!/bin/bash
+mencoder $1 -of rawaudio -oac mp3lame -lameopts br=128:cbr -ovc copy -o $1.mp3 #> /dev/null
+echo "$1.mp3 created!"
+---
+
+Für Linux-User: einfach unter /usr/local/bin/video2mp3, Mac-User in den entsprechenden bin Ordner, speichern und ausführbar machen:
+
+--- bash
+$ sudo mv video2mp3.sh /usr/local/bin/video2mp3
+$ sudo chmod o+x  /usr/local/bin/video2mp3
+---
+
+jetzt kann jede beliebige Videodatei die der mplayer lesen kann in mp3 exportiert werden.
+
+--- bash
+$ video2mp3 Vorlesung.mp4
+# ergibt Vorlesung.mp4.mp3
+$ file Vorlesung.mp4.mp3
+Vorlesung.mp4.mp3: MPEG ADTS, layer III, v1, 128 kbps, 44.1 kHz, JntStereo
+---

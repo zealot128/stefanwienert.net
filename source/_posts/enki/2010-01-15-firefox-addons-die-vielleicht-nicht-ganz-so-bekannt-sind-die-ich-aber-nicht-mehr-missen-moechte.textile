@@ -1,0 +1,23 @@
+---
+layout: post
+title: Firefox Addons (die vielleicht nicht ganz so bekannt sind) die ich aber nicht
+  mehr missen moechte
+enki_id: 27
+categories: [css, gedit]
+---
+Hier will ich mal ein paar Firefox Addons, die abseits von Adblock, Noscript und co. vielleicht den Mainstream etwas verlassen:
+
+* *Read It Later*: Hat fast komplett mein Favouritensystem ersetzt. Die meisten Links die ich bookmarken will, landen dort, weil es meist nur (Blog-)Artikel sind, die ich spaeter lesen moechte. Und genau dafuer ist RiL ideal
+* *Redirect Cleaner*: Weiterleitungen, wie z.B. bei google oder addthis werden damit gekillt ("http://.........&url=http://zielurl" zeigt mir gleich nur die zielurl an)
+* *AutoPager*: Droeselt per Pagination zersplitterte Seiten wieder zusammen, indem beim scrollen automatischen nachgeladen wird und eine "endlose" Seite entsteht. Hat fuer viele Seiten schon Profile (z.B. heise und wichtige Blogs), neue koennen aber relativ leicht angelegt werden.
+* *It's all Text*: Schonmal ueber eine Textarea aufgeregt, weil man z.B. keine Tabs einfuegen kann, oder Suchen und Ersetzen fehlte? Das leidige Copy&Paste in einen Editor und Zurueck kann man sich hiermit sparen. Bei jeder Textarea erscheint ein "Edit" Feld unten rechts, welches den Textarea Text in unserem bevorzugten Editor öffnet (gedit, notepad++, gvim ...). Weiterhin überwacht Itsalltext nun die Datei und aktualisiert bei Änderung die Textarea mit den neuem Text (also im Editor speichern, zack aktualisiert)
+* Linkification: Wandelt alle Links im Flusstext in klickbare Links um
+* *"Selector Gadget":http://www.selectorgadget.com* : Kein eigentliches Addon, sondern ein "Bookmarklet":http://de.wikipedia.org/wiki/Bookmarklet also ein Javascript Bookmark. Es ermöglicht extrem genial bestimmte CSS-Pfade von Elementen auf einer Seite herauszufinden. Dabei kommuniziert man dem Gadget, welche Elemente man haben moechte, und welche nicht, und es ermittelt automatisch den eindeutigen CSS-Pfad.
+
+
+h3. Standardaddons
+
+* DownloadHelper zum herunterladen von flvs
+* downThemAll: Massendownloader, UseCase: alle pdfs auf einer Website runterladen...
+* TabMixPlus
+* Firebug

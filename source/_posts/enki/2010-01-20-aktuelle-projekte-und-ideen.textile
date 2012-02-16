@@ -1,0 +1,13 @@
+---
+layout: post
+title: Aktuelle Projekte und Ideen
+enki_id: 29
+categories: [ruby, drupal]
+---
+Wenn ich zur Zeit während meines Praktikums etwas Zeit habe, arbeite ich an ein paar Hobbyprojekten, die mir so in letzter so eingefallen sind:
+
+* Ein (hübsches) (openSource) *DMS(Dokumenten Management System)* basierend auf Rails, welches *doc, pdf, odf, text* archiviert, taggt und indexiert, um die Dokumente leichter wiederzufinden
+** mit Paperclip, Ferret als Indexierungsdienst, Verwendung von pdftotext, antiword, odf2text und eventuell tesseract zum OCR (auch für Bilder und pdfs), rspec BDD(Behavior Driven Development) Tests für die Modelle
+* Einen "Bot", der die eigene Website abgrast um interne *Linkverbindungen als Graphen* darzustellen, um so lange Wege zu finden und zu eliminieren (Webdesignregel: Redundanz und kurze Wege)
+** Ruby mit mechanize oder evtl. auch einfach "wget -spider" nehmen, graphviz
+* *Drupal Scaffold* Ein Ruby Skript, welches mir, ähnlich dem scaffold von Rails, ein Datenmodell in ein (MySQL) Schema gießt, und auch gleich einen (einfachen) Adminsetter dazu liefert (eine Seite unter admin/settings/%name mit der Option, ein neues Objekt anzulegen und alte anzuschauen.

@@ -1,0 +1,28 @@
+---
+layout: post
+title: Free Chinese learning app - Introduction of my Web app
+enki_id: 72
+categories: [china, rails]
+---
+Today, I want to introduce my online web-app for learning Chinese vocabulary. I wrote this some weeks ago, and until now I had a lot of fun, which I want to share with all the other Chinese learners.
+
+For demonstration, I created a short screencast to show how easy it is to use.
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/iwSKzGhCDDE?hl=de&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/iwSKzGhCDDE?hl=de&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+In my opinion, this app helps a lot for a systematical learning of words
+
+If you are a learner of the Chinese language, and also waste a lot of papers to train the writing, "give it a try!":http://shufa.stefanwienert.net
+
+Languages available:
+
+* English: Interface and word database
+* German: Interface language only. Unfortunatly, I only found free-to-use dictionaries in English up to now.
+
+Browsers tested:
+
+* Firefox 4
+* Chrome 13+
+
+I am heavily motivated, to improve that app, so if you find any glitches or have some ideas, tell me at info@stefanwienert.net.
+Coders can also send in bugreports (and bugfixes) at "GitHub":https://github.com/zealot128/ShuFaZuoPin

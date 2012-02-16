@@ -1,0 +1,37 @@
+---
+layout: post
+title: Grafikkarte unter Ubuntu gewechselt - Schwarzer Bildschirm
+enki_id: 61
+categories: [linux, grafik]
+---
+Letztens gab es bei uns im Büro neue Grafikkarten mit Multimonitorunterstützung. 
+Leider waren 2 der Ubuntus davon wenig begeistert und landeten nach dem Booten in einem schwarzen Bildschirm ohne Möglichkeit eine Shell zu öffnen (Freeze?). Die Rettungskonsole im Sicheren Modus brachte auch nichts.
+
+Zu unseren Lösungen:
+
+Als erstes erstmal eine Shell aufkriegen: Dazu in den Bootloader GRUB, die aktuelle Startzeile bearbeiten (e) und in der langen Zeile mit dem linux-Kernel 
+
+---
+linux-generic ..... ro quiet slash
+linux-generic ..... rw init=/bin/bash
+---
+ro quiet splash durch rw init=/bin/bash austauschen. Nun sollte nach einem Starten eine Rootkonsole ohne Netzwerkzugriff starten.
+
+Man kann auch im minimalen Grafikmodus starten wennn man statt "ro quiet splash" -> "nomodeset" einträgt.
+
+Falls man mittels Xorg.conf seine Bildschirme einstellte, lohnt sich evtl. ein Blick in diese und ein löschen alle Grafikkartenspezifischen Zeilen.
+Was bei neueren Ubuntuvarianten nicht mehr klappte, wohl aber bei alten und evtl anderen Linuxdistributionen ist ein Rekonfigurien der Xorgconf:
+---
+dpkg-reconfigure -phigh xserver-xorg
+---
+
+An anderer Stelle half es, alle alten Treiber der vorherigen GraKa zu deinstallieren:
+---
+apt-get remove nvidia*
+apt-get remove radeon*
+---
+
+
+
+
+In unserem Falle hat uns der Wikiartikel unter ubuntuusers-Wiki zu "kms deaktivieren":http://wiki.ubuntuusers.de/Grafikkarten/ati/radeon#Probleme weitergeholfen. 

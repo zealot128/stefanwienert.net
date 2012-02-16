@@ -1,0 +1,28 @@
+---
+layout: post
+title: Internet und die Meinungsfreiheit
+enki_id: 67
+categories: [china]
+---
+Die Great Firewall of China, oft GWC genannt, ist nach meiner Information das modernste Filter- und Blockingsystem weltweit. Laut Verfassung und Aussage des Premier, ist die Meinungsfreiheit in China vorhanden und das Internet frei. In der Realität aber gibt es bei sehr vielen westlichen Seiten unterschiedliche Ergebnisse:
+<ul>
+	<li>Facebook ist gesperrt (Timeout)</li>
+	<li>Twitter ist gesperrt (Timeout)</li>
+	<li>Chaosradio Express ist gesperrt (Connection reset)</li>
+	<li>Google ist manchmal gesperrt, z.B. am Nationalfeiertag konnte ich auf Mail und Reader nicht zugreifen.</li>
+	<li>blogger.com und einige andere Bloggingportale sind gesperrt</li>
+	<li>youtube.com ist gesperrt</li>
+	<li>...</li>
+</ul>
+Daneben sind natürlich sehr viele offene Proxys, bekannte Tor-Bridges, Webproxys geblockt. Ich hatte einen eigenen, einfachen HTTP-Proxy Squid unverschlüsselt benutzt. Dies ging nur ein paar Minuten, dann gab es auch hier connection resets.
+
+Den meisten Chinesen kann das aber egal sein kann, da einerseits Chinesische Alternativen bereitstehen (toutou statt youtube z.B.) und die Portale eh alle in Englisch sind, was auch  von den jungen Chinesen eher schlecht gesprochen wird. Und das ist es auch. Im Gespräch mit ein paar Chinesen wurde die Sache heruntergespielt, die meisten gingen davon aus, dass das alles nur temporär ist, und China eine Übergangsgesellschaft sei.
+
+Auf der Straße aber, merkt man von Überwachung allerdings nicht viel. Im Gegensatz zu England gibt es kaum Kameras. Eine komplette Überwachung ist, wegen der schieren Menge an Einwohnern, wohl auch nicht möglich. Auch gibt es relativ wenig Polizisten, die weit weniger respektiert werden als hier; ein Polizeiauto unter Blaulicht hat eigentlich keinerlei besonderen Vorteile im Straßenverkehr.
+
+Leider hatte ich China schon verlassen, als der Friedensnobelpreis an einen "Kriminellen" vergeben wurde. Die Reaktionen der Chinesen an dieser Stelle hätte mich durchaus interessiert. Auch der aktuelle offene Brief, in dem 23 ehemalige Parteimitglieder diese Strukturen monierten, gibt der Debatte neuen Stoff. Ich bin gespannt, ob China hier in kurzer Zeit den Sprung schafft. Denn dieses ganze Blocken und Einsperren hätten sie meiner Ansicht nach nicht nötig. Die meisten Chinesen sind sehr Obrigkeitstreu wurde mir berichtet. Es wird nur ein starker, alleiniger Führer akzeptiert, da in der Vergangenheit mehrere Anführer immer in Streit und Krieg mündeten (Mao ze dung gegen Chiang Kai-shek, ...). Wer also auf eine Demokratie in China hofft, ich glaube das wird noch recht lange dauern, wahrscheinlicher ist ein evolutionärer Übergang, der mit der Übernahme des Kapitalismus' als alleinige Wirtschaftsform, sowie laxerer Ausreisebestimmungen fehlen "nur" noch die Meinungsfreiheiten. Allerdings bin ich gespannt, was Europa und Amerika dann einfällt, um China wiederrum zum Sündenbock zu machen, statt vor ihrer eigenen Haustür zu kehren (Roma in Frankreich, Polizeieinsatz in Stuttgart, Guantanamo Bay, einfach mal fefe lesen :D).
+
+Für Chinareisende: Baut euch ein VPN vorher zusammen, damit könnts gehen.
+<div id="_mcePaste" style="position: absolute; left: -10000px; top: 716px; width: 1px; height: 1px; overflow: hidden;">
+<h1 id="firstHeading" class="firstHeading">Chiang Kai-shek</h1>
+</div>

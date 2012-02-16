@@ -1,0 +1,45 @@
+---
+layout: post
+title: Webdesign Tools und Helferlein
+enki_id: 15
+categories: [css, tools]
+---
+Dank "Ruby on Rails":http://openbook.galileocomputing.de/ruby_on_rails/ (oder auch gerne "Django":http://openbook.galileocomputing.de/python/python_kapitel_25_003.htm oder jedes andere ausgereifte MVC) hat man schon einmal ein gutes Rückgrat für eigene Webprojekte.
+
+Allerdings muss/darf man nach wie vor das Design in die eigene Hand nehmen, oder outsourcen.
+Da ich als Informatikstudent nur sehr wenig in Kontakt komme mit Designregeln und  Tools (wie z.B. das allseits bekannte Photoshop, inDesign und andere), hab ich hier mal ein paar hilfreiche Links, die ich in meinen letzten Projekten verwendet habe.
+
+h4. theorie
+
+   * "4 Principles of Good Design for Websites":http://www.myinkblog.com/2009/03/21/4-principles-of-good-design-for-websites/
+Sehr ausführliche und bebilderte Darstellung wichtiger Prinzipien, wie Kontrast und Wiederholung
+  * "Smashing Magazine - 10 Principles Of Effective Web Design":http://www.smashingmagazine.com/2008/01/31/10-principles-of-effective-web-design/
+
+h4. css
+
+  * "Drawter CSS Designer":http://drawter.com/
+Hierbei lässt sich per Javascript ein Basis-Layout "malen" und der entsprechende CSS-Code generieren
+  * "FreeCSS":http://free-css.com/
+Diverse kostenlose (oft CreativeCommons) komplett fertige Templates.
+
+h4. graphics
+
+ * "CoolText Button Generator":http://cooltext.com/
+Diverse Optionen um Buttons zu generieren... sollte das gefordert sein (Theoretisch ist es schlechter Stil, ein Bild als Link zu verwenden)
+ * "Wikimedia - Creative Commons":http://commons.wikimedia.org/wiki/Crystal_Clear
+Bei Wikimedia sind eine Menge CreativeCommons lizensierte Icons, Cliparts usw. zu finden, wie z.B. dieses Crystal Clear Set.
+
+
+h4. finishing
+
+  * "Performance Rules + Firebug plugin":http://developer.yahoo.com/performance/rules.html
+Interessante Performance Ansätze und Tipps um das Surferlebnis der Nutzer flexibler zu gestalten. z.B. Javascript ans Ende des Dokuments
+  * "Silbentrennung - &amp;shy; generator":http://yellowgreen.de/soft-hyphenation-generator
+Funktioniert zwar nicht 100%-ig, aber macht ein Blocklayout wesentlich blockiger :)
+  * "Longtailvideo JW Flash Player":http://www.longtailvideo.com/players/jw-flv-player/
+Ein einbettbarer Flashplayer, zur privaten Nutzung kostenlos.
+  * "Test everything":http://tester.jonasjohn.de/
+  * "Browsershots":http://browsershots.org/
+Ein Generator der zwar ewig braucht, aber dann Screenshots ausspuckt, wie die Website in verschiedenen Browsern aussieht
+* "Random Passwort Generator":http://www.anonym-surfen.com/passwort-generator/
+Um ein CMS Passwort etwas schwieriger zu gestalten bevor es an den Kunden ausgeliefert wird

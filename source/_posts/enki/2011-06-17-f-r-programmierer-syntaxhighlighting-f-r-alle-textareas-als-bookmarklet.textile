@@ -1,0 +1,12 @@
+---
+layout: post
+title: ! 'Für Programmierer: Syntaxhighlighting für alle textareas als Bookmarklet'
+enki_id: 71
+categories: [javascript]
+---
+Den fantastischen Javascript-basierten Editor "ACE", früher als Mozilla Bespin bekannt, kann man auf allen Webseiten bequem als Bookmarklet einbinden.
+So hat man Syntaxhighlighting und einen brauchbaren Editor, um Miniskripte oder HTML online zu bearbeiten - schnell für beliebige Textarea-Formularfelder.
+
+"Ace-Bookmarklet":http://ajaxorg.github.com/ace/build/textarea/editor.html
+
+Wichtig: Zum Aktivieren 3x auf die gewünschte Textarea klicken.

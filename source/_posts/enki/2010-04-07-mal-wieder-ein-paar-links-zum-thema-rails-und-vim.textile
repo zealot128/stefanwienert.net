@@ -1,0 +1,18 @@
+---
+layout: post
+title: Mal wieder ein paar Links zum Thema Rails und Vim
+enki_id: 42
+categories: [vim, ruby, rails]
+---
+Vim:
+
+* "Rails.vim":http://robots.thoughtbot.com/post/166073596/intro-rails-vim
+* "Qualitativ hochwertiger Screencast für VIM":http://vimcasts.org/
+
+Rails:
+* "Gmate - Ein Gedit Plugin Kompendium":http://blog.siverti.com.br/gmate/ sehr genial auch für nicht-Rails Projekte
+* "plattformübergreifend Android, iPhone, WinMob Anwendungein in einem Rails ähnlichen Framework bauen":http://www.youtube.com/rhomobile#p/a/f/0/T2pztOky_L0
+* "Rspec Best Practices":http://eggsonbread.com/2010/03/28/my-rspec-best-practices-and-tips/
+* "Kostenloses Beta Buch: Ruby Best Practices":http://rubybestpractices.com/
+* "Rubytoolbox - Auswahl und Kategorisierung der beliebtesten Gems":http://www.ruby-toolbox.com/
+* "Rubyflow - DER Rubyticker":http://www.rubyflow.com/ Dazu hier von "mir der komplette Feed inklusive der nicht-approved Beiträge":http://site.stefanwienert.net/rss/rubyflow.rss

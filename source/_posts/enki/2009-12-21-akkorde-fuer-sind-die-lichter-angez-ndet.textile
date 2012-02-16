@@ -1,0 +1,34 @@
+---
+layout: post
+title: Akkorde für "Sind die Lichter angezündet"
+enki_id: 22
+categories: [musik]
+---
+Ich hab grad mein Notenbuch nicht erreichbar und den Musikwunsch "Sind die Lichter angezündet":http://de.wikipedia.org/wiki/Sind_die_Lichter_angez%C3%BCndet, ein sehr schönes (DDR-)Weihnachtslied erhalten.
+
+Wer es nicht kennt, einfach mal danach Googeln. Ich finde es hat ein paar interessante Harmonien, gerade in den Chorfassungen.
+
+Leider habe ich im Netz keinerlei Akkorde oder Noten auf die Schnelle gefunden, also musste ich's selbst machen :)
+
+---
+F        Dm      Gm  C
+Sind die Lichter angezündet,
+
+F      Dm       Gm    C
+Freude zieht in jeden Raum.
+
+F                Bb      F
+Weihnachtsfreude wird verkündet,
+
+Bb    F            C
+unter jedem Lichterbaum.
+
+Dm      Am        F      A
+Leuchte Licht mit hellem Schein,
+
+Bb  F    Bb  F       C11  C  F
+überall, überall soll Freude sein.
+---
+
+Bitte beachtet unter welche Lizenz das Lied fällt. Die Akkorde habe ich selbst "erarbeitet", und können beliebig verwendet werden.
+

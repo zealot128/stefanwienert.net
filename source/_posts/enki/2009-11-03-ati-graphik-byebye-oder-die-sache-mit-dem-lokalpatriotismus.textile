@@ -1,0 +1,38 @@
+---
+layout: post
+title: ! 'ATI-Graphik byebye... oder: Die Sache mit dem Lokalpatriotismus'
+enki_id: 11
+categories: [ubuntu]
+---
+Nun ist er für mich vorbei, der Leidensweg mit meiner ATI Grafikkarte. (Die direkte Konkurrenz ist recht ersichtlich, möchte aber keine [unbezahlte] Werbung machen).
+
+Seit heute kann ich *endlich* Desktopeffekte anschalten UND ein Video schauen... ist das nicht unglaublich? - *nicht wirklich*. So ziemlich alles mögliche habe ich probiert, aber meine alte Graphikkarte lies sich nie dazu überreden,.. warum? Weil die Linuxunterstützung von ATI/AMD etwas... minimal ausfällt.
+
+Da AMD ein "großes Werk in Dresden, die FAB36":http://fab36.amd.com/de-de/ hat, habe ich bisher bei einer Auswahl meiner PC-Komponenten stets darauf geachtet, etwas aus diesem Hause zu kaufen, zu dem "ATI seit einiger Zeit gehört":http://www.heise.de/newsticker/meldung/AMD-uebernimmt-ATI-fuer-5-4-Milliarden-Dollar-144435.html.
+Nach meinem Komplettumstieg zu Linux (Ubuntu) vor knapp einem Jahr musste ich allerdings schmerzlich feststellen, dass, ganz im Gegensatz zu sämtlichen anderen Hardwarekomponenten, die ATI-Grafikkarten nicht, "Aus der Kiste" (Out-of-the-box) laufen, ganz im Gegenteil (Ganz unrepräsentative Aussage: hatte hierbei Erfahrungen mit 2 verschiedenen ATI-Grafikkarten).
+
+h3. Der nicht ganz reibungslose Umstieg von ATI auf NVIDIA
+
+Nach EInbau der Grafikkarte hat das BIOS ohne (größere) Probleme (Stichwort: Deaktivierung des internen Graphikchips) die nvidia erkannt. Nach GRUB und etwas Präambel allerdings...
+Rausschmiss in einem Busybox-ähnlichem Loginfenster, allerdings mit Geflacker, mit extremen Lag bei Tastatureingaben, welche u.a. die Eingabe des Passworts unmöglich gestalten.
+Mein Vorgehen danach war:
+
+  * Reboot, bei Grub "Recovery" des Kernels als Bootoption
+  * drop to root shell
+---
+dpkg-reconfigure -phigh xserver-xorg
+sudo vim /etc/X11/xorg.conf
+---
+und dort erstmal alles löschen, was radeon/fglrx zu tun hatte (in meinem Fall war ich nach einiger Zeit beim freien "radeon" Treiber hängengeblieben).
+Danach habe ich mich mit links2 auf die Suche begeben :) und gemäß des "ubuntuusers-Beitrags zum nvidia-Treiber":http://wiki.ubuntuusers.de/Grafikkarten/Nvidia/nvidia das nvidia-Paket installiert:
+
+---
+nvidia-glx-185
+---
+
+Nach einem Reboot war alles wieder normal :) (in meinem Fall kam ich sogar ohne einen Neustart aus, indem ich einfach "sudo gdm" ausgeführt hatte, nachdem der recovery-Modus normal weitergebootet und mich in einer tty rausgeschmissen hatte).
+
+
+h3. Fazit:
+
+Ich möchte keineswegs ATI schlechtreden, allerdings hatte ich zumindest bei meinen beiden Graphikkarten alles andere als gute Erfahrungen, und auch in einigen Foren gelesen, dass die Linux-Unterstützung von ATI nicht weit her ist. Ich *hoffe jetzt wird alles besser...^^

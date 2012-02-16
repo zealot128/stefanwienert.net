@@ -1,0 +1,14 @@
+---
+layout: post
+title: ! 'Greasemonkey Useraddon: Notenviewer für die HIS-QIS der HTW Dresden '
+enki_id: 10
+categories: []
+---
+Wer an der HTW Dresden ein paar Semester studiert, kenn es vielleicht: Die Notenübersicht des HIS QIS wird nach einiger Zeit extrem unübersichtlich, und neue Noten zu finden wird zunehmend schwerer.
+Was als Idee von mir in einer extrem simplen Variante mal gestartet wurde, hat mein Kommilitone "Thomas Rothe":http://blog.burnred.de/ inzwischen zu einer halben IDE ausgeweitet =):
+
+Eine übersichtlichere Anordnung der Noten, aufgetrennt nach Semester, farblich unterlegt für das "HIS-QIS Notenabrufsystem":https://wwwqis.htw-dresden.de/qisserver/rds?state=user&type=0 unserer Hochschule.
+
+Das Skript und die Installationsanweisungen findet ihr auf seiner "Hochschulseite":http://www.informatik.htw-dresden.de/~s59561/#content/tools.xml.
+
+Wie man sich selbst einen RSS-Feed aus dem HISQIS bastelt, hab ich ja "schonmal erklärt":http://site.stefanwienert.net/2009/08/14/noten-bersichts-bot-in-php

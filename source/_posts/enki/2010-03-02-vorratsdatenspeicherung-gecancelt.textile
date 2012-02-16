@@ -1,0 +1,11 @@
+---
+layout: post
+title: Vorratsdatenspeicherung gecancelt
+enki_id: 38
+categories: [politik]
+---
+Kam grad bei "heise.de":http://www.heise.de/newsticker/meldung/Karlsruhe-kippt-Vorratsdatenspeicherung-2-Update-943695.html rein:
+
+bq. "Für die Speicherung der Vorratsdaten fehlt damit eine gesetzliche  Grundlage, die Speicherung ist also einzustellen, die erhobenen Daten  unverzüglich zu löschen."
+
+Sehr gut.

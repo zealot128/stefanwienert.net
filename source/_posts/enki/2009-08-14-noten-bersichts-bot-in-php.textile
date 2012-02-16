@@ -1,0 +1,92 @@
+---
+layout: post
+title: Notenübersichts-Bot in PHP
+enki_id: 6
+categories: [php]
+---
+Vor zwei Wochen kam mir beim Überprüfen der aktuellen Notenergebnisse die Idee in den Sinn, das Ganze zu automatisieren und als Feed zur Verfügung zu stellen, um es in meinen Feedreader mit einzubinden und so immer auf dem aktuellen Stand sein zu können ;).
+
+Der Einfachheit halber hab ich PHP/Curl genommen, da ich kurz mal in Ruby reingeschaut hatte, mir die HTTP-Bibliothek aber nicht zweckdienlich erschien.
+
+h3. Teil 1: Den Quelltext der Webseite holen
+
+Dazu mal mit Firefox und LiveHTTP-Headers-Addon schauen, was man beim Login zu alles schickt. In unserem Fall muss man danach noch einen Klick auf “Notenübersicht” machen.
+
+Das ganze dann in cURL gießen und eine cookies.txt schreibbar bereitstellen:
+
+--- PHP
+  $username="Meine Matrikelnummer"
+  $passwort="Mein Passwort ;)"
+  $ch = curl_init();
+  //Variablen setzen
+  $url="https://wwwqis.htw-dresden.de/qisserver/rds?state=user&type=1&category=auth.login&startpage=portal.vm";
+  //$url="https://wwwqis.htw-dresden.de/qisserver/rds?state=user&amp;type=1&amp;category=auth.login&amp;startpage=portal.vm";
+  $arrSubmit="username=$username&submit=%C2%A0Ok%C2%A0&password=$password";
+  $cookies="cookie.txt";
+//Session Optionen setzen
+  curl_setopt($ch, CURLOPT_URL,$url);
+  curl_setopt ($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $arrSubmit);
+  curl_setopt($ch, CURLOPT_HEADER, 0);
+  curl_setopt($ch, CURLOPT_COOKIEJAR, $cookies);
+  curl_setopt($ch, CURLOPT_COOKIEFILE, $cookies);
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+//Ausführen der Aktionen
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+  $result=curl_exec($ch);
+  curl_close($ch);
+---
+
+In unserem Beispiel des HIS-QIS gibt es noch eine Art zweiter Session-ID, die ausgelesen werden, und mit übergeben werden muss:
+
+--- PHP
+  preg_match("/asi=([^\"]*)\"/",$result,$treffer);
+  $asi=$treffer[1];
+---
+
+Dann der Zweite durchlauf mit der asi:
+
+--- PHP
+ $url="https://wwwqis.htw-dresden.de/qisserver/rds?state=htmlbesch&moduleParameter=Student&menuid=notenspiegel&asi=$asi";
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL,$url);
+  curl_setopt ($ch, CURLOPT_POST, 0);
+  curl_setopt($ch, CURLOPT_HEADER, 0);
+  curl_setopt($ch, CURLOPT_COOKIEJAR, $cookies);
+  curl_setopt($ch, CURLOPT_COOKIEFILE, $cookies);
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+  $result=curl_exec($ch);
+  //echo curl_error($ch);
+  //Session beenden
+  curl_close($ch);
+---
+
+Damit ist der Text in der Variablen $result
+Extraktion der wichtigen Zeilen mit XPath
+
+Mittels Firebug schauen, wo die Prüfungsergebnisse drinstehen und die XPaths kopieren bzw. analysieren. Damit erhalten wir eine NodeList die wir ausgeben/speichern können:
+
+--- PHP
+$Doc = new DOMDocument();
+$Doc->loadHTML($result);
+$Doc->preserveWhiteSpace = false;
+$Doc->normalizeDocument();
+$XPath = new DOMXPath($Doc);
+$NodeList = $XPath->query("//tr[@bgcolor='#EFEFEF']");
+foreach ($NodeList as $node)
+{
+  echo $node->nodeValue;
+  ...
+}
+---
+
+Schon fast fertig, was fehlt noch?
+
+* Die Datumswerte auslesen, nach Sekunden umwandeln um danach die Noten danach zu sortieren.
+
+* Einfacher Caching Algorithmus à la “Wenn unsere cache-datei älter als 30 minuten ist, dann erstelle sie neu [durchlaufe den Algorithmus] und schreibe das Ergebnis in die Cache-Datei; andernfalls gib nur die cache-Datei aus”
+
+* Ausgabe als RSS-Feed, einfach mal die Spezifikation googlen ;)

@@ -1,0 +1,33 @@
+---
+layout: post
+title: ! 'Vim 7.2 mit ERB HAML .. Syntaxhightlighting auf Debian Squeeze '
+enki_id: 39
+categories: [vim, debian, linux, rails]
+---
+Wer sein Rails Projekt auf Debian laufen hat, und seine Minichanges mit VIM macht, der kennt vielleicht das Problem, dass bei Vim 7.1 keine Syntax Beschreibungen fuer ERB und HAML (z.B.) dabei sind.
+
+7.2. kann man wie folgt installieren (Alternativ aber auch aus der Quelle, hier jetzt mit den debs)
+
+--- Ruby
+# Pakete herunterladen
+wget http://ftp.de.debian.org/debian/pool/main/v/vim/vim-common_7.2.330-1_i386.deb
+wget http://ftp.de.debian.org/debian/pool/main/v/vim/vim-runtime_7.2.330-1_all.deb
+wget http://ftp.de.debian.org/debian/pool/main/v/vim/vim_7.2.330-1_i386.deb
+
+# Das Zeug installieren
+dpkg -i *.deb
+---
+
+Jetzt ist es zwar schon installiert, aber u.a. das Syntaxhighlighting sollte noch etwas bocken, weil noch der runtimepath angepasst werden muss:
+
+---
+vim /usr/share/vim/vimrc
+
+# Dort unten einfuegen, falls die Zeile in der Datei nicht vorhanden ist:
+set runtimepath=~/.vim,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/addons,/usr/share/vim/vim72,\
+   /usr/share/vim/vimfiles,/usr/share/vim/addons/after,~/.vim/after
+
+# Speichern und raus
+---
+
+Sollte soweit klappen. Bitte einen Kommentar hinterlassen, falls was schiefgelaufen ist.

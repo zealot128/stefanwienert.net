@@ -1,0 +1,15 @@
+---
+layout: post
+title: SEO mit Ruby (Rails)
+enki_id: 2
+categories: [ruby, seo, rails]
+---
+Backlinks, Anzahl der Referenzen, Pagerank… all das wurde letztens für ein Projekt benötigt. Da noch einige andere Funktionen benötigt wurden, hab ich gleich eine Rails App draus gemacht.
+
+Das ganze in den lib-Ordner und in der entsprechenden Datei require’n.
+
+Google bietet leider keinen vernünftigen Developer-Account an, darum mache ich eine normale Browseranfrage; hierbei ist darauf zu achten, dass man nicht all zu viele Anfragen am Tag macht.
+Yahoo dagegen bietet eine API an, die uns Suchergebnisse als json zurückliefert.
+Die beiden Klassen google und yahoo lassen sich natürlich noch erweitern: momentan geben sie nur die Anzahl der Suchergebnisse und das jeweils erste zurück. Es ist noch nicht perfekt, aber für meine Zwecke erstmal ausreichend. Bitte beachtet auch die Quellenangaben.
+
+"Quelltext ist jetzt im Wiki":http://stefanwienert.net/~zealot128/dokuwiki/doku.php?id=tutorial:ruby_rails

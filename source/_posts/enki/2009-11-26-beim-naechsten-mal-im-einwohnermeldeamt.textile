@@ -1,0 +1,14 @@
+---
+layout: post
+title: Beim nächsten mal im Einwohnermeldeamt...
+enki_id: 14
+categories: [politik, dresden]
+---
+Nicht vergessen, der automatisierten Weitergabe der persönlichen Daten an Dritte zu widersprechen!
+
+Leider habe ich selbst den "Opt-Out-Day":http://www.optoutday.de/ verpasst. Aber eine Ausweisverlängerung steht bald an...
+
+Nach kurzer Suche fand ich "das Formular auf sachsen.de":https://fs.egov.sachsen.de/formserv/findform?shortname=widerspruch&formtecid=2&areashortname=SAKD. Dank Föderalismus gibt es für jedes Bundesland ein eigenes Formular. :D
+
+Falls die Angestellten dort vom Opt-Out noch nicht gehört sagen, einfach kurz den "Gesetztestext rezitieren":http://www.revosax.sachsen.de/Details.do?sid=972825726023&jlink=p32.
+Damit wird zwar nur die automatisierte Weitergabe per Internet untersagt, also eine persönliche (und telefonsiche?) Auskunft sollte noch immer möglich sein, aber das gegen Spam-Schleudern schon mal ein Anfang.

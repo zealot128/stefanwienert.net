@@ -1,0 +1,13 @@
+---
+layout: post
+title: Tool fuer externe/interne Link-Analyse mit rel=nofollow
+enki_id: 24
+categories: [seo, rails, ruby]
+---
+Fuer ein aktuelles Projekt wurde eine **Linkanalyse**, insbesondere der ausgehenden Links gewuenscht. Insbesondere die Verwendung des SEO Buzzwords "rel=nofollow" sollte dabei aufgezeigt werden. Was lag naeher als schnell in Ruby mit Zuhilfenahme des hpricot Gems ein kleines Skript dafuer zu bauen?
+
+Das Skript gruppiert die Links in die drei Kategorien "Internal, External with nofollow, External without nofollow". Hintergrund ist hierbei, dass das nofollow Attribut Suchmaschinen anweist, den verlinkten Seiten bei der Berechnung ihres Pagerankes diesen Link zu ignorieren. Mehr Infos in der "Wikipedia":http://de.wikipedia.org/wiki/Nofollow. Anmerken moechte ich noch, dass die Verwendung des Attributes umstritten ist, ich persoenlich finde es relativ ueberfluessig; Warum verlinkt man eine Seite, nur um den Suchmaschinen zu sagen, "hey, ich hab jetzt aber nicht auf die Seite verlinkt".
+
+Dank XML Builder ist dann auch ein ordentlicher XML Export kein Problem, und laesst sich so mit z.B. Firefox bequem navigieren.
+
+Unter "linkcheck/link_check_form":/linkcheck/link_check_form findet ihr ein minimalistisches Eingabeformular. Das Ganze laesst sich natuerlich auch bequem mit GET ansteuern :).

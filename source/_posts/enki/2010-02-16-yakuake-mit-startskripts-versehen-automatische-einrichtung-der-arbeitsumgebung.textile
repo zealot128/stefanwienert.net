@@ -1,0 +1,109 @@
+---
+layout: post
+title: Yakuake mit Startskripts versehen - Automatische Einrichtung der Arbeitsumgebung
+enki_id: 34
+categories: [ruby, ubuntu, bash]
+---
+Diejenigen von euch, die eine KDE Umgebung unter Linux verwenden, kennen vielleicht yakuake, ein Terminalprogramm mit etwas EyeCandy, welches bei Druck von F12 aus dem oberen Bildschirmrand herausfährt.
+Ich selbst nutze zwar Gnome, nehme aber als priorisiertes Terminalprogramm trotzdem yakuake, da ich finde, dass das Farbschema "Dunkle Pasteltöne" einfach gut aussieht, und man die Shell, egal auf welchem Virtuellem Desktop man sich befindet, nie aus den Augen verliert (F12 und sie ist wieder da).
+
+Die Dokumentation der Skriptfähigkeit ist etwas dürftig, außer einem "Blogeintrag":http://88.191.25.234/wordpress/2009/05/09/yakuake-launch-on-start/ habe ich nicht sehr viel gefunden. Das dort abgebildete Beispielshellskript hab ich bei mir nicht zum Laufen bekommen, darum hab ich ein Ruby Programm dafür geschrieben.... (Ehrlich gesagt, find ich Shell Skript hässlich, keine Parameterliste, hässliche Conditional-Syntax... ja wann kommt denn endlich eine Ruby Shell?? :D)
+
+h3. kurze Einführung
+
+Ersteinmal muss yakuake laufen, vornehmlich in einem initialen Zustand.
+Das Ganze läuft über qbus und man ruft prinzipiell nur ein paar recht einfache Shellkommandos auf:
+
+Ein Aufruf von
+
+--- shell
+qdbus org.kde.yakuake /yakuake/sessions
+
+# und
+
+qdbus org.kde.yakuake /yakuake/tabs
+---
+
+Gibt uns alle möglichen Kommandos auf. Hier meine Favoriten:
+
+--- ruby
+qdbus org.kde.yakuake /yakuake/sessions addSession
+qdbus org.kde.yakuake /yakuake/sessions addSessionTwoHorizontal
+qdbus org.kde.yakuake /yakuake/sessions addSessionTwoVertical
+# Macht ein neues Tab (mit zwei, horizontal/vertikal geteilten Sessions sprich Terminals)
+
+qdbus org.kde.yakuake /yakuake/tabs setTabTitle $tabid 'name'
+# Setzt den Tab auf ein neues Label
+
+qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal $sessionid 'command'
+# Führt ein Shell-Kommando in Terminal Nr X aus
+
+qdbus org.kde.yakuake | grep Sessions | cut --fields "3" --delim="/" | sort -n | tail -n 1
+# Gibt uns die letzte vergebene SessionID aus
+
+---
+
+Wie man sieht, besteht das eigentliche Problem, den Überblick über die Sessions (Terminals) und Tabs zu behalten. Wenn man keine geteilten Fenstern nutzt, sollten die beiden identisch sein.
+
+h3. Ein Ruby-Wrapper
+
+Um den IDs herr zu werden, habe ich das Ganze in ein Rubyprogramm, eine Klasse, geflochten:
+
+--- ruby
+class Yakuake
+
+  def initialize
+    @cid=0
+    @tabid=0
+  end
+
+  def exec(cmd)
+    puts cmd
+    system cmd
+  end
+
+  def add_splitted_tab(title1,command1,command2)
+    exec "qdbus org.kde.yakuake /yakuake/sessions addSessionTwoHorizontal"
+    @tabid+=1
+    cid = last
+    exec "qdbus org.kde.yakuake /yakuake/tabs setTabTitle #{@tabid} '#{title1}'"
+    [command1, command2].each_with_index do |command,index|
+      if command
+        ccid = cid -1 + index
+        exec "qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal #{ccid-1} '#{command}'"
+      end
+    end
+  end
+
+  def add_tab(name, command=false)
+    exec "qdbus org.kde.yakuake /yakuake/sessions addSession"
+    @tabid+=1
+    exec "qdbus org.kde.yakuake /yakuake/tabs setTabTitle #{@tabid} '#{name}'"
+    if command and !command.empty?
+      exec "qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal #{last - 1} '#{command}'"
+    end
+  end
+
+  def execute(terminal_id, command)
+    exec "qdbus org.kde.yakuake /yakuake/sessions runCommandInTerminal #{terminal_id} '#{command}'"
+  end
+
+  def last
+    `qdbus org.kde.yakuake | grep Sessions | cut --fields "3" --delim="/" | sort -n | tail -n 1`.strip.to_i
+  end
+end
+
+# Aufruf/Einrichtung des Workspace:
+y=Yakuake.new
+y.add_splitted_tab("sshs","ssh username@server.de","ssh username@server2.de")
+# jeweils in den Arbeitsordner navigieren und svn up
+y.execute(y.last-2,"cd  public_html/modules")
+y.execute(y.last-2,"svn up")
+y.execute(y.last-1,"cd  ~username/public_html/modules")
+y.execute(y.last-1,"svn up")
+# ein paar irbs zum "rumprobieren"
+y.add_splitted_tab("Irbs", "irb","irb")
+# Ein Programmstarter
+y.add_tab("Progs","ruby ~zealot64/rubyqt/tray.rb&")
+
+---

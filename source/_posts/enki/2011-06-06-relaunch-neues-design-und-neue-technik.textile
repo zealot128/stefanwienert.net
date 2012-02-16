@@ -1,0 +1,13 @@
+---
+layout: post
+title: Relaunch - Neues Design und neue Technik
+enki_id: 69
+categories: [coding]
+---
+Hat wahrscheinlich niemand bemerkt: Ich habe über das Wochenende die Seite offline genommen um den drunter liegenden Server mal gehörig aufzuräumen, um nicht zu sagen, neu zu installieren.
+
+Wozu das ganze? Ich habe mir mal Zeit genommen und den Mailserver, sowie ein ordentliches Rails-Setup, mit dem man arbeiten kann, eingerichtet. Das ganze dient dazu, ein anstehendes Projekt zu hosten, *shufazuopin*, eine neue Rails31 Anwendung, zum spaßigen Einpauken der chinesischen Zeichen.
+
+Dann hab ich noch eine neue Blogengine eingebaut und meine Posts vom alten, sowie dem Blog meiner Chinareise befüllt. Kommentare sind deaktiviert, da ich sonst im Spam ersticke.
+
+Ich hoffe das Design gefällt :) Sollte auf halbwegs moderenen Browsern ordentlich laufen, keine Garantie für Microsoft Produkte!

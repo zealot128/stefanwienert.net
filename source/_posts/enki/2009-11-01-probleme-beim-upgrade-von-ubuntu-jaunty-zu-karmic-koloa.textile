@@ -1,0 +1,31 @@
+---
+layout: post
+title: Probleme beim Upgrade von Ubuntu Jaunty zu Karmic Koloa
+enki_id: 9
+categories: [ubuntu]
+---
+Heute habe ich meinen Rechner angemacht, und siehe da: Kein Sound.
+
+Meine Soundkarte wurde nicht gefunden, und auch ein Neustart und Reinstallation von pulseaudio brachte nichts.
+Weiterhin wird meine ATI HD3100 nicht unterstützt, und das Desktop ruckelt so vor sich hin, eine manuelle Installation des fglrx-Treibers von ATI bricht ab, da die XServer-Version noch nicht unterstützt wird....
+
+Doch dann beim Booten, viel mir auf, dass nicht die Kernelversion 2.6.31-14 sondern 2.6.28 gebootet wird, obwohl ja die 31 Teil des neuen Ubuntus sein sollte.
+Also:
+---
+sudo update grub
+---
+Durchklickern und neustart.... und beides funktioniert wieder :)
+
+Da wurde wohl vergessen die Kernelversion beim Updatemanager mit einzubeziehen..? Wenn man mal danach "googlet":http://forum.ubuntuusers.de/topic/kein-sound-nach-upgrade-auf-karmic-64bit/, stellt man fest, dass es noch einige andere mit diesem Problem gibt.
+
+Im Nachhinein würde ich persönlich ein Upgrade von Jaunty zu Karmic machen; Probleme beim Update hatte ich schon beim letzten mal von Intrepid zu Jaunty. Die Updatefunktion scheint mir demnach noch etwas buggy, allerdings ist eine Neuinstallation erfahrungsgemäß relativ problemfrei.
+
+Zusammenfassend mal mein (Negativ)-Fazit:
+
+   * Empathy anstelle Pidgin... WTF? Ok, Empa unterstützt Voicechat, aber hässlich, und bei mir etwas langsam. "OTR-Plugin":http://de.wikipedia.org/wiki/Off-the-Record_Messaging auch noch nicht vorhanden (damit ICQ/MSN/QQ-Chats aufgrund der AGBs nutzlos^^)
+   *  Siehe letzten Post: Gedit hat neue API-Daten für die Snippets
+   * Grafikprobleme mit ATI (altes Thema), allerdings durch das Kernelupdate soweit behoben
+   * Die anderen Features bringen mir relativ wenig (Ubuntu One Integration...)
+   * Mal schauen, ob mein Soundbug, welcher nach einer längeren Zeit Videoguckens auftritt und sich durch einen 1-2minütigen Lag im Sound + Bild äußert, behoben ist...
+
+Nichtsdestotrotz bleibt es ein Ubuntu, und damit immer noch eines der bedienerfreundlichsten und am meisten Community-unterstützten Linux Distributionen überhaupt.

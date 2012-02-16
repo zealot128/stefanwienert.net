@@ -1,0 +1,25 @@
+---
+layout: post
+title: Deutschland in der Konjunktur
+enki_id: 52
+categories: [politik]
+---
+Mit Deutschland geht es nach neuesten Wirtschaftsstudien wieder bergauf.
+Soweit, dass die Bundesregierung, allen vorran Merkel "vom Spiegel sogar gelobt wird.":http://forum.spiegel.de/showthread.php?t=19867.
+Um 2.5% soll die Wirtschaft wieder wachsen, nachdem -sie um 5% geschrumpft war- es ein Minuswachstum gab.
+Soweit so gut. Führenden Wirtschaftsvertretern kann ein Wachstum ja nie hoch genug sein, ich warte nur auf das Jammern aus den Chefetagen trotz dieser Zahlen.
+
+Man schaue sich insbesondere das normale Vorgehen an der -Spiel- Börse an: "sinkender Aktienkurs trotz Gewinn/Umsatzerhöhung":http://www.focus.de/finanzen/boerse/aktien/sap-trotz-gewinnsteigerung-groesster-dax-verlierer_aid_534780.html oder "noch schlimmer", keine **Gewinn** veränderung wird oft mit Aktienverkauf bestraft, d.h. die Firma macht vielleicht einen guten Gewinn, arbeitet also wirtschaftlich, aber der wurde gegenüber dem Vorjahr nicht gesteigert.
+
+Dabei ist diese Wachstumsfixierung gerade im Bezug auf unsere Volkswirtschaft sehr gefährlich. Folgende Faktoren fallen mir da direkt ein:
+
+* "Die Deutsche Bevölkerung schrumpft":http://www.destatis.de/jetspeed/portal/cms/Sites/destatis/Internet/DE/Presse/pm/2010/05/PD10__176__126,templateId=renderPrint.psml. Es gibt immer mehr 1-Kind-Familien.
+* Der demographische Wandel: Viele Arbeitende werden in dem nächsten Jahrzehnt und danach in Rente gehen, stehen also der Wirtschaft nicht mehr zur Verfügung
+
+Um diesen zwei Punkten entgegenzusteuern, sollte einerseits die vorhandene Bevölkerung optimal ausgebildet, und das Kinderkriegen so attraktiv wie möglich gestaltet werden. Von der Bildungspolitik will ich aber jetzt gar nicht erst anfangen. Werfen wir also einen Blick auf eine weitere Möglichkeit: den Import von (qualifizierten) Einwanderern. Hier aber:
+
+* "Ausländer haben erwiesenermaßen ein deutlich geringeres Bildungsniveau":http://www.destatis.de/jetspeed/portal/cms/Sites/destatis/Internet/DE/Presse/pm/2008/02/PD08__061__217,templateId=renderPrint.psml, aus welchen Faktoren auch immer.
+* "Immer weniger Ausländer zieht es nach Deutschland":http://www.netzeitung.de/politik/deutschland/1149557.html
+* Da ich einige Ausländer kenne (meine Verlobte ist Chinesin), habe ich miterlebt, welche Hürden es gibt, überhaupt in Deutschland zu bleiben. Man kann nicht gerade behaupten, dass es von Amtswegen ein besonderes Bemühen gibt, die ausländischen Absolventen in Deutschland zu halten. (Dies ist sicherlich nicht zuletzt der Einwandernspolitik der CDU zu verdanken). Beispielsweise dürfen Studierte (d.h. gut ausgebildete Absolventen) nur in Deutschland bleiben, wenn sie einen (Vollzeit)-Job bekommen, der **genau** ihrem Studium entspricht. In meinen Augen ist das bedingt sinnvoll. Ich kenne selbst einige Deutsche, die jetzt etwas völlig anderes arbeiten, als sie letztendlich studiert haben. Außerdem erhält diese Gruppe von Ausländern absolut keine Zuwendungen vom Staat, ist also sowieso bestrebt, Geld zu verdienen.
+
+Ohne einen VWL- oder Soziologieabschluss zu haben, summieren sich alle diesen genannten Faktoren für mich zu einer unausweichlichen Umkehr des Wirtschaftswachstums. Automatisierung und Technologie führen zwar auch zu steigender Produktivität, aber für ein gut funktionierendes Unternehmen braucht man doch in erster Linie die Menschen. Keine Aktien, "keine Banken":http://www.youtube.com/watch?v=9BrLrwbkQWQ, sondern Bildung, Integration und ein Land, in das man Kinder setzen möchte.

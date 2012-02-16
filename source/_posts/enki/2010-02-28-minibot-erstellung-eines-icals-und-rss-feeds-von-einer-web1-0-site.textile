@@ -1,0 +1,67 @@
+---
+layout: post
+title: Minibot für Erstellung eines iCals und RSS-Feeds von einer Web1.0 Site
+enki_id: 35
+categories: [ruby]
+---
+In Dresden gibt es die Hochschule für Musik "Carl Maria von Weber", welche "auf ihrer Website":http://www.hfmdd.de/index.php?id=4 auch ihr aktuelles Programm kundtun. Wer etwas Interesse an klassischer Musik hat, hat durch diese Art der Konzerte die Gelegenheit, sehr gute Pianisten sehr preiswert (umsonst...) zu hören.
+
+Leider bieten sie weder einen Feed noch einen Kalender an, deshalb dachte ich mir, das wär wieder ein guter Einsatz für das hpricot-Gem, ich will hier mal kurz den Ablauf skizzieren.
+
+h3. Rien ne va plus ... ohne Gems!
+
+--- ruby
+%w[rubygems hpricot curl active_support icalendar].each { |x| require x}
+---
+
+Im ersten Fall hatte ich Probleme mit den *Umlauten*, also erst einmal alles nach UTF-8 transformieren/encodieren:
+
+--- ruby
+cal = Calendar.new  # by the way: wir machen gleich mal einen ical draus, siehe icalendar gem.
+
+curl_object = Curl::Easy.perform("http://www.hfmdd.de/veranstaltungen/")
+body = Iconv.conv("UTF-8//IGNORE","ISO-8859-1", curl_object.body_str)
+doc = Hpricot(body)
+---
+
+Im nächsten Schritt mit "Selector Gadget":http://www.selectorgadget.com/ und Firebug herausfinden, welcher CSS-Selektor uns Zeiger auf die Contentbereiche liefert, hier z.B. "#contentbereich div" mit der Eigenschaft, dass deren margin 35em ist... Leider haben die Webdesigner bei der Site der Musikhochschule wenig Gebraucht von Klassen oder IDs gemacht.
+
+--- ruby
+elements = doc.search("#contentbereich div").select{
+  |it| it[:style].include? "35em" if it[:style].present?
+}
+# present? ist das Gegenteil von .blank?
+
+# Jetzt traversieren wir die Elemente die uebrig bleiben
+elements.each do |item|
+  [...]
+end
+---
+
+Jetzt zum langweiligeren [...] Teil, dem lokalen Extrahieren der Daten...
+Das passiert leider etwas unsauber, da, wie man auf der Seite sehen kann, recht willkürliche Formate in den Datumsangaben gemacht wurden, hier mein bester Versuch:
+
+--- ruby
+      text = item.search("div[2]").inner_html rescue text = "???"
+      date = item.search(">div>b").first.inner_text.split(".")
+      time = item.search(">div[1]>*")[4].to_s[0..4].split(":") rescue time = "00:00"
+      begin
+        new_date = DateTime.strptime("20#{date[2]}-#{date[1]}-#{date[0]}T#{time[0]}:#{time[1]}:00+0100")
+        next if new_date < Date.today
+        event = cal.event
+        event.start = new_date
+        event.summary = text.split("<br").first[0..150]
+        event.description = text
+      rescue
+        puts "INVALID: 20#{date[2]}-#{date[1]}-#{date[0]}T#{time[0]}:#{time[1]}:00+0100"
+        # spaeter ein logger
+      end
+---
+
+Jetzt koennen wir den Kalendar direkt ausgeben, oder sonstwas damit machen
+
+--- ruby
+cal.to_ical
+---
+
+Das Ganze war eher ein Proof-of-Concept, denn wie immer, wenn man ScreenScraping betreibt, sollte man eine Art Einverständnis des Inhabers der gescrapten Seite haben (oder sie bieten wie Google und Twitter eine API an)

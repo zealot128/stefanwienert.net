@@ -1,0 +1,15 @@
+---
+layout: post
+title: Gedit Dokuwiki Syntax Highlighting Beschreibung
+enki_id: 45
+categories: [gedit]
+---
+Für Uni und private Aufzeichnungen verwende ich gerne Dokuwikis, welche recht schön zu installieren sind, und dank Datenbanklosigkeit auch gut kopiert und versioniert werden können.
+Als Ubuntu User nehme ich da gerne Gedit , wegen der guten Plugins (Snippets, Wortliste, Spellcheck) ein ganz netter Editor, nur ein gutes Syntaxhighlighting hat noch gefehlt.
+Also hab ich mich durch die XML Spezifikationen gewühlt und einen "ersten Draft auf github online gestellt":http://github.com/zealot128/Gedit-Dokuwiki-Syntax.
+
+Jetzt arbeitet es sich schon etwas "farbenfroher" :). Insbesondere in Ergänzung mit "der genialen Firefox Erweiterung It's all text":https://addons.mozilla.org/en-US/firefox/addon/4125, die es erlaubt, Textboxen (Textareas) in einem beliebigen Editor zu bearbeiten. Sehr komfortabel.
+
+In Zukunft werde ich das Language-File noch etwas feiner machen und noch mindestens meine Dokuwiki Snippets reinstellen.
+
+Kritik/Lob/Ergänzungen/Weiterentwicklungen absolut erwünscht! Gerade bei den Styles kann man noch viel machen...

@@ -1,0 +1,35 @@
+---
+layout: post
+title: Easy Website-Performance Tests mit ab
+enki_id: 56
+categories: [server, linux]
+---
+Mit dem Linux Standardprogramm "ab" Apache Bench kann man hervorragend Performance-Tests auf eine Website durchführen und seine DDos Strategie überprüfen.
+
+Einfach von der Kommandozeile:
+---
+$  ab -n100 -c5 http://www.stefanwienert.net/
+---
+und schon wird mein Server mit jeweils 5 Anfragen gleichzeitig bombardiert (concurrency), mit insgesamt 100 Durchläufen.
+
+So sieht dann die Ausgabe aus:
+
+---
+...
+Concurrency Level:      5
+Time taken for tests:   56.625 seconds
+Complete requests:      100
+Failed requests:        0
+Write errors:           0
+Total transferred:      2274571 bytes
+HTML transferred:       2219866 bytes
+Requests per second:    1.77 [#/sec] (mean)   <----- das wichtige
+Time per request:       2831.227 [ms] (mean)
+Time per request:       566.245 [ms] (mean, across all concurrent requests)
+Transfer rate:          39.23 [Kbytes/sec] received
+....
+---
+
+Da das ein Railsblog mit relativ wenig Caching Features ist, habe ich auch nur maximal 2 Requests/sekunde.
+
+Sehr brauchbares Tool um schnell mal verschiedene Performance Strategien zu testen.

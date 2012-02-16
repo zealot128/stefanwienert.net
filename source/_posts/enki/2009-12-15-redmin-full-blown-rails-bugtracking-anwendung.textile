@@ -1,0 +1,27 @@
+---
+layout: post
+title: Redmin - Full Blown Rails Bugtracking Anwendung
+enki_id: 16
+categories: [rails]
+---
+Kürzlich war ich auf der Suche nach einer guten Bugtracking Anwendung. Über den Weg gelaufen sind mir dabei:
+
+* "Mantis":http://www.mantisbt.org/ in PHP
+* "Bugzilla":http://www.bugzilla.org/ in Perl
+* "Redmine":http://www.redmine.org/ in Rails
+
+welche ich mir alle drei angeschaut habe.
+
+Mein absoluter Favorit ist Redmine, welches auch eine Rails Application ist :).
+Vom Umfang entspricht es genau dem, was ich mir wünschte:
+
+ * Verwaltung mehrere Projekte, öffentlich und nicht-öffentlich
+ * Feature Requests
+ * Taskverwaltung/Roadmap und Berichte für abgeleistete Stunden
+ * E-Mail Benachrichtigung bei Statusänderungen, neuen Bugs
+ * E-Mail API zum Antworten
+
+Meiner Ansicht nach für die meisten kleineren bis mittelgroßen Projekten absolut ausreichend. Nicht mehr und nicht weniger.
+
+**Anmerkung** Da Redmine Rails ist, war hier meiner Meinung nach die Installation am leichtesten; git clone, database.yml und migrate und einen neuen Eintrag für Apache/Passenger.
+Ganz im Gegensatz zu Bugzilla, welche als Perl Anwendung mich erst einmal vor größere Probleme stellte :).

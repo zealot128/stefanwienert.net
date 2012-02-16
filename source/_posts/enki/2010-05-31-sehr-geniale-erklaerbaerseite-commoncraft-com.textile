@@ -1,0 +1,9 @@
+---
+layout: post
+title: Sehr geniale Erklärbärseite - commoncraft.com
+enki_id: 48
+categories: [screencast]
+---
+Heute grad gefunden: "commoncraft.com":http://commoncraft.com/. Eine Firma, die Videos anbietet, die in jeweils 3 min ein meist technisches Thema sehr visuell erklärt.
+
+Angucken ist kostenlos, Verwenden muss dann lizensiert werden.

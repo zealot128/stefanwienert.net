@@ -1,0 +1,29 @@
+---
+layout: post
+title: Bedrohungen der Anonymität des Netzes - Browserfingerabdruck und History-Stealing
+enki_id: 30
+categories: [css, javascript]
+---
+Jüngst "stieß ich bei Heise":http://www.heise.de/newsticker/meldung/EFF-demonstriert-den-Fingerabdruck-des-Browsers-918262.html auf "zwei Artikel":http://www.heise.de/security/meldung/Plaudertasche-Web-Browser-erleichtert-Deanonymisierung-919076.html, die die EFF beschreiben. Diese bieten einen Test an, ob man der bisher "einzige Nutzer mit seiner Browserspezifikation":http://panopticlick.eff.org/ ist. Dabei stieß (zumindest ich) auf interessante Erkenntnisse, dass nicht nur einer, sondern gleich mehrere Faktoren mich eindeutig identifizierbar mach(t)en:
+ * HTTP ACCEPT Headers: Komischerweise ist dieser schon eindeutig
+ * Installierte Fonts: Ubuntu mit allen Fonts die ich in den Repos gefunden habe + 2 Selbstruntergeladene = Eindeutig
+ * Kombination aus Browserkennung (User Agent: X11, Firefox, sonstewas), installierten Plugins (kein pdf, aber flash)
+
+Zudem gibt es noch weitere Faktoren... "einfach mal ausprobieren":http://panopticlick.eff.org/. Die (De)Aktivierung von Javascript hat hierbei erhebliche Auswirkungen auf das Ergebnis.
+
+Das diese Seite dies nun öffentlich zeigt, finde ich sehr gut, aber keiner weiß, ob ein paar der Softwaregiganten dies nicht schon seit einiger Zeit auswerten.
+
+Um hier selber wieder anonym zu werden, muss man mindestens Javascript deaktivieren und den User Agent anonymisieren (User Agent Switcher für Firefox, aber auch TorButton ändert im aktiviertem Modus den User Agent auf einen Standardwert). Die HTTP Accept Headers lassen sich im FF unter about:config in der Einstellung network.http.accept.default ändern.
+
+h3. History-Diebstahl
+
+Eine weitere Bedrohung der Anonymität durch ein History Auslesen ist das sogenannte CSS oder Javascript History Stealing. Das Prinzip ist recht einfach:
+
+- Eine Seite hat eine Stange (eventuell per Positionierung versteckter) Links in ihrem Quelltext
+- Der "Anbieter" legt für jeden Link eine CSS-Eigenschaft "visited", die dem Link eigentlich ein anderes Hintergrundbild zuweisen soll
+- dieses Bild ist allerdings nur ein Skript
+- Beim Ansurfen werden nun die CSS Eigenschaften verarbeitet
+
+CSS ist recht leicht zu verstehen, aber wesentlich effektiver scheint das per Javascript zu gehen. Auf "mikeonads.com":http://www.mikeonads.com/2008/07/13/using-your-browser-url-history-estimate-gender/ kann man testen, ob eine Bestimmung des eigenen Geschlechts einzig durch die Auswahl der Seiten in seiner History möglich ist. (Bei mir waren es 95% männlich, Glück gehabt :D)
+
+Noscript (für Firefox) schützt hiergegen natürlich hervorragend.

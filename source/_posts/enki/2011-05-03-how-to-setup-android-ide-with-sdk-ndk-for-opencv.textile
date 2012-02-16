@@ -1,0 +1,183 @@
+---
+layout: post
+title: ! 'How To: Setup Android IDE with SDK, NDK for OpenCV'
+enki_id: 62
+categories: [android]
+---
+i. Gastbeitrag von Sebastian Starke
+
+This tutorial will give a brief overview about the installation and configuration of the opencv Framework for Android.
+
+The tutorial is tested for:
+* SWIG: Version 1.3.40 - Compiled with g++ [i686-pc-linux-gnu]
+* Android-SDK: android-sdk_r10-linux_x86.tgz, Checksum: c022dda3a56c8a67698e6a39b0b1a4e0
+* Android-SDK Platform-tools, revision 3
+* SDK Platform Android 2.2, API 8, revision 2
+* OpenCV; Rev: 4962; URL: https://code.ros.org/svn/opencv/trunk/opencv; Autor: vp153
+
+
+h3. Reference documentations/tutorials:
+* http://android-cmake.googlecode.com/hg/documentation.html
+* http://opencv.willowgarage.com/wiki/AndroidExperimental
+* http://opencv.willowgarage.com/wiki/Android
+
+h3. Setup Ubuntu 11.04
+
+---
+$ sudo apt-get install swig mercurial subversion cmake cmake-gui
+---
+
+h3. Setup Android-SDK
+
+Download the android-sdk from:
+* http://developer.android.com/sdk/index.html
+
+Unpack the Downloaded Package:
+---
+$ cd ~/; tar xvzf android-sdk_r10-linux_x86.tgz
+---
+Add this to your .bashrc:
+---
+export ANDROID_SDK=~/android-sdk-linux_x86
+export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
+---
+
+Update your environment:
+---
+$ . .bashrc
+---
+
+Setup SDK and test the environment Variables:
+
+---
+$ android
+---
+
+* Available Packages -> Install at least the packages „Android-SDK Platform-tools“ and "SDK Platform Android 2.2"
+* Virtual Devices -> Create a new AVD (Android Virtial Device) with the Target "Android 2.2 - API Level 8"
+
+Add this to your .bashrc:
+---
+export ANDROID_SDK=~/android-sdk-linux_x86
+export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
+---
+
+h4. Test your environment
+
+Try hello-cmake:
+* http://android-cmake.googlecode.com/hg/docs/hello-cmake.html
+Try hello-android-cmake:
+* http://android-cmake.googlecode.com/hg/docs/hello-android-cmake.html
+
+h3. Setup Android-NDK 5
+
+Add this to your .bashrc:
+
+---
+export NDK=~/android-ndk-r5b
+export NDK_ROOT=~/android-ndk-r5b
+---
+
+h3. Setup Android-Cmake
+
+Add this to your .bashrc:
+---
+alias android-cmake='cmake -DCMAKE_TOOLCHAIN_FILE=$ANDTOOLCHAIN '
+export ANDROID_CMAKE=~/android-cmake
+---
+
+h3. Setup standalone Android-Toolchain
+
+Add this to your .bashrc:
+---
+export ANDTOOLCHAIN=$ANDROID_CMAKE/toolchain/android.toolchain.cmake
+export ANDROID_NDK_TOOLCHAIN_ROOT=$HOME/android-toolchain
+---
+Install the toolchain with:
+
+---
+$NDK/build/tools/make-standalone-toolchain.sh --platform=android-5 --install-
+dir=$HOME/android-toolchain
+---
+
+h2. Setup OpenCV
+
+---
+cd ~/
+svn co https://code.ros.org/svn/opencv/trunk/opencv opencv-r4964 -r 4964
+ln -s ~/opencv-r4964 ~/opencv
+# Build OpenCV Static Lib
+ln -s ~/android-ndk-r5b ~/android-ndk-r4-crystax
+cd ~/opencv/android
+sh cmake_android.sh
+cd ~/opencv/android/build
+make -j8
+---
+
+If you get a error message like this @Compile error: something with gtest@ fix it with:
+
+---
+cmake-gui ...
+---
+
+* disable Google Test
+
+
+If you get a error like this @Compile error ~/opencv/modules/ts/src/ts_gtest.cpp:6950: clone not
+declared in this scope@ fix it with:
+* Edit the file @~/opencv/modules/ts/src/ts_gtest.cpp@ and add the declaration of the function at line 6944:
+---
+int clone (int (*fn) (void *), void *child_stack, int flags, void *arg);
+---
+
+h3. Build OpenCV Dynamic Lib
+
+---
+cd ~/opencv/android/android-opencv
+sh cmake_android.sh
+cd ~/opencv/android/android-opencv/build
+make
+cd ~/opencv/android/android-opencv
+sh project_create.sh
+---
+
+List available targets, so we can define it in the next step
+
+---
+android list target
+---
+
+Edit „project_create.sh“ and add the Argument „--target 1“
+
+---
+ant compile
+---
+
+If you get a error like this @Compile/Build Error: libraries not found!@ fix it with:
+* Edit the file @build.xml@ and add the following lines just before the project closing tag @</project>@:
+
+---
+<path id="android.libraries.src"><path refid="project.libraries.src" /></path>
+<path id="android.libraries.jars"><path refid="project.libraries.jars" /></path>
+---
+
+Compile again:
+
+---
+ant compile
+---
+
+h3. Build CVCamera App
+---
+cd ~/opencv/android/apps/CVCamera
+mkdir build
+cd build
+android-cmake ..
+cd ..
+ant compile
+ant install
+---
+
+"You can also download this tutorial in various formats (odt, pdf, html) for further reading.":http://www.stefanwienert.net/files/setup_android_with_opencv_tutorial.tar.gz
+
+*YOU DID IT! IT'S DONE, FINISHED! LET IT ROCK ;)*

@@ -1,0 +1,96 @@
+---
+layout: post
+title: Drupal Modulentwicklung - I - Einführung und Hello World
+enki_id: 53
+categories: [drupal, php]
+---
+Beruflich habe ich recht viel mit Drupal zu tun, einem in PHP geschriebenem CMS. Das Plugin-System, Module genannt, ist recht umfangreich und bietet vielfältige Möglichkeiten, fast jede Stelle des CMS' anzupassen, ohne wirklich am Kerncode rumzuhacken.
+
+Das ganze ist recht durchdacht, und bei weitem besser als nacktes PHP. Desweiteren bin ich kein großer "Fan" von den beiden Modulen "Views" und "CCK", die sehr oft verwendet werden, um Modelle und SQL Statements nachzubilden. Ich bevorzuge aber Code, und nicht das Zusammenklicken dessen.
+
+Voraussetzung für das Tutorial:
+
+* installiertes Drupal 6
+* PHP/SQL Erfahrungen
+
+h3. Hello World Modul
+
+Drupal bietet zwei Ordner an, in die wir unsere Module packen können: ./modules  und ./sites/all/modules. Der Konvention nach, sollten selbstgeschriebene Module in den letzteren, beides arbeitet aber korrekt.
+
+In einen der beiden Ordner legen wir nun einen neuen Ordner an:
+
+./modules/helloworld bzw. ./sites/all/modules/helloworld
+
+In der Regel heißt der Ordner des Moduls so, wie das Modul selbst. Das muss aber nicht so sein. Auch können noch beliebige weitere Unterordner vorher folgen, um z.B. alle Module einer gewissen Funktionalität zu bündeln.
+
+Ein Drupalmodul hat mindestens 2 "magische" Dateien, also Dateien, die per Definition eine besondere Rolle haben.
+
+./helloworld/helloworld.info
+./helloworld/helloworld.module
+
+h4. helloworld.info
+
+./helloworld/helloworld.info ist nur eine Datei, wo Metainformationen über das Modul stehen, und woraus die Informationen für die Modulseite entnommen werden. Der Aufbau ist vorgegeben und recht kurz:
+---
+; $Id$
+name = Hello World Modul
+description = ...
+package = StWienert
+version = 1.0
+core = 6.x
+dependencies = user
+---
+Damit definiere ich, dass mein Modul vom Modul user abhängt, also nicht ohne dieses aktiviert werden kann, und in der "Package" StWienert, d.h. einer gesonderten Gruppierung "StWienert", in der Modulübersicht zu finden ist.
+
+h4. helloworld.module
+
+Dies ist eine PHP-Datei, die erst aufgerufen wird, falls unser Modul aktiviert ist. Hier der Code für ein Hello world:
+
+--- php
+<?php
+function helloworld_menu() {
+  $items = array();
+  $items['test/helloworld'] = array(
+    'title' => 'Hello-World Site',
+    'page callback' => '_helloworld_page',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function _helloworld_page() {
+  return "hello World";
+}
+# kein schließendes ?> notwendig, da die Datei inkludiert wird
+---
+
+Nun können wird das Modul aktivieren, und die Seite "example.com/test/helloworld" aufrufen, und sollten unser Hello World sehen.
+
+Drupal basiert auf einem **Callbacksystem**. Funktionen, mit einem genau spezifizierten Namen, werden zu bestimmten Zeitpunkten aufgerufen und können Einfluss nehmen. Diese besonderen Funktionen werden **"Hooks"** genannt, "wovon es eine ganze Menge gibt.":http://api.drupal.org/api/group/hooks/6
+Hier verwenden wir den sogenannten "hook_menu":http://api.drupal.org/api/function/hook_menu. Anstelle von "hook" müssen wir den (internen) Namen des Moduls einsetzen, also denselben Namen, den unsere Dateien .info und .module führen.
+
+Ein paar der interessanteren Hook-Funktionen werde ich in einem folgenden Blogpost vorstellen, ansonsten ist ein wenig Stöbern in der Übersicht angebracht.
+
+h3. Addendum
+
+h4. Must-have-Module
+
+Hier noch die wesentlichen Basis-Developer-Module, die ich nicht mehr missen möchte. Was hätte ich an Zeit gespart, hätte ich gleich das alles gewusst :)
+
+* "admin_menu":http://drupal.org/project/admin_menu Fügt ein JS Menü am oberen Bildrand, mit denen man sehr schnell an den benötigten Funktionen ist, und sich auf Dauer Fantastillarden an Klicks erspart. Ausserdem gibt es einen "Cache leeren" Button unter dem ersten Menüpunkt. Dieser ist wichtig, um z.B. den hook_menu unseres Moduls nach einer Änderung noch einmal aufgerufen wird. Sonst wird u.a. die Menüinformation gecacht.
+* "devel":http://drupal.org/project/devel Fügt zwei für mich wesentliche Dinge ein; eine Funktion "dpm($variable)", die wie das print_r von PHP funktioniert, aber das ganze wesentlich übersichtlicher. Zweiteres einen Error-Backtrace. Also statt "Whitescreen of Death" gibt es detaillierte Fehlerinformationen, neben einer Fehlermeldung und exakter Ort des Auftretens auch alle Variablen des aktuellen Kontextes. Quasi ein Debugger für Arme. Das Modul hat noch viele Features mehr, ein Blick lohnt.
+* drush Drupal-Shell. Dies ist kein Drupalmodul, sondern ein externes Programm, das eine neue Schnittstelle zu Drupal eröffnet, nämlich die Kommandozeile. Dies kann natürlich nur installiert werden, wenn man Shellzugriff auf seinen Server hat. Hier ein paar Leckerbissen:
+--- ruby
+drush dl admin_menu && drush en admin_menu
+# Ladet das Modul admin_menu herunter, entpackt es
+# nach sites/all/modules, dann wird das gleich aktiviert (enabled)
+drush cc
+# leert den Cache
+drush eval "echo 'hello world'"
+# Führt beliebigen PHP Code im Kontext des Drupals aus
+---
+h4. CRE
+
+Der Chaosradio-Radio-Express Podcast hat eine Sendung zum Thema Drupal. Hierbei geht es aber nicht um die Modulentwicklung, sondern um das Ökosystem allgemein.
+Interessant ist das Fazit von Tim Pritlove: "Es ist ja nicht so, dass es [Drupal a.d.R.] sich anbiedern würde". Ja das stimmt, Drupal haut nicht vom Hocker, und gerade die Features der z.B. DatenbankAPI nicht gerade auf Höhe der Zeit. Aber es ist was grundsolides und sehr flexibles.

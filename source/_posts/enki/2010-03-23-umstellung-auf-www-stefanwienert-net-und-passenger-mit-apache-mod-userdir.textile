@@ -1,0 +1,67 @@
+---
+layout: post
+title: Umstellung auf "www.stefanwienert.net" und Passenger mit apache mod userdir
+enki_id: 41
+categories: [rails, server, debian]
+---
+Diejenigen, die meinen Feed abonniert haben, haben es wahrscheinlich schon gemerkt, da die ganzen Items als ungelesen markiert sein könnten.
+Da ich passenger verwende, aber gleichzeitig noch apache mit mod_userdir nutzen möchte, blieb mir nichts anderes übrig als den Hauptteil der Site auf eine Subdomain zu legen. Aus irgendwelchen unerfindlichen Gründen hatte ich damals "site.stefanwienert.net" genommen. Jetzt ist mir mal aufgefallen, dass die Wahl der Subdomain "www." deutlich klüger gewesen wäre.
+
+Anfragen an **mod_userdir** können bei dieser Methode dann einfach durch "http://hauptdomain/~username" entgegengenommen werden. Die Haupt Rails Domain, auf die der Nutzer bei Erstkontakt stoßen sollte, ist dann "www.stefanwienert.net" und wird dank Passenger dann an einen Ruby-Prozess dispatcht. Dazu muss man einfach nur zwei vhosts in seiner "/etc/apache2/sites-enabled/..." aktivieren:
+
+--- ruby
+# Hier fuer die Hauptdomain, um weitere Websites zu ermoeglichen
+# z.B. php Wikis oder Userspaces
+<VirtualHost *:80>
+      ServerAdmin s59605@htw-dresden.de
+      ServerName stefanwienert.net
+      DocumentRoot /var/www
+#   PassengerHighPerformance on
+        <Directory /var/www/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+        </Directory>
+</VirtualHost>
+
+# jetzt der eigentliche Rails Prozess
+<VirtualHost *:80>
+        ServerAdmin info@stefanwienert.net
+        ServerName www.stefanwienert.net
+        ServerAlias site.stefanwienert.net
+        #RailsBaseURI /site
+        DocumentRoot /path/to/rails/public
+# gzip html, css and js
+        AddOutputFilterByType DEFLATE text/html text/css application/x-javascript application/javascript
+
+  <Directory /path/to/rails/public>
+      Order allow,deny
+      Allow from all
+      AllowOverride All
+  </Directory>
+</VirtualHost>
+
+---
+
+Zu guter Letzt noch eine 304 Weiterleitung für die, die "http://site.stefanwienert.net" oder "http://stefanwienert.net" eintippen. Das ganze kann man in die entsprechenden htaccess packen oder oben gleich mit bei den "Directory" Direktiven mit angeben. Hier der Vollständigkeit halber, bevor ihr selbst erst googlen müsst.
+
+--- ruby
+# /var/www/.htaccess:
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^stefanwienert.net$
+RewriteCond %{REQUEST_URI} ^\/$
+RewriteRule ^(.*)$ http://www.stefanwienert.net/$1 [R=permanent,L]
+
+
+# /path/to/rails/public/.htaccess
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^site.stefanwienert.net [NC]
+RewriteRule ^(.*)$ http://www.stefanwienert.net/$1 [L,R=301]
+
+
+# Hups, hier sieht man mal, dass ich die Zeilen jeweils woanders
+# herkopiert habe: Selbe Funktion aber etwas andere Syntax :)
+---

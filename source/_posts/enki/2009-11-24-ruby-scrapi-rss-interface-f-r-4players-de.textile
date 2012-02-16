@@ -1,0 +1,19 @@
+---
+layout: post
+title: Ruby/ScrAPI-RSS-Interface für 4players.de
+enki_id: 13
+categories: [ruby]
+---
+In den letzten Tagen wollte ich mal die "PC-Tests von 4players.de":http://www.4players.de/4players.php/tests/PC-CDROM/Alle/Alle/datum/0/1.html als RSS-Feed abonnieren, musste aber leider feststellen, dass man nur PC-Artikel als ganzes abonnieren kann (Also inklusive aller Previews und was weiß ich alles), die mir zu umfangreich sind.
+Um einen guten Überblick über aktuelle (gute) Spiele zu erhalten, und vielleicht sogar gleich Wertung + Genre im Blick zu haben, lag es für mich also nahe, ein kleines RSS-Interface dafür zu bauen, was letztlich in einem Crawler/Parser + RSS Ausgabe resultiert.
+
+Motiviert dazu hat mich eine "halbwegs aktuelle Railscast-Episode zum Gem ScrAPI":http://railscasts.com/episodes/173-screen-scraping-with-scrapi, welches es stark erleichtert, per CSS-Pfad Daten einer Website abzufragen.
+Dazu sinnvoll ist das Firefox-Addon-Addon FireQuark für Firebug, welches sich mit CSS-Pfad als Alternative zu XPATH beschäftigt.
+
+Das eigentliche Problem nach dem Herausfinden der expliziten CSS-Pfade war, das ganze für Umlaute, also UTF-8 kompatibel zu gestalten.
+4players zeichnet seine Website zwar als UTF-8 aus, und mit einem normalen Browser gibt es keine Probleme, aber wenn ich z.B. mit wget (oder halt scrAPI) die Website manuell hole, erhalte ich LATIN1 kodierten Text. Da ScrAPI mir ersichtlich leider keine direkte Unterstützung von Kodierungskonvertierungen besitzt, musste ich dieses also händisch tun.
+
+Den gesamten Quelltext gibt es unter "http://stefanwienert.net/~zealot128/dokuwiki/doku.php?id=tutorial:4players-ruby-feedinterface":http://stefanwienert.net/~zealot128/dokuwiki/doku.php?id=tutorial:4players-ruby-feedinterface. Falls jemand direktes Interesse an dem Feed hat, kann "ihn hier abonnieren":http://site.stefanwienert.net/rss/fourplayers.rss.
+
+*Anmerung zu CURB*, Curb ist das Ruby-Binding für CURL, zur Installation des Gems wird also eine libcurl benöntigt.
+Unter Ubuntu also eines der libcurl Pakete installieren. Leider kann ich nicht mehr genau sagen welche, ich glaube es war eine der "libcurl-dev" oder "libcurl4-dev" Pakete :).

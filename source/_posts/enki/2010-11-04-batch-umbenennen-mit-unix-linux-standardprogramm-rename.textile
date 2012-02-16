@@ -1,0 +1,15 @@
+---
+layout: post
+title: Batch umbenennen mit Unix/Linux Standardprogramm rename
+enki_id: 57
+categories: [linux, bash, server, tools]
+---
+Was ist erst vor kurzem erfahren habe: Linux bringt ein Programm "rename" zum umbenennen von vielen Dateien mittels Musters schon mit.
+
+Zielgruppe sind Programmierer, da man das ganze mit einer Perl-Regex beschreiben muss.
+
+z.B. alle Leerzeichen zu Unterstrichen bei allen Dateien im aktuellen Verzeichnis:
+---
+rename 's/\s+/_/g' *
+---
+klein aber fein!

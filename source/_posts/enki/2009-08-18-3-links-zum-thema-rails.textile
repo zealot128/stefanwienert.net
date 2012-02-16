@@ -1,0 +1,14 @@
+---
+layout: post
+title: 3 Links zum Thema Rails
+enki_id: 5
+categories: [rails, php, ruby, screencast]
+---
+Einen interessanten Artikel aus dem t3n-Magazin zum Thema Rapid-Prototyping gibt es hier:
+"t3n-rapidprototyping":http://t3n.de/magazin/schnell-kommt-ohne-neue-buchstaben-erfinden-222480/
+
+Weiterhin, für alle Rails-Jünger natürlich unverzichtbar sind die Screencasts von Ryan Bates, die einfach nur Spaß machen, und meiner Meinung nach zu den besten (frei erhältlichen) Screencasts im Netz gehören!
+"railscasts":http://railscasts.com/episodes/
+
+Als Umsteiger von PHP fand ich diese Seite auch noch recht interessant, in der äquivalente Rails/Ruby-Konstrukte gängige PHP-Funktionen abgebildet werden :)
+"rails4php":http://railsforphp.com/reference/strings/htmlentities

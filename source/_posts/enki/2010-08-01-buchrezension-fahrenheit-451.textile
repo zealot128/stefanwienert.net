@@ -1,0 +1,36 @@
+---
+layout: post
+title: Buchrezension Fahrenheit 451
+enki_id: 51
+categories: [buch]
+---
+<img src="http://upload.wikimedia.org/wikipedia/en/7/75/Farneheit_451.jpg" style="float:left; margin: 0 10px 0 0; width:120px" alt="Wikicommons"/>
+
+Heute will ich mal eine neue Rubrik aufmachen, Buchrezensionen. Weil ich es wichtig finde, dass man gerade als Informatiker nicht zum horizontlosen Fachidioten mutiert. Drum verspeise ich auch mal erzählende Literatur und nicht nur die üblichen "Programmieren in XY", "XY Best Practices" usw.
+Allerdings gibt es eine wahre Flut an guten aber auch langweiligen Büchern, weshalb ich hier in unregelmäßigen Abständen vollkommen subjektive Rezensionen schreiben will.
+
+Den Anfang macht ein Buch, was ich vor kurzem beendet habe, und dem ein oder anderen vielleicht geläufig sein sollte: Fahrenheit 451. (die Temperatur, bei denen Bücher brennen)
+<div class="clear"></div>
+<!--break-->
+
+h3. Story
+
+Der Hauptcharakter Guy Montag, von Beruf "Feuerwehrmann" in einer alternativen oder fern zukünftigen Realität, geht täglich seiner Arbeit nach: Bücher verbrennen.
+
+In einer teilweise erschreckend bekannt-wirkenden Welt leben die Bewohner vor sich hin, schauen eine Art 3D Fernsehen und führen lediglich Smalltalk. Es gibt keine Tiefe mehr, niemand denkt mehr nach. Weil Nachdenken gefährlich sei und zu Unruhen und Unglück führe.
+Nun fängt Guy aber an, sich selbst Fragen zu stellen, angestoßen durch ein kleines Mädchen. Und so nimmt die Sache ihren Lauf.
+
+h3. Bewertung/Bedeutung
+
+Sehr eindringlich spätestens ab der Mitte. Trotz des Alters (1953) topaktuell. Verarbeitet viele Situationen, die einem bekannt vorkommen:
+* Die Menschen schauen viel Fernsehen, bzw. Fernsehähnliches, starren dabei wie gebannt auf die Mattscheibe und ignorieren ihre Mitmenschen und Lieben
+* Wichtige Themen werden verdrängt und stattdessen durch Smalltalk überspielt: Insbesondere ein anstehender Atomkrieg
+* Viele Menschen haben eine "Radiomuschel" im Ohr, die sie Tagein Tagaus berieselt. Auch hier eine deutliche Medienabhängigkeit erkennbar.
+* Technologie als Lösung aller Probleme. Schlaftablette, Glücklichmacher anstelle von Gefühlen und Ruhe.
+* Absolute Gleichgültigkeit gegenüber dem Verlust von Menschenleben (auch der eigenen Familie), kein Mitleid, wenig Gefühle
+
+Und natürlich das Hauptthema, Meinungsfreiheit. Eine zutiefst gleichgültige, furchterregende Gesellschaft.
+
+In a nutshell: dystopischer, gut erzählter Roman mit viel Wahrem in der Tradition von "1984" von Orwell.
+
+++

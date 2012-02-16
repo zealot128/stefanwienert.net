@@ -1,0 +1,19 @@
+---
+layout: post
+title: Kurzes Gem Showcase - Delicious, actsasarchive, menu borwsercms css sprite
+enki_id: 36
+categories: [ruby, rails]
+---
+Ich schaue gerade meine kürzlich gebookmarkten Sites an, und will hier mal ein paar coole Ruby Ressourcen zeigen.
+
+* Delicious-API: http://github.com/weppos/www-delicious für den beliebten Bookmarkdienst
+* Acts as archive, destroy und delete Aktionen eines Objektes führen nicht zur Löschung, sondern Archivierung http://github.com/winton/acts_as_archive
+* MMMenu http://github.com/snitko/mmmenu eine kleine Menü DSL((Domain Specific Language))
+* Automatische, transparente CSS Sprite Transformation http://github.com/reevoo/spriter
+* BrowserCMS, meine Basis CMS für meine nächsten Projekte http://www.browsercms.org/
+Schaut "euch das Video dazu an":http://aac2009.confreaks.com/07-feb-2009-10-00-browsercms-patrick-peak-and-paul-barry.html
+
+und sowieso:
+http://www.ruby-toolbox.com/ und http://www.rubyflow.com/ zur Ideenfindung.
+
+I love that community :)

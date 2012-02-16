@@ -1,0 +1,32 @@
+---
+layout: post
+title: Super simples Screencast aufnehmen mit VLC unter Ubuntu (Linux)
+enki_id: 40
+categories: [screencast]
+---
+Wenn man vlc installiert hat, dann kriegt man eine Screen Capture Software gleich mit frei Haus. Einfach in einer Konsole (eine der) folgende Zeile(n) reinkopieren:
+
+
+--- ruby
+# Sehr gute Qualitaet, scale 1.0 also 1:1 Bildschirmgroesse
+# gut fuer Aufnahme von Programmierscreencasts (hier bei 1920x1080)
+cvlc screen:// --screen-fps 25 --nooverlay --sout \
+"#transcode{vcodec=h264,vb=8192,scale=1.0,acodec=mp3,ab=128,channels=2}:\
+duplicate{dst=std{access=file,mux=mp4,dst=test.flv}}"
+
+
+# mittlere Qualitaet, Klickdummies, "How to"s
+cvlc screen:// --screen-fps 25 --nooverlay --sout \
+"#transcode{vcodec=h264,vb=2048,scale=0.5,acodec=mp3,ab=128,channels=2}:\
+duplicate{dst=std{access=file,mux=mp4,dst=test.flv}}"
+---
+erzeugt jeweils die Datei test.flv im Ausführungsverzeichnis.
+
+Quelle: "ubunuusers.de":http://wiki.ubuntuusers.de/screencasts#VLC
+
+
+*EDIT* Aktuell verwende ich stattdessen recordmydesktop. Neben einer konfigurierbaren GUI (gtk-recordmydesktop) besitzt dies ein Kommandozeileninterface und nimmt in ogv auf.
+
+---
+recordmydesktop --fps=2 --no-sound --quick-subsampling --v_quality=20
+---

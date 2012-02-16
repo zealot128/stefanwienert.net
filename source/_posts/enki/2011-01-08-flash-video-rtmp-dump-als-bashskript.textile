@@ -1,0 +1,41 @@
+---
+layout: post
+title: Flash-Video/RTMP Dump als Bashskript
+enki_id: 58
+categories: [bash, linux, video]
+---
+Wer einen Online-Video-Stream mitschneiden will, kann dies in der Regel mit dem mplayer -dumpfile machen.
+Allerdings schafft dieser keine RTMP-Streams.
+Dafür bietet sich rtmpdump an, welches selbst kompiliert werden muss. "Eine genaue Anleitung gibt es hier.":http://stream-recorder.com/forum/use-rtmpdump-rtmpsrv-linux-t7661.html
+
+Viele Videostreams erwarten aber sehr spezielle Parameter, die nur das entsprechende Flash-Objekt "weiß". Hier kann man nun entweder mit einem Paketsniffer rangehen, der in Deutschland illegal ist, oder man nutzt den beiligenden rtmpserver.
+
+Diesen startet man und routet dann per Firewall seinen RTMP Traffic über diesen, nutzt diesen also als Proxy. Nach einem Start dieses rtmpsrv muss man dann nur noch sein Flashvideo ansurfen und rtmpsrv liest im Hintergrund die entsprechenden Header aus.
+
+Das ganze kann man natürlich mit einem kleinen Bashskript schön automatisieren und gleich eine Queue zum nachträglichen Dumpen/Herunterladen anlegen.
+
+--- bash
+#!/bin/bash
+
+
+echo "Setting iptable for redirect to rtmpsrv"
+sudo iptables -t nat -A OUTPUT -p tcp --dport 1935 -j REDIRECT
+echo "Starting RTMPSRV, Try to open the videos now in the browser "
+echo "Use Crtl+C when done"
+rtmpsrv 2>&1 | tee rtmplog
+
+echo "Shutted down, reset iptables"
+sudo iptables -t nat -D OUTPUT -p tcp --dport 1935 -j REDIRECT
+
+cat rtmplog | grep "rtmpdump -r" | tee rtmpdownload.sh
+echo "Grepping done, use sh rtmpdownload.sh now"
+
+echo "inserting breaks of 5 seconds"
+sed '
+/rtmpdump/ a\
+echo "done, sleeping";  sleep 5
+' -i rtmpdownload.sh
+
+---
+
+Eventuell hilft manchmal eine kleine Pause (hier 5 Sekunden nach jedem Downloadvorgang).

@@ -1,0 +1,22 @@
+---
+layout: post
+title: ! 'Inline Quotes mit deutschen Anführungszeichen mit CSS '
+enki_id: 28
+categories: [css]
+---
+Wenn man deutsche Anführungszeichen um einen HTML-Text setzen möchte, dann nimmt man am besten CSS mit dem "Inline-Element 'q'":http://www.w3schools.com/css/pr_gen_quotes.asp (oder falls gewünscht mit blockquote)
+
+--- css
+q:lang(de), q {
+  quotes: "\201E" "\201D" "\00AB" "\00BB";
+}
+
+q:lang(en) {
+  quotes: "«" "»" "'" "'";
+}
+---
+heißt soviel wie: 
+* Level 1 Zitat umranden mit:  &#8222;Zitat&#8221;
+* Zitat im Zitat umranden mit: &#171;Zitat&&#187;
+
+Dabei lassen sich durch den "lang"-Selektor natürlich gleich Formatierungen fuer verschiedene Sprachen festlegen, sodass je nach Sprachversion der Nutzer ihm vertraute Zitierungen sieht.

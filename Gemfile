@@ -13,6 +13,11 @@ group :development do
   gem 'rb-fsevent'
   gem 'stringex'
   gem 'liquid', '2.2.2'
+  gem "nokogiri"
+  gem "sequel"
+  gem "sqlite3"
+  gem "mysql"
 end
 
 gem 'sinatra', '1.2.6'
+gem "rb-inotify"

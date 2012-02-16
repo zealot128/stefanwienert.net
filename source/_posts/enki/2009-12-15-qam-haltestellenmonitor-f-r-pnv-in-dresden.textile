@@ -1,0 +1,12 @@
+---
+layout: post
+title: QAM - Haltestellenmonitor für ÖPNV in Dresden
+enki_id: 17
+categories: [dresden]
+---
+Ein Kommilitone von mir hat vor einiger Zeit mal ein "nettes Programm":http://nichtcool.de/dl/dev/ geschrieben, bei welchem man seine Haltestelle eingibt und die nächsten abfahrenden Busse und Straßenbahnen sieht.
+Gut finde ich, dass er sich an Entwicklungsgrundsätze gehalten hat, und das ganze plattformunabhängig programmiert hat, also sowohl unter Windows als auch qt-fähigen (Linux) Betriebssystemen lauffähig.
+
+Well done, Recht praktisch.
+
+

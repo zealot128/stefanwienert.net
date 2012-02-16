@@ -1,0 +1,75 @@
+---
+layout: post
+title: Hochqualitatives Code Highlighting in Latex mit Pygments
+enki_id: 73
+categories: [latex]
+---
+Beim Erstellen meiner Diplomarbeit bin ich grad am Tüffteln, wie die Code-Beispiele schöner gemacht werden könnten. Die bekannten Listings sind relativ beschränkt und sehen auch nicht so umwerfend aus.
+
+Abhilfe schafft das Python Tool "pygments", dass ein Syntaxhighlighter darstellt. Unter Ubuntu lässt sich dieser leicht nachinstallieren:
+
+h3. Pygments
+
+---
+sudo apt-get install python-pygments 
+---
+
+Nun generiert das Kommando:
+---
+pygmentize -O full -f latex -l ruby DATEI.rb
+---
+aus der angegebenen Datei ein Codehighlighting für Ruby (pygments kann fast alles).
+
+Beispiel: <a href="/files/pygments.pdf" >job_test.rb.pdf</a>
+
+h3. Initialisierung der Pygments Makros
+
+Dabei gibt es den ganzen initialen Teil, den wir irgendwo in unserem Latex-Header, einmal einbinden müssen, am besten in einer eigenen Quelltextdatei, z.B. "syntax.tex":
+
+---
+\usepackage{fancyvrb}
+\usepackage{color}
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+... usw. die ganzen Defs aus dem Pygments Output
+---
+Die Datei dann noch im Header unseres Master-Tex Dokuments einbinden:
+---
+\include{syntax}
+---
+
+Der Teil im "\begin{Verbatim}" ist der eigentliche Code, den wir an die entsprechende Stelle in unserem Textfluss kopieren können.
+
+h3.  Finetuning: Zeilennummern, Rahmen, Caption und Eintrag in LoL (List of Listings)
+
+Allerdings lässt sich dieser noch tunen, da er z.B. noch keine Labels hat, und auch keine Einträge im Listings Verzeichnis hinterlässt.
+
+Dies habe ich so gelöst:
+
+---
+\DefineVerbatimEnvironment{pygments}{Verbatim}{numbers=left,frame=single,stepnumber=1,numbersep=1pt,
+commandchars=\\\{\}}
+
+\newenvironment{codeenv}{
+\begin{minipage}{\textwidth}
+\captionsetup{type=lstlisting}
+}{\end{minipage}}
+---
+Nun können wir Codeteile mit Captions und Labels machen:
+
+---
+\begin{codeenv}
+  \begin{pygments}[label={lib/src/datei\_test.rb}]
+   \PY{n+nb}{require} \PY{l+s+s1}{'test\PYZus{}helper'}
+    ( hier dann der ganze Kladderadatsch vom Pygements.... )
+  \end{pygments}
+\caption{Listing Test}
+\end{codeenv}
+---
+
+Das Ergebnis sieht dann in der Gegenüberstellung so aus:
+<a href="/files/syntax-complete.pdf" >syntax-complete.pdf</a>
+
+Ich hoffe das erspart dem einen oder anderen ein paar Stunden suchen und probieren :)

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Schon wieder ein Relaunch?
+enki_id: 1
+categories: [ruby, rails]
+---
+Ich hoffe, das neue Design gefällt; dieses mal anstelle einer selbstgefrickelten Rails-Anwendung auf "Enki":http://www.enkiblog.com/ aufsetzend.
+Dieses ist ein Bloggrundgerüst mit richtig geiler Adminoberfläche und... Syntaxhighlighting =).
+
+Mal schaun, was die nächsten Tage noch so kommt
+
+--- Ruby
+def hello_world
+  puts "Yehaw"
+end
+---

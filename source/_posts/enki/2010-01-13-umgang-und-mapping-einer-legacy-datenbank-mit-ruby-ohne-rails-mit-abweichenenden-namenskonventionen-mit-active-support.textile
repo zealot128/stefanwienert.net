@@ -1,0 +1,142 @@
+---
+layout: post
+title: Umgang und Mapping einer Legacy Datenbank mit Ruby (ohne Rails) mit abweichenenden
+  Namenskonventionen mit Active Support
+enki_id: 26
+categories: [ruby, rails]
+---
+h3. Einleitung/Motivation
+
+Zur Zeit moechte ich verschiedene XML-Dialekte aus einem *vorhandenen Datenbankschema* gewinnen, und brauchte dazu ein ordentliches *Objektrelationales Mapping,* wie man es aus *Rails* ja kennt. (Ausprobieren! keine Zeile SQL mehr notwendig :D).
+Allerdings *ohne Rails* sondern in einem einfachen Rubyscript.
+Was es dort alles gibt, will ich hier mal kurz exemplarisch vorfuehren.
+
+h3. Voraussetzung und Datenbankverbindung
+
+Um ein Legacy relationales Datenmodell mit Ruby schoen zu mappen, ging ich letztens wie folgt vor:
+
+Zu erst Rails (*active_record* ist aber auch ausreichend) installieren, falls noch nicht gemacht (fuer active_record) und *composite primary keys*, das uns wie der Name schon sagt, *zusammengesetzte Primärschlüssel*, welches unser Legacy-Schema mitunter mit sich bringt, bereitstellt.
+--- bash
+sudo gem install rails composite_primary_keys
+---
+
+Nun können wir uns im ersten Schritt *mit unserer Datenbank verbinden*:
+
+--- ruby
+require "rubygems"
+require "active_record"
+require "composite_primary_keys"
+
+options = {:adapter  => 'mysql',
+      :database => 'databasename',
+      :username => 'username',
+      :password => '******',
+      :host     => 'localhost' ,
+      :encoding => 'utf8'}
+ActiveRecord::Base.establish_connection(options)
+---
+
+h3. Definition der Modelle
+
+Nun kommt dort drunter die Konstruktion der *Modell-Klassen*, die die Tabellen abbilden.
+
+Angenommen wir haben eine **Tags**, **Posts**, **Posts_Tags** und **Users** Tabelle (in freier Ruby Namenskonvention) mit den folgenden Beziehungen:
+Post : Tag = n : m  (Jobs_Tags)
+Post : User = n : 1
+
+Also ein Post hat eine Anzahl Tags (über "jobs_tags") und genau einen User.
+
+Da das aber zu leicht wäre, gibt es folgende *Handicaps* :):
+
+* "Posts" Tabelle heißt "entries_import", Primaerschluessel (PK) postid, Fremdschlüssel "uid" heißt "nutzer"
+* "Tags" Tabelle heißt "clouds_import", PK tagid
+* "Posts_Tags" Tabelle heisst "clouds_import_lnk", PK (postid,tagid) *zusammengesetzter Primaerschluessel!*
+* "Users"-Tabelle heißt "users", mit PK uid
+
+(leicht abgeändertes RealWorld Beispiel!)
+
+Tja sieht schon recht messy aus. Aber alles machbar:
+
+h3. Der Code
+
+--- Ruby
+class Post < ActiveRecord::Base
+  set_table_name "entries_import"  # posts Tabelle
+  set_primary_key "postid"
+  has_many :tags, :through => :taggings
+  has_many :taggings, :primary_key => "postid", :foreign_key => "postid"
+  belongs_to :user,  :foreign_key => "nutzer"
+
+# Extra Points! Unser 'Post' hat ein "visible" Attribut, welches
+# geradezu nach einem named scope schreit! :)
+   named_scope :visible, :conditions => {:visible => 1}, :order => "pubDate desc"
+
+
+#Extra Points! Tags direkt als (Komma)getrennte Liste zurueckgeben lassen, und
+# noch den Tag "Blog" auf jeden Fall ans Ende der Tags haengen
+  def tag_list(sep = ",")
+    (tags.map(&:name) << "Blog").uniq.join(sep)
+  end
+end
+
+class Tag < ActiveRecord::Base
+  set_table_name "clouds_import"
+  set_primary_key "tagid"
+  has_many :jobs, :through => :taggings
+  has_many :taggings, :primary_key => "tagid", :foreign_key => "tagid"
+end
+
+class Tagging < ActiveRecord::Base
+  set_table_name "clouds_import_lnk"
+  set_primary_keys :jobid, :tagid  # Zusammengesetzter Primaerschluessel
+  belongs_to :job, :primary_key => "postid", :foreign_key => "postid"
+  belongs_to :tag, :primary_key => "tagid", :foreign_key => "tagid"
+end
+
+class User < ActiveRecord::Base
+  set_primary_key "uid"
+  set_table_name 'users'
+  has_many :jobs, :foreign_key => "nutzer", :primary_key => "uid"
+end
+---
+
+Fertig!
+Nun können wir in althergebrachter Rails Manier extrem bequem auf unsere Modelle wie folgt zugreifen:
+
+--- Ruby
+
+posts = Post.all
+posts.first.tags  #  gibt uns die tags zurück
+post = Post.find(:first, :order => "...")
+post.user.name
+
+# oder auch named scopes (siehe oben)
+Post.visible.first.tag_list
+---
+usw.
+Wirklich eine Wohltat ;)
+
+Natürlich kann man in seinen Modellen noch Methoden definieren, die uns den Zugriff noch erleichtern und unser Modell um Funktionalität erweitert und damit unsere Controller und Views nicht zumuellt.
+
+h3. Bonus: XML Builder
+
+Wie man jetzt damit einen XML-Dialekt (z.B. auch RSS) baut, ist recht einfach, dank des XML Builder Gems (Das bei Rails eigentlich auch schon dabei sein sollte).
+Ich will hier nur ganz kurz teasern, ansonsten.. Google ist dein Freund:
+
+--- ruby
+require "rubygems"
+require "builder"
+
+xml = Builder::XmlMarkup.new( :target => $stdout , :indent => 1 )
+xml.instruct!
+xml.rss do
+# oder:  xml.tag!("rss") do   sinnvoll falls unser Tag nicht nur aus Kleinbuchstaben besteht
+  xml.channel do
+    for item in Post.visible
+       ...
+       ... item.title  ...
+
+    end
+  end
+end
+---

@@ -1,0 +1,22 @@
+---
+layout: post
+title: Bessere PHP Shell, ähnlich wie Rubys irb
+enki_id: 33
+categories: [php, ubuntu]
+---
+Nachdem ich bei Ruby von der recht mächtigen und gut tunebaren Interactive Ruby Shell ("HIRB":http://tagaholic.me/2009/03/13/hirb-irb-on-the-good-stuff.html und "Wirble":http://www.rubyinside.com/wirble-tab-completion-and-syntax-coloring-for-irb-336.html seien hier anzumerken) verwöhnt wurde, war ich auf der Suche nach einer ähnlichen Lösung für PHP.
+Leider ist die eingebaute CLI Shell mit "php -a" relativ nutzlos, da man Output selbst ausgeben muss, es keine Autocomplete gibt usw.
+
+Allerdings gibt es die "php-shell":http://jan.kneschke.de/projects/php-shell/ welche recht interessant wirkt und ich heute mal runtergeladen habe.
+
+Unter Ubuntu muss man noch php pear nachinstallieren:
+--- shell
+sudo apt-get install php-pear php5-cli php5-dev
+sudo pear install http://jan.kneschke.de/assets/2007/2/17/PHP_Shell-0.3.1.tgz
+
+# Jetzt kann die shell mit:
+php-shell.sh
+#gestartet werden
+---
+
+Das reduziert den PHP-Schmerz schonmal ein ganzes Stück :)

@@ -1,0 +1,71 @@
+---
+layout: post
+title: Einführung in HDRI-Fotografie
+enki_id: 31
+categories: [foto]
+---
+Auf eine Anfrage hin, wie ich einige der Bilder, die hier in der Galerie austell', erzeugt habe, will ich mal eine kleine Einführung in die digitale HDRI-Fotografie geben.
+
+HDRI ist eine Technik um aus (mehreren) Eingabebildern ein Ausgabebild mit einem hohen Dynamik- sprich Kontrastumfang zu erhalten.
+Klarer: Viele Eingabebilder führen zu einem Bild, was Details aus allen Lichtstärken abbildet.
+z.B. bei einer Landschaftsfotografie sowohl Wolken (heller Himmel) als auch die Kiesel im Vordergrund (dunkel).
+
+Mit Einzelbildern sind solche Motive recht schwierig, da man entweder den Himmel als weiße Fläche hat, oder der Vordergrund zu dunkel erscheint.
+
+Was liegt also näher, als einfach alle Lichstärken zu fotografieren und den Rechenknecht die Übereinanderlegung überlässt?
+
+
+h3. Die Hardware
+
+Für alle von mir geschossenen HDR-Bilder hatte ich nur folgende (unterirdische) Ausstattung zur Verfügung:
+
+ * Eine ältere Canon Kompaktkamera
+ * Irgendeine Form von Stativ (meistens aber eh nicht dabei, und dann muss ein Stein, eine Mauer, Stuhl, ... herhalten)
+
+Wichtig für die Kamera sind meines Erachtens nur folgende Funktionen:
+
+ * Ein "manueller" Modus, in dem Blende und Belichtungszeit selbst eingestellt werden können
+ * Eine Auslöseverzögerung, da ansonsten beim Abdrücken fast immer verwackelt wird
+ * Bonuspunkte gibt es, wenn man eine skriptbare Kamera hat. Die meisten billig- und mittelklasse Canon haben z.B. das "CHDK":http://chdk.wikia.com/ ("Oder hier ein deutsches Forum":http://www.wirklemms.de/). später folgenden Prozess komplett zu automatisieren
+
+h3. Das Vorgehen:
+
+Wenn wir dieses haben, dann kann es schon losgehen: Einen Ort suchen, am besten mit wenig Bewegung (wenig Passanten, relativ Windstill, außer man will genau sowas im Bild haben).
+Im Manuellem Modus stellen wir unsere Kamera auf eine Blende ein. Blende ist bei den meisten Kameras ein Wert zwischen ca. 3 und 8 (abhängig vom Objektiv) und bestimmt den Lichteinfall "Wenn die Sonne lacht, nimm Blende acht": Wenn wir schönes Wetter haben kann es ruhig etwas höher sein (6+).
+Am besten ein paar Probefotos schießen (Faustregel: Wenig Licht, wenig Blende, viel Licht, hohe Blende).
+
+**Die Belichtungszeit**:
+Beim HD-Fotografieren ist sie die Variable: Wir wollen eine Fotoserie von einem Motiv machen, welches jeweils **dieselbe Blende**, aber **unterschiedliche Belichtungszeiten** hat. Mindestens 2, besser 4-10 Bilder desselben Motivs: Von fast komplett dunkel, bis überbelichtet. Damit sind wir sicher, alle Details eingefangen zu haben (Insbesondere bei Bildern mit hellem Himmel erkennt man hier einen deutlichen Unterschied).
+
+h4. Der Algorithmus
+
+# Blende einstellen, Startbelichtungszeit so klein einstellen (1/1000s z.B.), dass das Bild fast komplett Schwarz ist
+# Kamera aufstellen, Auslöseverzögerung von 1s, damit wir nicht beim Abdrücken verwackeln
+# Von 1 bis ... tue:
+## Vorsichtig Abdrücken
+## Abbrechen, wenn aktuelles Vorschaubild überbelichtet
+## Vorsichtig die Belichtungszeit verdoppeln (Wenn man weniger Fotos schießen will/muss, kann man auch mehr einen höheren Faktor z.B. 3 nehmen)
+
+Wenn man wie oben beschrieben, eine Skriptfunktion hat, dann erleichtert sich der Schritt 3 zum einfachem:
+ * Drücken der Abschusstaste und Warten bis die Fotos im Kasten sind :)
+
+Am besten gleich noch einmal, eventuell mit anderer Blende...? Immer mehr als ein Bild machen, in der Regel ist doch etwas leicht verwackelt, aufgrund des nicht vorhandenen Equipments :)
+
+h3. Die Software
+
+Jetzt gilt es, den geschossenen Fotofundus in ein HDRI Bild zu gießen, wofür ein Programm benötigt wird. Gleichzeitig kann dies auch ein sehr kreativer Teil des Prozesses sein, da man durch unterschiedliche Transformationsparameter sehr unterschiedliche Ergebnisse erzielt: von einem surrealistischem Graubild, bis hin zu einem "überrealistischem" farb- und konstraststarkem Bild, frei nach dem Motto "besser als in echt".
+
+Für **Windows** ist das Referenzprogramm **Photomatix (Pro)**, welches allerdings nicht kostenlos ist. Eine Vielzahl von Reglern und Schaltern ermöglichen aber eine sehr anpassbare HDR-Bearbeitung. Die Handhabung ist relativ leicht, und bringt einige coole Features mit wie z.B. automatisches Ausrichten der Bilder (mit kleinerem Qualitätsverlust)
+
+Die etwas ältere 2.x Version scheint auch "unter Wine zu laufen":http://appdb.winehq.org/objectManager.php?sClass=version&iId=5021.
+Weiterhin gibt es natürlich **Photoshop**, wobei ich hier mal in die Gelegenheit des Testens kam (CS2), und von dem Ergebnis nicht gerade überwältigt war.
+
+Unter Linux/deb-basierten existiert **qtpfsgui**, ein Frontend, sowie pfstools als kommandobasiertes Programm derselben Bibliothek. Die verfügbaren Regler sind bei qtpfsgui etwas geringer als bei Photomatix und auch hatte ich einige merkwürdige Fehlermeldungen (Das letzte mal vor ca. 9 Monaten getestet) und es war mir überhaupt nur möglich, meine Quellfotos über die Kommandozeile einzulesen.
+Das Ergebnis war aber trotzdem sehr brauchbar.
+Mit pfstool habe ich mich nicht beschäftigt, da ich hier eine GUI sehr angebracht empfinde, um beim Verschieben der Regler sofort das Ergebnis zu sehen
+
+Sowohl bei Photomatix, als auch bei qtpfsgui erstellt man erst ein "HD"-Bild aus seinen Bildern, was noch nicht grad vom Hocker reißt, und muss dieses dann "farbabbilden". Dies ist notwendig, da ein HD-Bild einen höheren Dynamikumfang besitzt als die Monitore anzeigen können bzw. unser Auge sehen kann.
+
+Im letzten Schritt folgt unabhängig von der HD Bearbeitung, das üblich Postprocessing: Cropping (Bildrandbeschneidung) eventuell Blendenkorrektur für herabstürzende Kanten.
+
+Soviel zu einem Überblick. Am besten einfach selbst ausprobieren, z.B. an einem Stillleben in der eigenen Wohnung.

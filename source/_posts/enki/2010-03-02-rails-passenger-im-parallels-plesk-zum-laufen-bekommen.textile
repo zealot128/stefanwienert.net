@@ -1,0 +1,46 @@
+---
+layout: post
+title: Rails/Passenger im Parallels Plesk zum Laufen bekommen EDIT mit SSL
+enki_id: 37
+categories: [ruby, rails, plesk, debian]
+---
+Wer auch Parallels Plesk Panel für seine Serveradministration verwendet, und sich schonmal gefragt hat, ob es was besseres als die Build-in Fast CGI Unterstützung oder Mongrel/Webrick gibt, dem will ich hier mal einen kleinen Guide geben, wie das ganze mit Passenger zu bewerkstelligen ist.
+Wir verwenden für die Administration unserer Server auch Plesk, da es echt stupid simple ist.
+
+Ich gehe davon aus, dass Ruby und Rubygems bereits installiert sind! (Sollte man z.B. Debian verwenden, auf keinen Fall die Pakete aus dem apt-get installieren, sondern "manuell wie hier beschreiben":http://rubyonrails.org/download.) Auch ein Root-Zugang zum Server wird benötigt.
+
+Also:
+
+# im Plesk eine neue Domain/Subdomain anlegen
+# Unser Rails-Projekt nach <tt>/var/www/vhosts/DOMAIN/httpdocs</tt> bzw. <tt>/var/www/vhosts/DOMAIN/subdomains/SUBDOMAIN/httpdocs</tt> kopieren. Also genau dort rein, kein weiteres Unterverzeichnis (nach httpdocs kommen dann gleich app db config public ...)
+# Schauen, dass die Lese/Schreibrechte hinhauen: z.B. <tt>chgrp psaserv log db tmp -R && chmod g+w * -R</tt>. Im einzelnen mal schauen.
+# Root Konsole: Gems installieren und Datenbank migrieren:
+--- ruby
+rake gems:install
+rake db:migrate RAILS_ENV="production"
+gem install passenger
+# laengere Anleitung befolgen. Im Endeffekt muss man ein paar Zeilen in die apache2.conf kopieren.
+# Den zweiten Teil mit mit der Vserver Konfiguration interessiert uns im Moment nicht
+---
+# Im Ordner <tt>DOMAIN/conf</tt> also von unserem httpdocs Verzeichnis <tt>../conf/vhost.conf</tt> nun die Datei vhost.conf anlegen und folgendes reinkopieren (jeweils das richtige Verzeichnis als Ziel nehmen, je nachdem ob wir eine Subdomain oder Domain benutzen möchten):
+--- ruby
+ DocumentRoot /var/www/vhosts/DOMAIN/httpdocs/public
+# bzw.   /var/www/vhosts/DOMAIN/subdomains/SUBDOMAIN/httpdocs/public
+ <Directory /var/www/vhosts/pludoni.de/subdomains/tasks/httpdocs/public >
+    AllowOverride all
+    Options -MultiViews
+ </Directory>
+---
+# plesk Vhost reloaden:
+---
+/usr/local/psa/admin/sbin/websrvmng -u --vhost-name=DOMAIN.de
+---
+hierbei jeweils immer nur die Domain angeben, auch wenn wir nur einen Subdomain anlegen.
+
+Nun sollte unsere Rails App unter der Domain bzw. Subdomain verfügbar sein. Neustarten können wir Passenger indem wir ein <tt>touch tmp/restart.txt</tt> oder die Datei sonst irgendwie im Timestamp verändern.
+
+*Edit*: Möchte man Plesk, Rails und Passenger mit SSL verwenden (also https://...domain), muss man noch etwas tun:
+* die Datei "conf/vhost.conf" nach "conf/vhost_ssl.conf" kopieren
+* Plesk reloaden
+
+Ansonsten erhält man ein 403 "Forbidden You don't have permission to access / on this server.", da Apache das ganze als statische HTML-Seite betrachtet, und die index.html sucht.

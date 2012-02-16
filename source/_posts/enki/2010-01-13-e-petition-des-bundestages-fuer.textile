@@ -1,0 +1,11 @@
+---
+layout: post
+title: ! 'e-Petition des Bundestages fuer  '
+enki_id: 25
+categories: [politik]
+---
+Unter den "e-Petitionen des Bundestages erregte eine Petition heute mein Aufsehen":https://epetitionen.bundestag.de/index.php?action=petition;sa=details;petition=8911:
+
+bq. Der Deutsche Bundestag möge beschließen, dass Systemoperatoren und Administratoren ähnlich Ärzten und Pastoren in den Kreis der Berufsgeheimnisträger aufgenommen werden und eine Verschwiegenheitspflicht gesetzlich verankert wird.
+
+Admins haben heutzutage eine große Macht. Es gibt zwar so etwas wie einen "Ehrenkodex", dass der root nur in anderer Leute Verzeichnisse reinschaut, wenn es ein Problem gibt, aber sind insbesondere deren Chef nicht daran gebunden. Da Admins normale Angestellte sind, muessen sie einer Aufforderung zur Rausgabe von Daten ihrer Chefs dem nachkommen. Durch eine gesetzliche Vorschrift wären aber Admins an ein Berufsgeheimnis gebunden, was ich für richtig halte.

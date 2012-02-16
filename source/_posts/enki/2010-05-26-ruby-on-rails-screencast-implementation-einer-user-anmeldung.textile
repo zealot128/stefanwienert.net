@@ -1,0 +1,16 @@
+---
+layout: post
+title: Ruby on Rails Screencast - Implementation einer User Anmeldung
+enki_id: 47
+categories: [rails, screencast, ruby, tdd]
+---
+Für eine kommende Vorlesung über Test Driven Development habe ich einen Screencast angefertigt.
+
+Das ganze natürlich in Rails mit Test::Unit und Vim (wegen der Sparsamkeit mit dem Screenplatz).
+
+Das Auditorium kennt Rails größtenteils nicht, weshalb es ein einfach gewähltes Beispiel ist:
+Die Implementierung eines simplen Authentifizierungsmechanismus, der einen Nutzer am System anmeldet. 
+
+<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12044362&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12044362&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><p><a href="http://vimeo.com/12044362">Screencast Rails Session Authentication</a> from <a href="http://vimeo.com/user3902285">Stefan Wienert</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+Das genutzte Programm zur Aufnahme war Xvidcap. Sehr genial.
