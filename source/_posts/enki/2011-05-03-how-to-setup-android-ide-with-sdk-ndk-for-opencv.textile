@@ -1,10 +1,10 @@
 ---
 layout: post
-title: ! 'How To: Setup Android IDE with SDK, NDK for OpenCV'
+title: 'How To: Setup Android IDE with SDK, NDK for OpenCV'
 enki_id: 62
 categories: [android]
 ---
-i. Gastbeitrag von Sebastian Starke
+/Gastbeitrag von Sebastian Starke/
 
 This tutorial will give a brief overview about the installation and configuration of the opencv Framework for Android.
 
@@ -17,15 +17,16 @@ The tutorial is tested for:
 
 
 h3. Reference documentations/tutorials:
+
 * http://android-cmake.googlecode.com/hg/documentation.html
 * http://opencv.willowgarage.com/wiki/AndroidExperimental
 * http://opencv.willowgarage.com/wiki/Android
 
 h3. Setup Ubuntu 11.04
 
----
+{% codeblock root-shell lang:sh %}
 $ sudo apt-get install swig mercurial subversion cmake cmake-gui
----
+{% endcodeblock %}
 
 h3. Setup Android-SDK
 
@@ -33,34 +34,36 @@ Download the android-sdk from:
 * http://developer.android.com/sdk/index.html
 
 Unpack the Downloaded Package:
----
+
+{% codeblock shell lang:sh %}
 $ cd ~/; tar xvzf android-sdk_r10-linux_x86.tgz
----
+{% endcodeblock %}
+
 Add this to your .bashrc:
----
+{% codeblock shell lang:sh %}
 export ANDROID_SDK=~/android-sdk-linux_x86
 export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
----
+{% endcodeblock %}
 
 Update your environment:
----
+{% codeblock shell lang:sh %}
 $ . .bashrc
----
+{% endcodeblock %}
 
 Setup SDK and test the environment Variables:
 
----
+{% codeblock shell lang:sh %}
 $ android
----
+{% endcodeblock %}
 
 * Available Packages -> Install at least the packages „Android-SDK Platform-tools“ and "SDK Platform Android 2.2"
 * Virtual Devices -> Create a new AVD (Android Virtial Device) with the Target "Android 2.2 - API Level 8"
 
 Add this to your .bashrc:
----
+{% codeblock shell lang:sh %}
 export ANDROID_SDK=~/android-sdk-linux_x86
 export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools:$PATH
----
+{% endcodeblock %}
 
 h4. Test your environment
 
@@ -73,36 +76,36 @@ h3. Setup Android-NDK 5
 
 Add this to your .bashrc:
 
----
+{% codeblock shell lang:sh %}
 export NDK=~/android-ndk-r5b
 export NDK_ROOT=~/android-ndk-r5b
----
+{% endcodeblock %}
 
 h3. Setup Android-Cmake
 
 Add this to your .bashrc:
----
+{% codeblock shell lang:sh %}
 alias android-cmake='cmake -DCMAKE_TOOLCHAIN_FILE=$ANDTOOLCHAIN '
 export ANDROID_CMAKE=~/android-cmake
----
+{% endcodeblock %}
 
 h3. Setup standalone Android-Toolchain
 
 Add this to your .bashrc:
----
+{% codeblock shell lang:sh %}
 export ANDTOOLCHAIN=$ANDROID_CMAKE/toolchain/android.toolchain.cmake
 export ANDROID_NDK_TOOLCHAIN_ROOT=$HOME/android-toolchain
----
+{% endcodeblock %}
 Install the toolchain with:
 
----
+{% codeblock shell lang:sh %}
 $NDK/build/tools/make-standalone-toolchain.sh --platform=android-5 --install-
 dir=$HOME/android-toolchain
----
+{% endcodeblock %}
 
 h2. Setup OpenCV
 
----
+{% codeblock shell lang:sh %}
 cd ~/
 svn co https://code.ros.org/svn/opencv/trunk/opencv opencv-r4964 -r 4964
 ln -s ~/opencv-r4964 ~/opencv
@@ -112,13 +115,13 @@ cd ~/opencv/android
 sh cmake_android.sh
 cd ~/opencv/android/build
 make -j8
----
+{% endcodeblock %}
 
 If you get a error message like this @Compile error: something with gtest@ fix it with:
 
----
+{% codeblock shell lang:sh %}
 cmake-gui ...
----
+{% endcodeblock %}
 
 * disable Google Test
 
@@ -126,49 +129,49 @@ cmake-gui ...
 If you get a error like this @Compile error ~/opencv/modules/ts/src/ts_gtest.cpp:6950: clone not
 declared in this scope@ fix it with:
 * Edit the file @~/opencv/modules/ts/src/ts_gtest.cpp@ and add the declaration of the function at line 6944:
----
+{% codeblock ts_gtest.cpp c %}
 int clone (int (*fn) (void *), void *child_stack, int flags, void *arg);
----
+{% endcodeblock %}
 
 h3. Build OpenCV Dynamic Lib
 
----
+{% codeblock shell lang:sh %}
 cd ~/opencv/android/android-opencv
 sh cmake_android.sh
 cd ~/opencv/android/android-opencv/build
 make
 cd ~/opencv/android/android-opencv
 sh project_create.sh
----
+{% endcodeblock %}
 
 List available targets, so we can define it in the next step
 
----
+{% codeblock shell lang:sh %}
 android list target
----
+{% endcodeblock %}
 
 Edit „project_create.sh“ and add the Argument „--target 1“
 
----
+{% codeblock shell lang:sh %}
 ant compile
----
+{% endcodeblock %}
 
 If you get a error like this @Compile/Build Error: libraries not found!@ fix it with:
 * Edit the file @build.xml@ and add the following lines just before the project closing tag @</project>@:
 
----
+{% codeblock build.xml xml %}
 <path id="android.libraries.src"><path refid="project.libraries.src" /></path>
 <path id="android.libraries.jars"><path refid="project.libraries.jars" /></path>
----
+{% endcodeblock %}
 
 Compile again:
 
----
+{% codeblock shell lang:sh %}
 ant compile
----
+{% endcodeblock %}
 
 h3. Build CVCamera App
----
+{% codeblock shell lang:sh %}
 cd ~/opencv/android/apps/CVCamera
 mkdir build
 cd build
@@ -176,8 +179,6 @@ android-cmake ..
 cd ..
 ant compile
 ant install
----
-
-"You can also download this tutorial in various formats (odt, pdf, html) for further reading.":http://www.stefanwienert.net/files/setup_android_with_opencv_tutorial.tar.gz
+{% endcodeblock %}
 
 *YOU DID IT! IT'S DONE, FINISHED! LET IT ROCK ;)*

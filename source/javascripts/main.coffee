@@ -1,6 +1,5 @@
 ---
 ---
 
-
-require "jquery.min.js"
-require "jquery.pjax.js"
+#$('a').pjax '#content',
+#console.log "pjax!!"
