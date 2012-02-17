@@ -5,8 +5,10 @@ gzip_assets: off
 
 javascripts:
   common:
-    - source/javascripts/jquery.min.js
-    - source/javascripts/jquery.pjax.js
+    - source/javascripts/ender.js
+    - source/javascripts/modernizr-2.0.js
+    - source/javascripts/octopress.js
+    - source/javascripts/libs/jXHR.js
 
 stylesheets:
   common:
