@@ -6,10 +6,11 @@ categories: [drupal]
 ---
 Um eine typische Unternehmensseite halbwegs modern und effektiv umzusetzen, eignet sich das relativ neue Drupal 7 ideal.
 
-Dazu gibt es einen super-effektiven, fertigen Baukasten (Installationsprofil) bei Github (https://github.com/juampy72/corporative-site), der allerhand coole Module mitbringt und gescheit konfiguriert: File-Upload, WYSIWYG-Editor, lesbare URLs, sitemap, robots.txt
+Dazu gibt es einen super-effektiven, fertigen Baukasten (Installationsprofil) bei Github ("github.com/juampy72/corporative-site":https://github.com/juampy72/corporative-site), der allerhand coole Module mitbringt und gescheit konfiguriert: File-Upload, WYSIWYG-Editor, lesbare URLs, sitemap, robots.txt
 
 Hier ein Mini-Guide um Drupal 7 mit diesem Profil mit einer deutschen Übersetzung zu installieren an einem Beispiel-Plesk/Debian System:
-<pre><code>
+
+{% codeblock Bash lang:bash%}
 cd httpdocs
 git clone git://github.com/juampy72/corporative-site.git .
 chown www-data sites/default/ -R
@@ -17,7 +18,7 @@ chown www-data sites/default/ -R
 mkdir -p profiles/corporative_site/translations
 cd profiles/corporative_site/translations
 wget http://ftp.drupal.org/files/translations/7.x/drupal/drupal-7.10.de.po
-</code></pre>
+{% endcodeblock %}
 
 Danach die Seite im Browser öffnen und den Installationsanweisungen folgen.
 

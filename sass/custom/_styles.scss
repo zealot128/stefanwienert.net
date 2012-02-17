@@ -1,0 +1,28 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+@import "typography.scss";
+
+ul li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+html {
+  background: url("/images/blossom.jpg") no-repeat fixed left -140px #FEFBF3;
+}
+@import "compass/css3/images";
+$__color1: darken(#9e0000, 10%);
+$__color2: darken(#cc1515, 10%);
+body header[role=banner] {
+
+  @include background-image(linear-gradient($__color1, $__color2 20%, $__color2 50%,$__color1));
+  h1 a {
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  }
+}
+body {
+  @include border-radius(5px);
+  @include box-shadow(0 0 5px black);
+  margin-top: 50px;
+}

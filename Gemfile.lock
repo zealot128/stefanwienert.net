@@ -1,22 +1,36 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    POpen4 (0.1.4)
+      Platform (>= 0.4.0)
+      open4
+    Platform (0.4.0)
     RedCloth (4.2.8)
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
+    binding_of_caller (0.6.2)
     blankslate (2.1.2.4)
     chunky_png (1.2.1)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
+    coderay (1.0.5)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.2.0)
     compass (0.11.5)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
     directory_watcher (1.4.0)
+    execjs (1.3.0)
+      multi_json (~> 1.0)
     fast-stemmer (1.0.0)
     ffi (1.0.9)
     fssm (0.2.7)
     haml (3.1.2)
+    jammit (0.6.5)
+      yui-compressor (>= 0.9.3)
     jekyll (0.11.0)
       albino (>= 1.3.2)
       classifier (>= 1.3.1)
@@ -28,9 +42,21 @@ GEM
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
+    method_source (0.7.0)
+    multi_json (1.0.4)
     mysql (2.8.1)
     nokogiri (1.5.0)
+    open4 (1.3.0)
     posix-spawn (0.3.6)
+    pry (0.9.8.1)
+      coderay (~> 1.0.5)
+      method_source (~> 0.7)
+      slop (>= 2.4.3, < 3)
+    pry-nav (0.1.0)
+      pry (~> 0.9.8.1)
+    pry-stack_explorer (0.3.8)
+      binding_of_caller (~> 0.6.2)
+      pry (~> 0.9.8)
     pygments.rb (0.1.3)
       rubypython (>= 0.5.1)
     rack (1.3.2)
@@ -48,22 +74,33 @@ GEM
     sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
+    slop (2.4.4)
     sqlite3 (1.3.5)
     stringex (1.3.0)
     syntax (1.0.0)
     tilt (1.3.2)
+    uglifier (1.2.3)
+      execjs (>= 0.3.0)
+      multi_json (>= 1.0.2)
+    yui-compressor (0.9.6)
+      POpen4 (>= 0.1.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   RedCloth
+  coffee-script
   compass (>= 0.11)
   haml (>= 3.1)
+  jammit
   jekyll
   liquid (= 2.2.2)
   mysql
   nokogiri
+  pry
+  pry-nav
+  pry-stack_explorer
   pygments.rb
   rack
   rake
@@ -75,3 +112,4 @@ DEPENDENCIES
   sinatra (= 1.2.6)
   sqlite3
   stringex
+  uglifier

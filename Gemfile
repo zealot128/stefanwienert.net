@@ -21,3 +21,10 @@ end
 
 gem 'sinatra', '1.2.6'
 gem "rb-inotify"
+
+gem "coffee-script"
+gem "pry"
+gem "pry-nav"
+gem "pry-stack_explorer"
+gem "jammit"
+gem "uglifier"

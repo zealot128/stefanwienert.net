@@ -1,0 +1,151 @@
+article{
+	border-bottom: 1px solid $gray04;
+	border-top: 1px solid $gray05;
+	padding: 30px 0;
+	position: relative;
+	h1.title{
+		font-weight: 300;
+		line-height: 35px;
+		margin-bottom: 20px;
+		a{
+			color: $gray01;
+		}
+	}
+	.entry{
+		line-height: 2;
+		text-align: justify;
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.more-link{
+			display: block;
+			margin-top: 20px;
+			padding-left: 30px;
+			background: image-url('more.png') 0 center no-repeat;
+		}
+		strong{
+			font-weight: bold;
+		}
+		ol, ul{
+			margin-left: 20px;
+			margin-top: 10px;
+			ol, ul{
+				margin-top: 0;
+			}
+		}
+		p{
+			margin-top: 10px;	
+		}
+		h2{
+			font-weight: 300;
+			margin-top: 10px;
+			border-bottom: 1px solid $gray04;
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				border-bottom: 1px solid $gray05;
+				width: 100%;
+			}
+		}
+		h3{
+			margin-top: 10px;
+		}
+		img, video{
+			max-width: 100%;
+			height: auto;
+		}
+		blockquote{
+			background: $gray04;
+			border-left: 5px solid $gray03;
+			padding: 15px 20px;
+			margin-top: 10px;
+			& > p:first-of-type{
+				margin-top: 0;
+			}
+		}
+		iframe{
+			margin-top: 10px;
+			border: none;
+		}
+		ol, ul, p, blockquote{
+			code{
+				background: $gray04;
+				border: 1px solid $gray03;
+				padding: 1px 3px;
+				margin: 0 3px;
+				@include border-radius(5px);
+			}
+		}
+		code{
+			font: $meta-size $monospace;
+		}
+		>pre{
+			background: $gray04;
+			padding: 5px 15px;
+			margin-top: 10px;
+			border: 1px solid $gray03;
+			line-height: 1.5;
+			overflow-x: auto;
+			@include border-radius(5px);
+		}
+		table{
+			background: $gray04;
+			border: 1px solid $gray03;
+			border-spacing: 0;
+			margin-top: 10px;
+			th{
+				background: $gray03;
+				padding: 0 15px;
+			}
+			td{
+				text-align: center;
+			}
+			tr{
+				&:nth-of-type(2n){
+					background: #d5d5d5;
+				}
+			}
+		}
+		.caption{
+			background: image-url('caption.png') 0 4px no-repeat;
+			display: block;
+			font-size: $meta-size;
+			color: $gray02;
+			padding-left: 25px;
+		}
+		.video-container{
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 30px;
+			height: 0;
+			overflow: hidden;
+			iframe, object, embed{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+.share{
+	padding: 15px 0;
+	@include border-shadow();
+}
+
+@media screen and (max-width: 800px){
+	article{
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	article{
+		padding: 15px 0;
+	}
+}

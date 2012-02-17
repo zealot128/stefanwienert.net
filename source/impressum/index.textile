@@ -1,0 +1,16 @@
+---
+layout: page
+title: "Impressum"
+date: 2012-02-16 22:46
+footer: true
+---
+
+Stefan Wienert
+Dresden
+
+E-Mail: info@stefanwienert.net
+Internet: http://stefanwienert.net/
+
+Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV: Stefan Wienert
+
+Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir, die Betreiber dieser Webseite und deren Unterseiten (Subdomains) keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
