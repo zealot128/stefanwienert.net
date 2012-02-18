@@ -28,6 +28,9 @@ GEM
     fast-stemmer (1.0.0)
     ffi (1.0.9)
     fssm (0.2.7)
+    google_plus (0.2.0)
+      json
+      rest-client (~> 1.6.1)
     haml (3.1.2)
     jammit (0.6.5)
       yui-compressor (>= 0.9.3)
@@ -38,11 +41,13 @@ GEM
       kramdown (>= 0.13.2)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
+    json (1.6.5)
     kramdown (0.13.3)
     liquid (2.2.2)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     method_source (0.7.0)
+    mime-types (1.17.2)
     multi_json (1.0.4)
     mysql (2.8.1)
     nokogiri (1.5.0)
@@ -65,6 +70,8 @@ GEM
     rb-inotify (0.8.8)
       ffi (>= 0.5.0)
     rdiscount (1.6.8)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rubypants (0.2.0)
     rubypython (0.5.1)
       blankslate (>= 2.1.2.3)
@@ -92,6 +99,7 @@ DEPENDENCIES
   RedCloth
   coffee-script
   compass (>= 0.11)
+  google_plus
   haml (>= 3.1)
   jammit
   jekyll

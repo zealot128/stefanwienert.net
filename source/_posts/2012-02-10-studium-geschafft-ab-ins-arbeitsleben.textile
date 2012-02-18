@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Studium geschafft - ab ins Arbeitsleben"
+date: 2012-02-10 21:52
+comments: true
+categories: [personal]
+---
+
+Nach 8 Semestern im Diplomstudiengang Allgemeine Informatik hatte ich am 21.12. nun (endlich) meine Diplomverteidigung. Und bestanden. Zeit für eine Retrospektive.
+
+Insgesamt gab es einige aufschlussreiche und interessante Vorlesungen und ich habe es nicht bereut an einer FH studiert zu haben. Allerdings vermittelt die Hochschule an sich nur einen guten Überblick über verschiedene Aspekte eines Informatikerdaseins. Und das ist ja auch ihre Aufgabe.
+Klar, es gab sicher auch das ein oder andere Fach, welches - IMO - eine fragwürdige Relevanz hat, aber im Gegenzug gab es auch - wieder IMO - sehr gute Professoren und Fächer:
+* Prof. Neumann für Mathe,
+* Prof. Baumgartl für Sicherheit und Linux-Geeking
+* Prof. Pätzold mit seinen wunderbaren Stilblüten
+* die Datenbanken-Praktika
+* Informatikrecht beim Prof. Westfeld, was für ein überraschend interessantes Gebiet geworden ist und mir den Zugang zu den Gesetzestexten geöffnet hat
+* Software-Engineering bei Prof. Hauptmann, insbesondere SEII und III. Die Projektarbeit war sehr interessant und sollte definitiv fester Bestandteil sein, wenn nicht sogar min. 1 Projektarbeit dieser Art je Semester!
+* Hausaufgaben von jeanm, mit seiner zynischen Art der Dr. House unter den Professoren. Die waren zahlreich aber interessant, und brachten meiner Meinung nach viel.
+
+Am meisten vermisst habe ich das Thema Test, welches nur im Rahmen von SE1 angeschnitten wurde, aber definitiv eine eigene Vorlesung verdient hätte! GUI-Test, Browser-Tests, Unittests, TDD, BDD, Continuos Integration, Mocks & Stubs, Usability Test, Code Quality Metriken, Branch coverage etcpp. Und das Ganze üben, üben, üben!
+
+Das eigentliche Studium war zwar auch fördernd, aber um ein guter Programmierer zu werden, reicht das Pensum nicht aus. Angehende Developer sollten auf jeden Fall nebenbei Praktika bei örtlichen IT-Firmen ("ITsax.de":http://www.itsax.de/) machen oder OpenSource Projekte unterstützen. Das zeigt Ambitionen und Bereitschaft zur Weiterentwicklung. Im Gegensatz dazu: Falls man als Bewerber nur exakt das Skillset im CV hat, welches man von der Uni erhalten hat, dann erzeugt einen weniger positiven Eindruck¹.
+
+
+Seit dem Praktikumssemester vor 2 Jahren habe ich nebenbei schon bei der *pludoni GmbH* meine Brötchen verdient und bin nun seit dem 01.11. offiziell der Leitende Entwickler :). Nun habe ich endlich 40h pro Woche mit vim, Ruby und co. Spaß zu haben.
+
+Ich wünsche allen HTW-Studenten, die das lesen, eine vergnügliche Zeit! Vielleicht sieht man sich ja mal im Praktikum bei der pludoni GmbH? "Interessierte ambitionierte und tech-geeks suchen wir eigentlich immer":http://www.pludoni.de/praktika/webentwickler ;).
+
+
+---
+
+¹ Da ich nun ab und an auch mal CVs beurteilen darf, offenbarte sich mir eine andere Sichtweise. Je mehr Technologie-Anstriche im Skillset, desto weniger kann der Bewerber meist. Lieber weniger Buzzwords, dafür aber auch Sachen, die man gut kennt UND die was mit der Stelle zu tun haben, auf die man sich bewirbt. Klasse statt Masse; "Ich kann auf Anhieb ein C Programm erkennen" ist leider keine ausreichende Skill-Stufe ;)
+
+
+
