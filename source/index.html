@@ -1,29 +1,34 @@
 ---
 layout: default
+title: StefanWienert.net
+date: 2012-02-18 21:07
+comments: false
+sharing: false
+footer: false
+sidebar: false
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
+
+<article role="article" id='front'>
+<header><h1>Welcome, Hallo, 欢迎光临!</h1></header>
+<p>
+  I am Stefan Wienert from Dresden, Germany, an developer focused on Ruby/Rails working at pludoni GmbH. I use this site for blogging, ... sometimes.<br/>
+  When I do, than in German or English and most about:
+</p>
+<div id="tag-cloud">{% tag_cloud %}</div>
+  <p>Most recently, about: </p>
+<section role='recent-posts' id='blog-archives'>
+    {% for post in site.posts limit: site.recent_posts %}
     <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+      {% include archive_post.html %}
+      </article>
+    {% endfor %}
+</section>
+
+
+
+
+<h2>Credits</h2>
+This blog software is based on octopress, which is based on jekyll, which is an Ruby blogging-framework (for geeks). The background is a water color picture, which I bought in China.
+
+</article>

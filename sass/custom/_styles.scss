@@ -26,3 +26,7 @@ body {
   @include box-shadow(0 0 5px black);
   margin-top: 50px;
 }
+
+#content article#front {
+  width: auto;
+}

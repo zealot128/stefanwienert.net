@@ -9,8 +9,8 @@ Dieses ist ein Bloggrundgerüst mit richtig geiler Adminoberfläche und... Synta
 
 Mal schaun, was die nächsten Tage noch so kommt
 
---- Ruby
+```
 def hello_world
   puts "Yehaw"
 end
----
+```

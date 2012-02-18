@@ -2,34 +2,34 @@
 layout: post
 title: SEO - Einstiegstipps
 enki_id: 4
-categories: [seo, firefox]
+categories: [seo]
 ---
 Zur Zeit muss ich mich beruflich mit dem heißen Thema “Suchmaschinenoptimierung” herumschlagen. Dies ist keine richtige “Wissenschaft”, aber es haben sich ein paar Grundregeln herausgestellt, die, wenn man sie einhält, mit einer höheren Auffindung “belohnt” wird. Hier ein paar der wichtigsten:
 
-    * HTML/CSS valide gestalten → optimalerweise sogar noch strict:
-      komplett externe Styledefinitionen
-      alt-Tags bei IMGs
-      titles bei Links
-      → haben beide Keyword-Potenzial, hier kann man schon seine Keywords reinstopfen.
-    * Externe Links mit “nofollow”/“noindex”
-    * ein gesundes Verhältnis von Content zu Struktur zu haben (ab 30%)
-    * Keywords in den Überschriften, Meta-Tags, Webseitentitel und auch im Text
-    * Optimal, wenn die eigene Seite von anderen Seiten verlinkt wird, sogenannte Backlinks erhöhen den “Wert”
-    * Social Bookmarking direkt anbieten
-    * nicht zuletzt: Sinnvollen Content anbieten ;)
+* HTML/CSS valide gestalten → optimalerweise sogar noch strict:
+  komplett externe Styledefinitionen
+  alt-Tags bei IMGs
+  titles bei Links
+  → haben beide Keyword-Potenzial, hier kann man schon seine Keywords reinstopfen.
+* Externe Links mit “nofollow”/“noindex”
+* ein gesundes Verhältnis von Content zu Struktur zu haben (ab 30%)
+* Keywords in den Überschriften, Meta-Tags, Webseitentitel und auch im Text
+* Optimal, wenn die eigene Seite von anderen Seiten verlinkt wird, sogenannte Backlinks erhöhen den “Wert”
+* Social Bookmarking direkt anbieten
+* nicht zuletzt: Sinnvollen Content anbieten ;)
 
 So, jetzt zu den Tools:
 
 h3. Websites mit Live-Auswertung
 
-    * "seitenreport.de":http://www.seitenreport.de/ bietet eine sehr detailierte Übersicht über “Technik” (verwendeter Doctype, HTML-Validität), Keyword/Meta-Tag Analyse, und darauf basierend die Suchmaschinenränke), Social Bookmarks und noch vieles mehr.
-    * "seitwert.de":http://www.seitwert.de/ Im Gegensatz zu seitenreport nicht so detailiert, sondern eher für eine schnelle Übersicht; auch weniger technisch detailiert.
-    * w3c.org: Ja auch das ;) Erstmal sollte man seine Seite valide machen (am besten strict), bevor man sich an das High-Level Zeug macht.
+* "seitenreport.de":http://www.seitenreport.de/ bietet eine sehr detailierte Übersicht über “Technik” (verwendeter Doctype, HTML-Validität), Keyword/Meta-Tag Analyse, und darauf basierend die Suchmaschinenränke), Social Bookmarks und noch vieles mehr.
+* "seitwert.de":http://www.seitwert.de/ Im Gegensatz zu seitenreport nicht so detailiert, sondern eher für eine schnelle Übersicht; auch weniger technisch detailiert.
+* w3c.org: Ja auch das ;) Erstmal sollte man seine Seite valide machen (am besten strict), bevor man sich an das High-Level Zeug macht.
 
 h3. Firefox-Addons
 
-    * google-Toolbar: Recht bekannt, ich nutze sie aber nicht
-    * "SeoQuake":https://addons.mozilla.org/de/firefox/addon/3036 Fügt u.a. eine Toolbar hinzu, die so allerlei Informationen anbietet: Von PageRank bis Yahoo-Links, SocialBookmarks, robots.txt/sitemap.xml vorhanden und und und. Weiterhein stellt es einen Link auf deren Analyse-Seite mit der aktuellen Website als Parameter bereit, auf der man ähnliche Informationen wie die beiden oben genannten Seiten erhält.
-    * "SenSEO":https://addons.mozilla.org/de/firefox/addon/9403 Ein auf die Keyword-Analyse fokussiertes Plugin, das sich zudem noch nett als Firebug-Tab eingliedert, sollte dieses vorhanden sein. SenSEO ist recht technisch ausgelegt, und hilft bei der Auffindung von fehlenden “a:title”, “img:alt” sowie bei der Analyse der einzelnen Keywords in den hierarchischen Elementen der Website (also was steht in den META-Tags, was in H2 usw.)
+* google-Toolbar: Recht bekannt, ich nutze sie aber nicht
+* "SeoQuake":https://addons.mozilla.org/de/firefox/addon/3036 Fügt u.a. eine Toolbar hinzu, die so allerlei Informationen anbietet: Von PageRank bis Yahoo-Links, SocialBookmarks, robots.txt/sitemap.xml vorhanden und und und. Weiterhein stellt es einen Link auf deren Analyse-Seite mit der aktuellen Website als Parameter bereit, auf der man ähnliche Informationen wie die beiden oben genannten Seiten erhält.
+* "SenSEO":https://addons.mozilla.org/de/firefox/addon/9403 Ein auf die Keyword-Analyse fokussiertes Plugin, das sich zudem noch nett als Firebug-Tab eingliedert, sollte dieses vorhanden sein. SenSEO ist recht technisch ausgelegt, und hilft bei der Auffindung von fehlenden “a:title”, “img:alt” sowie bei der Analyse der einzelnen Keywords in den hierarchischen Elementen der Website (also was steht in den META-Tags, was in H2 usw.)
 
 Mir gefällt SenSEO persönlich sehr gut, da ich aus dem PageRank usw. relativ wenig ableiten kann, was mir hilft, die Seite zu verbessern, während SenSEO mit Tipps gibt, wie ich Keywords und MetaTags verbessere.

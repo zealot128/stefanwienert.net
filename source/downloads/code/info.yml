@@ -1,0 +1,46 @@
+---
+person:
+  occupation: "Web-Developer @pludoni GmbH"
+  location:  "Dresden, Saxony, Germany"
+  skills:    [ Ruby, Rails, Javascript, TDD, PHP, Drupal, Vim ]
+  interests: [ China, Piano ]
+  languages:
+    german:  "mother-tongue"
+    english: "pretty good"
+    chinese: "well... yeah.. actually"
+    french:  "omg, do not ask"
+  contact:
+    mail:    "info@stefanwienert.net"
+    github:  "https://github.com/zealot128"
+    xing:    "http://www.xing.com/profile/Stefan_Wienert"
+  blogs:
+    notes:
+      description: "Random developer notes - unique solutions to unique problems
+        or guides which we used on several occasions in the dev-team."
+      url: "http://notes.pludoni.de"
+    corporate:
+      description: "Company Blog"
+      url: "http://www.pludoni.de/team"
+  projects:
+    pludoni GmbH:
+      JobCommunities:
+        description: "JobCommunity application from pludoni GmbH for
+         local job search of specific business sectors. JobCommunities
+          support local small and medium-sized companies at HR-related
+          tasks, like job search, channel controlling, job marketing
+          consulting and social media activities.
+         Current instances:
+          ITsax.de, ITmitte.de, MINTsax.de, OFFICEsax.de, OFFICEmitte.de"
+        link: "http://www.itsax.de"
+      Empfehlungsbund:
+        description: "Parent app for all the job communities and global admin
+          interface. Research project for all new fancy Rails plugins."
+        link: "http://empfehlungsbund.de"
+    private:
+      shuFaZuoPin:
+        title: "Shufa - Chinese learning supplemental App"
+        description: "Vocabulary learning app for learning
+          Chinese characters  with a staged learning system
+          and a huge database of characters and translation."
+        link: "http://shufa.stefanwienert.net"
+

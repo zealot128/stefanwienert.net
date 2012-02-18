@@ -8,9 +8,6 @@ Falls mal Langeweile aufkommt, hier ein paar Vorlesungsaufzeichnungen, die ich m
 
 * "Hasso Plattner Institut":http://www.tele-task.de/series/archived/
 Vorlesungen des Hasso-Plattner-Instituts, qualitativ sehr gut und große Auswahl an Informatik-Vorlesungen
-
 * "Mustererkennung":http://lmb.informatik.uni-freiburg.de/lectures/mustererkennung/Videoaufzeichnungen/index.html an der Uni Freiburg
-
 * "Auf dem FTP Server eines Dresdner Wohnheims":ftp://ftp.wh2.tu-dresden.de/pub/mirrors/programming-methodology-video/ findet man ein paar "Programming Methodology" Vorlesungsmitschnitte der Stanford University, die einen fast unterhaltsamen Einstieg in das Programmieren (mit Java) :). Geeignet für Einsteiger.
 
-more to come...
