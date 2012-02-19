@@ -1,3 +1,19 @@
+
+# stefanwienert.net
+
+
+based on Octopress, modified with:
+
+* jammit as javascript pipeline
+* coffeescript
+* local fonts instead of google webfonts
+* modifications on category links through patch
+* bourbon css lib for fancy buttons
+* [jekyll-repost][https://github.com/zealot128/jekyll-repost] binaries
+* styles...
+
+
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
