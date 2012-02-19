@@ -9,7 +9,7 @@ based on Octopress, modified with:
 * local fonts instead of google webfonts
 * modifications on category links through patch
 * bourbon css lib for fancy buttons
-* [jekyll-repost][https://github.com/zealot128/jekyll-repost] binaries
+* [jekyll-repost](https://github.com/zealot128/jekyll-repost) binaries
 * styles...
 
 
