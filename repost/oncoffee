@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+#
+require "bundler"
+
+Bundler.setup
+
+require "jekyll-reposter"
+
+
+reporter = Jekyll::Reposter.new "http://www.pludoni.de/devs-on-coffee/rss",
+  :tags => "[pludoni, external]"
+
+reporter.create_if do |entry|
+  entry.author == "stefanw"
+end
