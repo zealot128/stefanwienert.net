@@ -30,3 +30,44 @@ body {
 #content article#front {
   width: auto;
 }
+
+article a {
+  border-bottom: 1px solid;
+  text-decoration: none;
+  &:visited {
+  color: darken($link-color, 20%);
+  }
+}
+
+h1 a:visited, #blog-archives h1 a:visited {
+  color: #999;
+}
+
+
+//  Tags
+
+@import 'bourbon/bourbon';
+
+a.category {
+  @include button(simple, #666);
+  display: inline-block;
+  padding: 0 10px;
+}
+#main #content .categories {
+  display: block;
+  float: right;
+  &:before {
+    content: "";
+  }
+}
+#main #content #blog-archives .categories {
+  display: block;
+  float: none;
+}
+
+#blog-archives a.category {
+  @include button(simple, #fff);
+  background: #eeeeee;
+}
+
+

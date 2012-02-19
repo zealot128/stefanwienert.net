@@ -14,7 +14,7 @@ Dazu mal mit Firefox und LiveHTTP-Headers-Addon schauen, was man beim Login zu a
 
 Das ganze dann in cURL gießen und eine cookies.txt schreibbar bereitstellen:
 
---- PHP
+```php
   $username="Meine Matrikelnummer"
   $passwort="Mein Passwort ;)"
   $ch = curl_init();
@@ -36,18 +36,18 @@ Das ganze dann in cURL gießen und eine cookies.txt schreibbar bereitstellen:
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
   $result=curl_exec($ch);
   curl_close($ch);
----
+```
 
 In unserem Beispiel des HIS-QIS gibt es noch eine Art zweiter Session-ID, die ausgelesen werden, und mit übergeben werden muss:
 
---- PHP
+```php
   preg_match("/asi=([^\"]*)\"/",$result,$treffer);
   $asi=$treffer[1];
----
+```
 
 Dann der Zweite durchlauf mit der asi:
 
---- PHP
+``` php
  $url="https://wwwqis.htw-dresden.de/qisserver/rds?state=htmlbesch&moduleParameter=Student&menuid=notenspiegel&asi=$asi";
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,$url);
@@ -62,14 +62,14 @@ Dann der Zweite durchlauf mit der asi:
   //echo curl_error($ch);
   //Session beenden
   curl_close($ch);
----
+```
 
 Damit ist der Text in der Variablen $result
 Extraktion der wichtigen Zeilen mit XPath
 
 Mittels Firebug schauen, wo die Prüfungsergebnisse drinstehen und die XPaths kopieren bzw. analysieren. Damit erhalten wir eine NodeList die wir ausgeben/speichern können:
 
---- PHP
+``` php
 $Doc = new DOMDocument();
 $Doc->loadHTML($result);
 $Doc->preserveWhiteSpace = false;
@@ -81,7 +81,7 @@ foreach ($NodeList as $node)
   echo $node->nodeValue;
   ...
 }
----
+```
 
 Schon fast fertig, was fehlt noch?
 
