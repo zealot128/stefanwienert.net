@@ -71,3 +71,21 @@ a.category {
 }
 
 
+$skill-width: 250px;
+.skills {
+  > li {
+    list-style: none outside none;
+    padding-left: $skill-width;
+    position: relative;
+  }
+  strong {
+    font-size: 1.3em;
+    font-weight: normal;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    text-align: right;
+    vertical-align: middle;
+    width: $skill-width - 10px;
+  }
+}

@@ -1,7 +1,7 @@
 PATH
   remote: /home/stefan/repos/jekyll-reposter
   specs:
-    jekyll-reposter (0.1.7)
+    jekyll-reposter (0.1.8)
       curb (~> 0.8)
       feedzirra
       sanitize
