@@ -6,9 +6,11 @@ comments: true
 categories: [personal]
 ---
 
+{% img right /images/blog/graduate.jpg http://www.flickr.com/photos/51975360@N02/596659179 %}
 Nach 8 Semestern im Diplomstudiengang Allgemeine Informatik hatte ich am 21.12. nun (endlich) meine Diplomverteidigung. Und bestanden. Zeit für eine Retrospektive.
 
 Insgesamt gab es einige aufschlussreiche und interessante Vorlesungen und ich habe es nicht bereut an einer FH studiert zu haben. Allerdings vermittelt die Hochschule an sich nur einen guten Überblick über verschiedene Aspekte eines Informatikerdaseins. Und das ist ja auch ihre Aufgabe.
+<!-- more -->
 Klar, es gab sicher auch das ein oder andere Fach, welches - IMO - eine fragwürdige Relevanz hat, aber im Gegenzug gab es auch - wieder IMO - sehr gute Professoren und Fächer:
 * Prof. Neumann für Mathe,
 * Prof. Baumgartl für Sicherheit und Linux-Geeking

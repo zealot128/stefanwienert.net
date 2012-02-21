@@ -7,6 +7,7 @@ layout: post
 categories: [notes, external, ruby]
 ---
  Here are some thoughts on how to install Ruby with rvm and most features on a Debian/Ubuntu plattform:
+ <!-- more -->
 
 
 ```bash

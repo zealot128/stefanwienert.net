@@ -8,6 +8,7 @@ categories: [notes, external, rails]
 ---
  Spree is a fantastic eCommerce Rails-Engine. To change it, to speak German, one has to:
 
+<!-- more -->
 
 ```ruby
 # Gemfile

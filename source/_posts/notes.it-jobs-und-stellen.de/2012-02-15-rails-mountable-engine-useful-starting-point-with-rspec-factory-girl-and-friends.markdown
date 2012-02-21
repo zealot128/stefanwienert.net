@@ -8,6 +8,7 @@ layout: post
 categories: [notes, external, rails]
 ---
  Since Ruby on Rails 3.1, engines were introduced. Unfortunatly, the generated code needs some love. I copied together some settings from various Stackoverflow posts regarding this topic.
+<!-- more -->
 <h2>Creating new engine</h2>
 
 
@@ -73,7 +74,7 @@ end
 ```
 
 ## Testing
- Now we can use "bundle exec rspec" to run our tests from within the dummy app. Later, when we want to do integration with our real app, we should start by adding our gem to the app’s Gemfile via file-path.  Doing so, we are able to work at our engine and viewing the results right in our development app (see later in this article).
+ Now we can use ```bundle exec rspec``` to run our tests from within the dummy app. Later, when we want to do integration with our real app, we should start by adding our gem to the app's Gemfile via file-path.  Doing so, we are able to work at our engine and viewing the results right in our development app (see later in this article).
 
 ## Working
 

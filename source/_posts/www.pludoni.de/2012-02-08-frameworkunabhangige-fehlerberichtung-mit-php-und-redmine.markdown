@@ -12,6 +12,7 @@ Webanwendungen sind Software, und damit prinzipbedingt fehlerbehaftet. Wenn nun 
 * Ähnliches auch für PHP umzusetzen
 * die Fehler-Benachrichtigung an unser eigenes System zu melden, um unabhängig von externen Dienstleistern zu sein.
 * Das Ganze in einen Workflow zu bringen, sodass Fehler nicht vergessen werden
+<!-- more -->
 
 
 ### Nutzung von Redmine als Bug-API-Server

@@ -7,11 +7,14 @@ layout: post
 categories: [pludoni, external,inux]
 ---
 
+{% img right /images/blog/train.jpg http://www.flickr.com/photos/cecco1965/438969886 Train %}
+
 Dank moderner Kommunikationsmittel ist eine ICE-Fahrt heutzutage kein Grund mehr mit der Arbeit aufzuhören :). Insbesondere falls es Probleme am Server gibt, ist es wünschenswert, auf SSH-Ebene mit den Servern stabil zu kommunizieren.
 
 Leider führt eine solche Fahrt auch mal durch ländliches Gebiet ohne gute Netzabdeckung, und eine stabile SSH-Verbindung ist dann nicht gegeben. Als Ergebnis friert die Shell ein, und man muss eine neue aufmachen. Ärgerlich, wenn man die soeben geöffnete Datei noch nicht gespeichert hat.
 
 Allerdings gibt es da einige Tipps, die auf unixoiden Betriebssystemen (Linux, MacOS) leicht umzusetzen sind. Zum einen gibt es eine Einstellung in der SSH-Verbindung und zum anderen einige Punkte in der Arbeitsweise, die man beachten kann, um so trotzdem sinnvoll zu arbeiten.
+<!-- more -->
 
 ### Einstellungen
 

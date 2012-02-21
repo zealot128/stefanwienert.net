@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Android Apps - short personal overview"
+date: 2012-02-21 19:51
+comments: true
+categories: [android]
+class: hello-world
+---
+
+{% img right /images/blog/market.png Android Market %}
+I was asked for a short overview over my installed Apps on my Android OS. Do you know, you can install apps directly from your computer to your android, just activate background services.  All shown apps are free, if not marked otherwise.
+So, here we go :
+<!-- more -->
+
+<div class='list-post'>
+h2. Basic
+* "Power Scheduler":https://market.android.com/details?id=com.mcmeel.PowerScheduler I use this app to switch on the Airplane-Mode in the night.
+* "3G Watchdog":https://market.android.com/details?id=net.rgruet.android.g3watchdog How much traffic I have left this month? This app can tell you. It installs a little icon in the message bar, which shows your current quota. Of course, very inaccurate, just for getting a clue.
+* "Unified Remote":https://market.android.com/details?id=com.Relmtech.Remote Connect your cellphone via Bluetooth or Wifi to your PC and use the phone as a remote control, for controlling stuff like VLC Player or Powerpoint.
+* "HDR Camera+":https://market.android.com/details?id=com.almalence.hdr_plus (Paid/Free with ads) Easy to use camera app, which makes HDRI Pictures by combining 3 different pictures with different exposition into one. Could have more config options, and free version is almost unusable, due to the ads (Video ads!!!)
+* "MensaPlaner Dresden":https://market.android.com/details?id=de.android.mensaplan When I was a student, I used that app for canteens in Dresden. I heard MyMensa should be better.
+
+h2. News
+* "gReader (Google Reader | RSS)":https://market.android.com/details?id=com.noinnion.android.greader.reader (paid/free) IMO the best app for greader. In contrast to the official Google Reader app, this one can automatically download and sync new articles, so they are available later (Wifi!). And because of this syncing, the app is much more responsive than the Google Reader app, which just seems to wrap a website.
+* "ZDFmediathek":https://market.android.com/details?id=com.zdf.android.mediathek Mediathek, works great on 3G
+* "Tagesschau":https://market.android.com/details?id=de.cellular.tagesschau Good ol' Tagesschau. Unsophisticated, but serious news.
+* "heise online":https://market.android.com/details?id=de.heise.android.heiseonlineapp just for fun, normally, gReader is enough
+
+h2. Outside of my living room ... excuse me, where?
+
+A smartphone is a great companion when exploring new cities. Happily, Google Maps is already pre-installed, a great tool for navigation, orientation and places discovering. Also works with great precision in all countries I visited until now.
+
+
+* "DB Navigator":https://market.android.com/details?id=de.hafas.android.db Thank you traveling with Deutsche Bahn. Works as expected, even shows if my current train is late.
+* "Öffi - ÖPNV Auskunft":https://market.android.com/details?id=de.schildbach.oeffi Great for viewing public transport in Germany and Austria. The unique feature is the visual presentation of the connections
+* "Qype":https://market.android.com/details?id=com.qype.radar Looking for good restaurants in new towns
+* "My Tracks":https://market.android.com/details?id=com.google.android.maps.mytracks GPS Recording, for measuring bike-tours, hiking etc.
+* "Barcode Scanner":https://market.android.com/details?id=com.google.zxing.client.android Barcode scanner #1, mostly for fun in supermarket/electronik markets for comparing, evaluation etc.
+* "barcoo":https://market.android.com/details?id=de.barcoo.android Sometimes works better, also scans QR-Codes (are that one still be used?)
+
+
+h2. Audio
+
+* "Listen":https://market.android.com/details?id=com.google.android.apps.listen (Semi)-automatically download new issues from your favourite podcasts, when you are in Wifi. UI could be better, and only works in combination with Google Reader. This apps just looks at all your feeds inside your "Listen Subscriptions" Folder/Tag of your Google Reader.
+* "Music Folder Player Donate":https://market.android.com/details?id=de.zorillasoft.musicfolderplayer.donate  (Paid/Free). Very easy to use Music player, which remembers it's position much more reliable than my built-in from Samsung. I dumped that in favor for Music Folder Player. This one almost ignores ID3 tags and just uses folders as albums. Great for audio books.
+* "IMDb Films & TV":https://market.android.com/details?id=com.imdb.mobile Looking a movie with friends: "I know this guy, he played in the movie ... ehhhh" - IMDB for the win! I even think, this app has a slightly better usability than the website.
+
+
+h2. Developer
+* "RedMinerDroid":https://market.android.com/details?id=com.vhqlabs.redminerdroid If you are using RedMine as a bugtracker, this is the best app for connecting.
+* "Ruboto IRB (Ruby on Android)":https://market.android.com/details?id=org.ruboto.irb, no reason, just fun
+* "ConnectBot":https://market.android.com/details?id=org.connectbot If you do not know, what SSH is, then don't bother. Otherwise great to reboot the server/restart apache and stuff while you are outside.
+
+h3. developer-Books
+
+Reading? oh yes. O'Reilly offers very cheap book "apps".
+
+* "vi Editor Pocket Reference":https://market.android.com/details?id=com.aldiko.android.oreilly.vieditorpocketreference (Paid) Waiting for the doctor? Just look up some new keybindings...
+* "JavaScript: The Good Parts":https://market.android.com/details?id=com.aldiko.android.oreilly.javascriptparts (Paid) The book is on the definite reading list of every JavaScript programmer
+* "The Art of Agile Development":https://market.android.com/details?id=com.aldiko.android.oreilly.artagiledevelopment (Paid) The Art of Agile programming - I used this book for my thesis
+* "GoF Design Patterns":https://market.android.com/details?id=com.poash.gofdp Honestly, I totally do not know every Design Pattern by name, so this app can help
+
+h2. Communication / Social
+* "TweetCaster for Twitter":https://market.android.com/details?id=com.handmark.tweetcaster Decent twitter app
+* "XING":https://market.android.com/details?id=com.xing.android Combine your xing-address book with your Android address book. Great, it only syncs TO your phone, not like the Facebook app ;)
+* "Xabber":https://market.android.com/details?id=com.xabber.android standard jabber client
+* "Skype":https://market.android.com/details?id=com.skype.raider Besides video telephoning (if your phone has a front camera), Skype also can sync it's contact list to your phone
+* "Meebo":https://market.android.com/details?id=com.meebo&feature=search_result Multi-protocoll messenger - AIM, MSN, Yahoo, MySpace, Google Talk,Jabber and ICQ. I think, all communication is piped through to the Meebo-server, so I wouldn't send to private information or passwords through it.
+
+* <a>Facebook?</a> Do not install this before thinking about, what the app can potentially do:
+** Read all SMS, Send SMS
+** Can read all contacts
+** get GPS location
+* <a>Google+?</a> Same like Facebook. In default, G+ will automatically upload your new pictures from the camera to a private g+-gallery. In contrast to Facebook, one even can delete the picture afterwards \o/
+
+</div>
+
+So guys, what did I miss?
