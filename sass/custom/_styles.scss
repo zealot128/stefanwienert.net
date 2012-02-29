@@ -140,3 +140,12 @@ $skill-width: 300px;
     clear: both;
   }
 }
+@mixin hyphens($value: "manual") {
+  @each $prefix in -webkit-, -moz-, -o-, "" {
+    #{$prefix}hyphens: $value;
+  }
+}
+p, li {
+  text-align: justify;
+  @include hyphens(auto);
+}

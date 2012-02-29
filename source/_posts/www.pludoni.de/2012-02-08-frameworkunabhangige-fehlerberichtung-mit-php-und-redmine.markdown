@@ -6,6 +6,8 @@ layout: post
 
 categories: [pludoni, external,php,rails]
 ---
+
+<img src='/images/blog/redmine.png' alt='Redmine Logo' class='right'/>
 Webanwendungen sind Software, und damit prinzipbedingt fehlerbehaftet. Wenn nun ein Fehler bei einem Nutzer bzw. Kunden auftritt, wäre es wünschenswert, wenn wir als Entwickler zumindest davon erfahren. Für unsere Ruby on Rails-Anwendungen (z.B. [Empfehlungsbund.de](http://www.empfehlungsbund.de)) nutzen wir seit einiger Zeit den Service von *Airbrake*, die ein leicht zu installierendes Plugin anbieten. Nun suchten wir für PHP etwas ähnliches. Da wir aber mittlerweile sehr viele PHP-Anwendungen hatten, kam die Motivation auf:
 
 

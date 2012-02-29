@@ -7,7 +7,7 @@ layout: post
 categories: [pludoni, external,inux]
 ---
 
-{% img right /images/blog/train.jpg http://www.flickr.com/photos/cecco1965/438969886 Train %}
+<img class='right' src='/images/blog/train.jpg' alt='http://www.flickr.com/photos/cecco1965/438969886 Train'/>
 
 Dank moderner Kommunikationsmittel ist eine ICE-Fahrt heutzutage kein Grund mehr mit der Arbeit aufzuhören :). Insbesondere falls es Probleme am Server gibt, ist es wünschenswert, auf SSH-Ebene mit den Servern stabil zu kommunizieren.
 

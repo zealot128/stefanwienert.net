@@ -4,6 +4,8 @@ title: Effektive Corporate Website mit Drupal und Installationsprofilen
 enki_id: 75
 categories: [drupal]
 ---
+
+<img src='/images/blog/drupal-cc.png' alt='Corporate Clean Theme von Drupal' class='right'/>
 Um eine typische Unternehmensseite halbwegs modern und effektiv umzusetzen, eignet sich das relativ neue Drupal 7 ideal.
 
 Dazu gibt es einen super-effektiven, fertigen Baukasten (Installationsprofil) bei Github ("github.com/juampy72/corporative-site":https://github.com/juampy72/corporative-site), der allerhand coole Module mitbringt und gescheit konfiguriert: File-Upload, WYSIWYG-Editor, lesbare URLs, sitemap, robots.txt
