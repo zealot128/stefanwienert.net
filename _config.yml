@@ -59,7 +59,7 @@ default_asides: [custom/asides/about.html, asides/recent_posts.html, custom/asid
 # ----------------------- #
 
 # Github repositories
-github_user: zealot128
+github_user:
 github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
@@ -68,10 +68,10 @@ rdiscount:
   extensions: [autolink]
 
 # Twitter
-twitter_user: stefanwienert
+twitter_user:
 twitter_tweet_count: 4
 twitter_show_replies: false
-twitter_follow_button: true
+twitter_follow_button: false
 twitter_show_follower_count: false
 twitter_tweet_button: false
 
