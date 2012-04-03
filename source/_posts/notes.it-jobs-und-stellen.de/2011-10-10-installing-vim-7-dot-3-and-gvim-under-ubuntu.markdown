@@ -1,13 +1,13 @@
 ---
-title: Installing vim 7.3 and gvim under Ubuntu
+title: Installing vim 7.3 and gvim on Ubuntu/Debian
 date: 2011-10-10 04:43
 comments: true
 layout: post
 
 categories: [notes, external, vim, linux]
 ---
- Always comes in handy…
-this build vim with most features, including ruby-support.
+Always comes in handy...
+This builds Vim with most features, including ruby-support.
 
 
 ```bash
@@ -20,7 +20,7 @@ sudo su
 wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 tar jxf vim-7.3.tar.bz2
 cd vim73/
-./configure --with-features=huge --enable-gui=gnome2
+./configure --with-features=huge --enable-gui=gnome2 --enable-rubyinterp
 make
 make install
 ```
