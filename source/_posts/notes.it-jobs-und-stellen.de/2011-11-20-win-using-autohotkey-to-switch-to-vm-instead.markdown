@@ -21,5 +21,19 @@ return
 
 One caveat: Doesn’t seems to work with Firebug, which takes the F12 key by itself. But Firebug offers ways to change keybindings.
 
+**Update**
+
+Thanks to the comment from outsmartin, one can leave out the '~' and the F12-keypress will always be sent into the Virtual Box.
+
+```ruby
+SetTitleMatchMode 1
+
+F12::
+IfWinExist LinuxMint
+  WinActivate
+Send {F12}
+return
+```
+
 ---
 <i>Reposted from <a href='http://notes.it-jobs-und-stellen.de/notes/30' rel='canonical'>notes.it-jobs-und-stellen.de</a></i>

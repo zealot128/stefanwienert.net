@@ -7,9 +7,9 @@ YAML::ENGINE.yamler = 'syck'
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
-ssh_user       = "root@stefanwienert.net"
+ssh_user       = "root@stefanwienert.de"
 ssh_port       = "22"
-document_root  = "/var/www/vhosts/stefanwienert.net/octopress"
+document_root  = "/var/www/vhosts/stefanwienert.de/documents/stefanwienert.de"
 rsync_delete   = false
 deploy_default = "rsync"
 
