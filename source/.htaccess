@@ -1,2 +1,12 @@
 Redirect permanent /posts.atom http://stefanwienert.net/atom.xml
 
+
+# Kanonische URL
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^stefanwienert\.de$ [NC]
+RewriteRule ^(.*)$ http://stefanwienert.net/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.stefanwienert\.de$ [NC]
+RewriteRule ^(.*)$ http://stefanwienert.net/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.stefanwienert\.net$ [NC]
+RewriteRule ^(.*)$ http://stefanwienert.net/$1 [L,R=301]
+
