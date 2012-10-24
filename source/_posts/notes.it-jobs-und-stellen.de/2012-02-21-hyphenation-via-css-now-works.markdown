@@ -4,7 +4,7 @@ date: 2012-02-21 21:39
 comments: true
 layout: post
 
-categories: [notes, external,css]
+categories: [english, notes, external,css]
 ---
 
 Finally, justify aligning now makes much more sense.

@@ -2,7 +2,7 @@
 layout: post
 title: Tool fuer externe/interne Link-Analyse mit rel=nofollow
 enki_id: 24
-categories: [seo, rails, ruby]
+categories: [german, seo, rails, ruby]
 ---
 Fuer ein aktuelles Projekt wurde eine **Linkanalyse**, insbesondere der ausgehenden Links gewuenscht. Insbesondere die Verwendung des SEO Buzzwords "rel=nofollow" sollte dabei aufgezeigt werden. Was lag naeher als schnell in Ruby mit Zuhilfenahme des hpricot Gems ein kleines Skript dafuer zu bauen?
 

@@ -2,7 +2,7 @@
 layout: post
 title: Vorratsdatenspeicherung gecancelt
 enki_id: 38
-categories: [politik]
+categories: [german, politik]
 ---
 Kam grad bei "heise.de":http://www.heise.de/newsticker/meldung/Karlsruhe-kippt-Vorratsdatenspeicherung-2-Update-943695.html rein:
 

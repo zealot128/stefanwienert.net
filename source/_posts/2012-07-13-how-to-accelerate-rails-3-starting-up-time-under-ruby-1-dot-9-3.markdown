@@ -3,7 +3,7 @@ layout: post
 title: "How to accelerate Rails 3 start up time under Ruby 1.9.3"
 date: 2012-07-13 10:01
 comments: true
-categories: [ruby, rails]
+categories: [ruby, rails, english]
 ---
 We use Rails 3 with a boat load of gems, so the basic boot time for any Rake task or Rails Generator is slow... about 1 minute.
 

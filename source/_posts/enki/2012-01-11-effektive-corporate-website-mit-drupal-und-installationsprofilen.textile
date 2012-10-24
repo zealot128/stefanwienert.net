@@ -2,7 +2,7 @@
 layout: post
 title: Effektive Corporate Website mit Drupal und Installationsprofilen
 enki_id: 75
-categories: [drupal]
+categories: [german, drupal]
 ---
 
 <img src='/images/blog/drupal-cc.png' alt='Corporate Clean Theme von Drupal' class='right'/>

@@ -2,7 +2,7 @@
 layout: post
 title: Ruby on Rails Screencast - Implementation einer User Anmeldung
 enki_id: 47
-categories: [rails, screencast, ruby, tdd]
+categories: [german, rails, screencast, ruby, tdd]
 ---
 Für eine kommende Vorlesung über Test Driven Development habe ich einen Screencast angefertigt.
 

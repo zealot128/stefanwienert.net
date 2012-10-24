@@ -4,7 +4,7 @@ date: 2011-10-25 17:57
 comments: true
 layout: post
 
-categories: [notes, external]
+categories: [english, notes, external]
 ---
  When reinstalling with apt-get the message:
 

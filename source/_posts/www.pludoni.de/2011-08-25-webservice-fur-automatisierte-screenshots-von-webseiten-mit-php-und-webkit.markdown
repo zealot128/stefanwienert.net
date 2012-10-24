@@ -4,7 +4,7 @@ date: 2011-08-25 17:48
 comments: true
 layout: post
 
-categories: [pludoni, external, php]
+categories: [pludoni, external, php, german]
 ---
 
 *UPDATE*: Eine wesentlich schnellere Möglichkeit stellt wkhtmltoimage aus dem [wkhtmltopdf](https://code.google.com/p/wkhtmltopdf/)-Paket.

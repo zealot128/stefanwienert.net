@@ -2,7 +2,7 @@
 layout: post
 title: ! 'e-Petition des Bundestages fuer  '
 enki_id: 25
-categories: [politik]
+categories: [german, politik]
 ---
 Unter den "e-Petitionen des Bundestages erregte eine Petition heute mein Aufsehen":https://epetitionen.bundestag.de/index.php?action=petition;sa=details;petition=8911:
 

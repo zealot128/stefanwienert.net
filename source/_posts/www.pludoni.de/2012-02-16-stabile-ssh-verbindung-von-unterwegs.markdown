@@ -4,7 +4,7 @@ date: 2012-02-16 10:11
 comments: true
 layout: post
 
-categories: [pludoni, external,inux]
+categories: [pludoni, external,linux, german]
 ---
 
 <img class='right' src='/images/blog/train.jpg' alt='http://www.flickr.com/photos/cecco1965/438969886 Train'/>

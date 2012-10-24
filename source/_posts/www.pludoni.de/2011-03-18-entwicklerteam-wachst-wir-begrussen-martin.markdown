@@ -4,7 +4,7 @@ date: 2011-03-18 09:53
 comments: true
 layout: post
 
-categories: [pludoni, external]
+categories: [pludoni, external, german]
 ---
  Vor kurzem ist Martin zu uns gestoßen. Er wird Akos und mich beim Weiterentwickeln der pludoni Produktpalette unterstützen.
 Martin studiert Informatik in Dresden und wird sein Praktikum und Bachelorarbeit bei uns absolvieren. Er hat Erfahrung mit PHP und dem Dojo-Framework und ist begeistert von den bisherigen Ruby-on-Rails-Entwicklungen in der Firma.

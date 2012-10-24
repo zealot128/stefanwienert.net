@@ -3,7 +3,7 @@ layout: post
 title: "Kick-start brand new XING API with Ruby and OAuth"
 date: 2012-03-08 12:47
 comments: true
-categories: [xing,ruby]
+categories: [xing,ruby,english]
 ---
 
 Recently, the Social Network XING.com released it's public (closed) beta to API developers. The API uses OAuth for Authentication and REST for the URL design.

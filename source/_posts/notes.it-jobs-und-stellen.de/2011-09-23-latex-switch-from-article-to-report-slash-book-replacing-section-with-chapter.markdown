@@ -4,7 +4,7 @@ date: 2011-09-23 14:49
 comments: true
 layout: post
 
-categories: [notes, external,bash,latex]
+categories: [english, notes, external,bash,latex]
 ---
  To quickly change from a Article doc-class to a Book or Report class, one have to replace all section with chapters and so on.
  Using sed helps:

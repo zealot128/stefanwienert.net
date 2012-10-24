@@ -2,7 +2,7 @@
 layout: post
 title: Rails/Passenger im Parallels Plesk zum Laufen bekommen EDIT mit SSL
 enki_id: 37
-categories: [ruby, rails, plesk, debian]
+categories: [german, ruby, rails, plesk, debian]
 ---
 Wer auch Parallels Plesk Panel für seine Serveradministration verwendet, und sich schonmal gefragt hat, ob es was besseres als die Build-in Fast CGI Unterstützung oder Mongrel/Webrick gibt, dem will ich hier mal einen kleinen Guide geben, wie das ganze mit Passenger zu bewerkstelligen ist.
 Wir verwenden für die Administration unserer Server auch Plesk, da es echt stupid simple ist.

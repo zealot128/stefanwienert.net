@@ -2,7 +2,7 @@
 layout: post
 title: Akkorde für "Sind die Lichter angezündet"
 enki_id: 22
-categories: [musik]
+categories: [german, musik]
 ---
 Ich hab grad mein Notenbuch nicht erreichbar und den Musikwunsch "Sind die Lichter angezündet":http://de.wikipedia.org/wiki/Sind_die_Lichter_angez%C3%BCndet, ein sehr schönes (DDR-)Weihnachtslied erhalten.
 

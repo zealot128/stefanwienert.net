@@ -2,7 +2,7 @@
 layout: post
 title: Finanzielles - interessehalber
 enki_id: 66
-categories: [china]
+categories: [german, China]
 ---
 <a href="/images/blog/10/200905221622041208.jpg"><img class="alignleft size-full wp-image-45" title="200905221622041208" src="/images/blog/10/200905221622041208.jpg" alt="" width="180" height="91" /></a>Uns sind letztens die Bargeldreserven, die wir direkt mitgenommen und hier umgetauscht hatten, ausgegangen.
 

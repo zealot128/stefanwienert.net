@@ -5,7 +5,7 @@ date: 2012-02-15 15:03
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
  Since Ruby on Rails 3.1, engines were introduced. Unfortunatly, the generated code needs some love. I copied together some settings from various Stackoverflow posts regarding this topic.
 <!-- more -->

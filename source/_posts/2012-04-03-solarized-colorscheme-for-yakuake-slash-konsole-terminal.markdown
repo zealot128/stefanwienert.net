@@ -3,7 +3,7 @@ layout: post
 title: "Solarized Colorscheme for Yakuake/Konsole Terminal"
 date: 2012-04-03 21:57
 comments: true
-categories: [linux, tools]
+categories: [linux, tools,english]
 ---
 
 The [Solarized](http://ethanschoonover.com/solarized) color palette, is a relativly new, but very popular one, which exists for a lot of editors, shells etc.

@@ -5,7 +5,7 @@ date: 2012-01-05 15:17
 comments: true
 layout: post
 
-categories: [notes, external, ruby]
+categories: [english, notes, external, ruby]
 ---
  bundle install results in infinite loop when gem requires active_support and one of its dependencies rails.
 

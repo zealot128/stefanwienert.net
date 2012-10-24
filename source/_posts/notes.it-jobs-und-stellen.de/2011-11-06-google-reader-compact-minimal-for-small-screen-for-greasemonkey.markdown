@@ -4,7 +4,7 @@ date: 2011-11-06 00:54
 comments: true
 layout: post
 
-categories: [notes, external]
+categories: [english, notes, external]
 ---
  Useful greasemonkey script for small screens (netbooks) for the new Google Reader Design, which is way to spacy. 
 

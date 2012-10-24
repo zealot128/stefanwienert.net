@@ -2,7 +2,7 @@
 layout: post
 title: Relaunch - Neues Design und neue Technik
 enki_id: 69
-categories: [coding]
+categories: [german, coding]
 ---
 Hat wahrscheinlich niemand bemerkt: Ich habe über das Wochenende die Seite offline genommen um den drunter liegenden Server mal gehörig aufzuräumen, um nicht zu sagen, neu zu installieren.
 

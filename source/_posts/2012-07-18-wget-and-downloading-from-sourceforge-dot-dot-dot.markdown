@@ -3,7 +3,7 @@ layout: post
 title: "Wget and downloading from Sourceforge..."
 date: 2012-07-18 17:57
 comments: true
-categories: [linux, server]
+categories: [linux, server, english]
 ---
 Hands up, who tried to download a source code archive directly from Sourceforge's "Direct link" (Or any other PHP download script)?
 

@@ -4,7 +4,7 @@ date: 2011-09-12 08:54
 comments: true
 layout: post
 
-categories: [notes, external,ruby,apache,server,plesk]
+categories: [english, notes, external,ruby,apache,server,plesk]
 ---
  Um eine Rack-Anwendung mit Plesk zu deployen, gehen wir folgenden Weg:
  Ruby,Rails und Passenger sind installiert. Dazu gibt es allerhand Guides.

@@ -3,7 +3,7 @@ layout: post
 title: "Proxy Errors with unicorn and apache2 reverse proxy"
 date: 2012-05-22 23:14
 comments: true
-categories:  [ruby,apache]
+categories:  [ruby,apache,english]
 ---
 
 I usually used thin as app-server for Rails in combination with Apache2 as webserver. I tried using unicorn instead, because I read a lot of interesting articles about it. Unfortunatly, now I got a lot of error messages like that when uploading files:

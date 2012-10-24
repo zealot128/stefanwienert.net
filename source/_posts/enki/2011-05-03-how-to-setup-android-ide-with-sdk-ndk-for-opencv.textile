@@ -2,7 +2,7 @@
 layout: post
 title: 'How To: Setup Android IDE with SDK, NDK for OpenCV'
 enki_id: 62
-categories: [android]
+categories: [english, android]
 ---
 /Gastbeitrag von Sebastian Starke/
 

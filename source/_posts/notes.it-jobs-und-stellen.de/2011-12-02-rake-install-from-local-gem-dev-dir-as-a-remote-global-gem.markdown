@@ -4,7 +4,7 @@ date: 2011-12-02 14:46
 comments: true
 layout: post
 
-categories: [notes, external, ruby]
+categories: [english, notes, external, ruby]
 ---
  For installing and updating a (private) gem that was developed locally, we defined a rake task.
 

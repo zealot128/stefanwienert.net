@@ -2,7 +2,7 @@
 layout: post
 title: Einführung in HDRI-Fotografie
 enki_id: 31
-categories: [foto]
+categories: [german, foto]
 ---
 Auf eine Anfrage hin, wie ich einige der Bilder, die hier in der Galerie austell', erzeugt habe, will ich mal eine kleine Einführung in die digitale HDRI-Fotografie geben.
 

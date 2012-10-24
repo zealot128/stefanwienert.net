@@ -4,7 +4,7 @@ date: 2012-01-09 18:57
 comments: true
 layout: post
 
-categories: [pludoni, external, personal, tdd, rails]
+categories: [pludoni, external, personal, tdd, rails, german]
 ---
 Im letzten Jahr schrieb ich meine Diplomarbeit bei der pludoni GmbH. Dabei stand die Entwicklungsmethode "Testgetriebene Softwareentwicklung (TDD)" im Vordergrund und wurde auf die Tauglichkeit zum Einsatz in der Firma untersucht. Insbesondere hatten wir die Vermutung, dass sie eine effektive Möglichkeit zur Steigerung unserer (internen) Qualität, d.h. der Code-Qualität und langfristig effizientere Entwicklung sei.
 <!-- more -->

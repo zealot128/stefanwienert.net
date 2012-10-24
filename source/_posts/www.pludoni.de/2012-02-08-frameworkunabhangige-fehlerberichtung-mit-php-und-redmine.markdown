@@ -4,7 +4,7 @@ date: 2012-02-08 11:07
 comments: true
 layout: post
 
-categories: [pludoni, external,php,rails]
+categories: [pludoni, external,php,rails, german]
 ---
 
 <img src='/images/blog/redmine.png' alt='Redmine Logo' class='right'/>

@@ -3,7 +3,7 @@ layout: post
 title: "Tageswebschau: Der fehlende RSS-Feed zum neues Tageschau Format"
 date: 2012-07-12 12:47
 comments: true
-categories: [ruby]
+categories: [ruby, german]
 ---
 
 Der eine oder andere mag es mitbekommen haben: Die Tagesschau hat neuerdings eine Sendung ["Tageswebschau"](http://www.radiobremen.de/unternehmen/aktuell/tageswebschau110.html), in der Werktags kurz auf neue Memes und Netzpolitik eingegangen wird. Ich finde das Format recht interessant.

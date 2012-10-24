@@ -2,7 +2,7 @@
 layout: post
 title: Gedit Dokuwiki Syntax Highlighting Beschreibung
 enki_id: 45
-categories: [gedit]
+categories: [german, gedit]
 ---
 Für Uni und private Aufzeichnungen verwende ich gerne Dokuwikis, welche recht schön zu installieren sind, und dank Datenbanklosigkeit auch gut kopiert und versioniert werden können.
 Als Ubuntu User nehme ich da gerne Gedit , wegen der guten Plugins (Snippets, Wortliste, Spellcheck) ein ganz netter Editor, nur ein gutes Syntaxhighlighting hat noch gefehlt.

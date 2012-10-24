@@ -4,7 +4,7 @@ date: 2011-09-29 18:04
 comments: true
 layout: post
 
-categories: [notes, external,bash]
+categories: [english, notes, external,bash]
 ---
  Bash: Ctrl+X Ctrl+E opens current line in default editor (vim, emacs, nano,…)
  quite handy when editing long commands with a lot of pipelining

@@ -4,7 +4,7 @@ date: 2011-10-28 12:05
 comments: true
 layout: post
 
-categories: [notes, external]
+categories: [english, notes, external]
 ---
  provided by facebook, written in Python :)
  WAY better than php -a or php-shell! Autocompletion, History etc.

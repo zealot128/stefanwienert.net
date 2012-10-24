@@ -2,7 +2,7 @@
 layout: post
 title: ! 'ATI-Graphik byebye... oder: Die Sache mit dem Lokalpatriotismus'
 enki_id: 11
-categories: [ubuntu]
+categories: [german, ubuntu]
 ---
 Nun ist er für mich vorbei, der Leidensweg mit meiner ATI Grafikkarte. (Die direkte Konkurrenz ist recht ersichtlich, möchte aber keine [unbezahlte] Werbung machen).
 

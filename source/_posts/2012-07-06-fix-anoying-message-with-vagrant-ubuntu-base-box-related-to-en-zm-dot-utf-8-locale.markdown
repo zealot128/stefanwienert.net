@@ -3,7 +3,7 @@ layout: post
 title: "Fix anoying message with vagrant ubuntu base box related to en_ZM.UTF-8 locale"
 date: 2012-07-06 00:44
 comments: true
-categories: [vagrant, server, linux]
+categories: [vagrant, server, linux,english]
 ---
 
 I just initialized a new Vagrant "base" virtualbox and got the following messages after ssh-login and after most commands:

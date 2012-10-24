@@ -2,7 +2,7 @@
 layout: post
 title: Kurzes Gem Showcase - Delicious, actsasarchive, menu borwsercms css sprite
 enki_id: 36
-categories: [ruby, rails]
+categories: [german, ruby, rails]
 ---
 Ich schaue gerade meine kürzlich gebookmarkten Sites an, und will hier mal ein paar coole Ruby Ressourcen zeigen.
 

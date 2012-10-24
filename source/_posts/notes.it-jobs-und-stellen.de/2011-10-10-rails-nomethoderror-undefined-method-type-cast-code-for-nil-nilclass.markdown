@@ -4,7 +4,7 @@ date: 2011-10-10 11:43
 comments: true
 layout: post
 
-categories: [notes, external,rails]
+categories: [english, notes, external,rails]
 ---
 This Error:
 

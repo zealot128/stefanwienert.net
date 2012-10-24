@@ -3,7 +3,7 @@ layout: post
 title: "Securing mongodb and redis on a normal linux/ubuntu/..."
 date: 2012-09-06 15:38
 comments: true
-categories: [linux,server]
+categories: [linux,server, english]
 ---
 If you are using Redis-Server or MongoDB, they are usually not protected. So anybody can connect from anywhere to your Key-Value-Stores and to nasty stuff.
 

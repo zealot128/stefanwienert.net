@@ -3,7 +3,7 @@ layout: post
 title: "Traffic in China"
 date: 2012-06-13 09:28
 comments: true
-categories: china
+categories: [China, english]
 ---
 When coming from Germany, the first impression of Beijing's traffic was horrible. Driver drive like crazy: using signal-horn all the time, dangerous overtaking, not big fans of seatbelt and a very reckless driving especially towards pedestrians.
 

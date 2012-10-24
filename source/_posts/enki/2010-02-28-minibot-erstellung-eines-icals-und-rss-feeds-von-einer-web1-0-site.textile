@@ -2,7 +2,7 @@
 layout: post
 title: Minibot für Erstellung eines iCals und RSS-Feeds von einer Web1.0 Site
 enki_id: 35
-categories: [ruby]
+categories: [german, ruby]
 ---
 In Dresden gibt es die Hochschule für Musik "Carl Maria von Weber", welche "auf ihrer Website":http://www.hfmdd.de/index.php?id=4 auch ihr aktuelles Programm kundtun. Wer etwas Interesse an klassischer Musik hat, hat durch diese Art der Konzerte die Gelegenheit, sehr gute Pianisten sehr preiswert (umsonst...) zu hören.
 

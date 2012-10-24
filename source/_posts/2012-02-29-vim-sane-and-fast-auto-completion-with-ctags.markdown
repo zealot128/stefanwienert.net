@@ -3,7 +3,7 @@ layout: post
 title: "Vim: sane &amp; fast auto completion and common issues"
 date: 2012-02-29 17:26
 comments: true
-categories: [vim, rails]
+categories: [vim, rails, english]
 ---
 
 Using vim's autocompletion feature is mostly fine, but there are some considerations:

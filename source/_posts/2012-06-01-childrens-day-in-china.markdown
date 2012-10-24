@@ -3,7 +3,7 @@ layout: post
 title: "Children's day in China"
 date: 2012-06-01 05:28
 comments: true
-categories: china
+categories: [China, english]
 ---
 
 Today, I had the great opportunity to take part in the International Children's Day celebration in a Chinese kindergarten in Xiamen South Eastern China. The evening before, we gave presents to the children. We brought some LEGO, which is very rare and expensive here. It turns out to be a good choice:

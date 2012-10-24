@@ -2,7 +2,7 @@
 layout: post
 title: Mal wieder ein paar Links zum Thema Rails und Vim
 enki_id: 42
-categories: [vim, ruby, rails]
+categories: [german, vim, ruby, rails]
 ---
 Vim:
 

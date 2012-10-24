@@ -2,7 +2,7 @@
 layout: post
 title: SEO mit Ruby (Rails)
 enki_id: 2
-categories: [ruby, seo, rails]
+categories: [german, ruby, seo, rails]
 ---
 Backlinks, Anzahl der Referenzen, Pagerank… all das wurde letztens für ein Projekt benötigt. Da noch einige andere Funktionen benötigt wurden, hab ich gleich eine Rails App draus gemacht.
 

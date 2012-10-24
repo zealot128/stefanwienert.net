@@ -4,7 +4,7 @@ date: 2011-10-04 16:16
 comments: true
 layout: post
 
-categories: [notes, external, plesk,php]
+categories: [english, notes, external, plesk,php]
 ---
  In plesk in comination for PHP, the error reporting is redirected to a log file, and instead a Whitescreen is shown. To change that, e.g. for a development-system:
 

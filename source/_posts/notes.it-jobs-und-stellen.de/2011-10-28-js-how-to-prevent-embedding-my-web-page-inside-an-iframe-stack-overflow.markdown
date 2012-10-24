@@ -4,7 +4,7 @@ date: 2011-10-28 15:33
 comments: true
 layout: post
 
-categories: [notes, external,javascript]
+categories: [english, notes, external,javascript]
 ---
 
 

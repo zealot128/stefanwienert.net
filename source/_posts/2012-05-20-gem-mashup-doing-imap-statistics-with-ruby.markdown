@@ -3,7 +3,7 @@ layout: post
 title: "Gem Mashup: Doing IMAP statistics with Ruby"
 date: 2012-05-20 22:01
 comments: true
-categories: [ruby]
+categories: [ruby,english]
 ---
 
 I was interested: Who are the people, which wrote the most e-mails to me?

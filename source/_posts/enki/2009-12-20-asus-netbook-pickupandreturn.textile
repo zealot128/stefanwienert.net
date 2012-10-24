@@ -2,7 +2,7 @@
 layout: post
 title: Asus Netbook Pickup&Return
 enki_id: 21
-categories: []
+categories: [german, ]
 ---
 Neulich war die Tastatur meines ASUS eeepc 901 hin. Etwa 10 Tasten gingen absolut gar nicht mehr; ich glaube die Tastatur war etwas feucht geworden... ^^
 

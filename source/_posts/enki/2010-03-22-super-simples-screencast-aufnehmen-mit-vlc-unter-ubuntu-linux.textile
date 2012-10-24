@@ -2,7 +2,7 @@
 layout: post
 title: Super simples Screencast aufnehmen mit VLC unter Ubuntu (Linux)
 enki_id: 40
-categories: [screencast]
+categories: [german, screencast]
 ---
 Wenn man vlc installiert hat, dann kriegt man eine Screen Capture Software gleich mit frei Haus. Einfach in einer Konsole (eine der) folgende Zeile(n) reinkopieren:
 

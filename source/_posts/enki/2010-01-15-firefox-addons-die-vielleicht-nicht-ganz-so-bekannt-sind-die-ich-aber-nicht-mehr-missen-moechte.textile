@@ -3,7 +3,7 @@ layout: post
 title: Firefox Addons (die vielleicht nicht ganz so bekannt sind) die ich aber nicht
   mehr missen moechte
 enki_id: 27
-categories: [css, gedit]
+categories: [german, css, gedit]
 ---
 Hier will ich mal ein paar Firefox Addons, die abseits von Adblock, Noscript und co. vielleicht den Mainstream etwas verlassen:
 

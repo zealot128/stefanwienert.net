@@ -2,7 +2,7 @@
 layout: post
 title: Ruby/ScrAPI-RSS-Interface für 4players.de
 enki_id: 13
-categories: [ruby]
+categories: [german, ruby]
 ---
 In den letzten Tagen wollte ich mal die "PC-Tests von 4players.de":http://www.4players.de/4players.php/tests/PC-CDROM/Alle/Alle/datum/0/1.html als RSS-Feed abonnieren, musste aber leider feststellen, dass man nur PC-Artikel als ganzes abonnieren kann (Also inklusive aller Previews und was weiß ich alles), die mir zu umfangreich sind.
 Um einen guten Überblick über aktuelle (gute) Spiele zu erhalten, und vielleicht sogar gleich Wertung + Genre im Blick zu haben, lag es für mich also nahe, ein kleines RSS-Interface dafür zu bauen, was letztlich in einem Crawler/Parser + RSS Ausgabe resultiert.

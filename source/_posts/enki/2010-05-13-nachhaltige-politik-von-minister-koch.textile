@@ -2,7 +2,7 @@
 layout: post
 title: ! '"Nachhaltige" Politik von Minister Koch'
 enki_id: 46
-categories: [politik]
+categories: [german, politik]
 ---
 Im "Spiegel":http://www.spiegel.de/politik/deutschland/0,1518,694513,00.html (via Fefe) gibts einen sehr erleuchtenden Kommentar über die Finanz-Politik von Herrn Koch, falls er Finanzminister wird.
 

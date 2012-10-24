@@ -2,7 +2,7 @@
 layout: post
 title: Chinesische Shopping Kultur
 enki_id: 63
-categories: [china]
+categories: [german, China]
 ---
 Nach mehreren Shopping-Touren bin ich doch zu dem Schluß gekommen, dass sich chinesische Shoppingkultur von unsriger unterscheidet.
 <h3><a href="http://news.xinhuanet.com/english/2008-07/30/content_8857533.htm"><img class="alignleft" title="Wangfujing " src="http://news.xinhuanet.com/english/2008-07/30/xinsrc_352070530153454618211.jpg" alt="" width="273" height="174" /></a>Laden-Landschaft</h3>

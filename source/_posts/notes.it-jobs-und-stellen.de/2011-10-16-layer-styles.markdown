@@ -4,7 +4,7 @@ date: 2011-10-16 11:55
 comments: true
 layout: post
 
-categories: [notes, external, css]
+categories: [english, notes, external, css]
 ---
  Nice Web-App for playing with shadow, border-radius etc. for creating boxes, buttons etc.
 

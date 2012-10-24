@@ -2,7 +2,7 @@
 layout: post
 title: ! 'Mencoder: MP3 Spur aus Video Datei extrahieren'
 enki_id: 50
-categories: [screencast]
+categories: [german, screencast]
 ---
 Ich kam grad in die Verlegenheit, ein Audiofile für meinen MP3-Player zu generieren. Konkret ging es um eine Vorlesungsaufzeichnung vom HPI, die man teilweise auch nur in Audio "genießen" kann :).
 

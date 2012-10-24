@@ -2,7 +2,7 @@
 layout: post
 title: Was tun bei Inspirationsverlust? So bekämpfte ich mein Programmier-Down
 enki_id: 74
-categories: [coding]
+categories: [german, coding]
 ---
 Wer kennt das nicht? Man sitzt vor dem Bildschirm und will eigentlich etwas arbeiten, aber irgendwie kann man sich nicht aufraffen. Sei es nun ein *Flash*-Spielchen (I hate you, dear kongregate!) oder *Facebook/Twitter/G+*, irgendetwas ist immer interessanter. Und es wird immer schlimmer: Je länger man das Arbeiten duch Ablenkungen verzögert, desto eher bekommt man ein schlechtes Gewissen und verliert sich immer mehr in die Ablenkungen... Auch mir geht es alle Tage wieder so. Mit der Weile habe ich ein paar Tätigkeiten gefunden, mit denen ich diesen Teufelskreis anscheinend stoppen kann.
 

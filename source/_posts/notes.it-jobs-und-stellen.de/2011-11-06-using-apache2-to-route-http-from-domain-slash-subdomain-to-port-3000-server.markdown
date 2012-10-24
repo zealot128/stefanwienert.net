@@ -4,7 +4,7 @@ date: 2011-11-06 19:42
 comments: true
 layout: post
 
-categories: [notes, external,apache,ruby]
+categories: [english, notes, external,apache,ruby]
 ---
  To easy test Rails Application-Server (mongrel, webrick, thin) in development through a full domain/subdomain, you can use the Apache-Proxy-Ability. So, every traffic will be redirected transparently to that running application server.
 

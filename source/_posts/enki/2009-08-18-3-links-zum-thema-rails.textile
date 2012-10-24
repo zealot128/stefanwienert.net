@@ -2,7 +2,7 @@
 layout: post
 title: 3 Links zum Thema Rails
 enki_id: 5
-categories: [rails, php, ruby, screencast]
+categories: [german, rails, php, ruby, screencast]
 ---
 Einen interessanten Artikel aus dem t3n-Magazin zum Thema Rapid-Prototyping gibt es hier:
 "t3n-rapidprototyping":http://t3n.de/magazin/schnell-kommt-ohne-neue-buchstaben-erfinden-222480/

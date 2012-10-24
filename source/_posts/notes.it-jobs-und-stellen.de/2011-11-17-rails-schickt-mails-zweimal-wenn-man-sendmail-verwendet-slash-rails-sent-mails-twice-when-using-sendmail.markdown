@@ -5,7 +5,7 @@ date: 2011-11-17 17:07
 comments: true
 layout: post
 
-categories: [notes, external,rails]
+categories: [english, notes, external,rails]
 ---
  One quite annoying thing, is that rails seems to send mails twice when using sendmail on Debian 5.
  To fix that, add to ```config/environments/production.rb```

@@ -2,7 +2,7 @@
 layout: post
 title: Flash-Video/RTMP Dump als Bashskript
 enki_id: 58
-categories: [bash, linux, video]
+categories: [german, bash, linux, video]
 ---
 Wer einen Online-Video-Stream mitschneiden will, kann dies in der Regel mit dem mplayer -dumpfile machen.
 Allerdings schafft dieser keine RTMP-Streams.

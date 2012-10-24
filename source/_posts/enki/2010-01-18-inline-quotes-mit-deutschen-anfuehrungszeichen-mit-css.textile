@@ -2,7 +2,7 @@
 layout: post
 title: ! 'Inline Quotes mit deutschen Anführungszeichen mit CSS '
 enki_id: 28
-categories: [css]
+categories: [german, css]
 ---
 Wenn man deutsche Anführungszeichen um einen HTML-Text setzen möchte, dann nimmt man am besten CSS mit dem "Inline-Element 'q'":http://www.w3schools.com/css/pr_gen_quotes.asp (oder falls gewünscht mit blockquote)
 

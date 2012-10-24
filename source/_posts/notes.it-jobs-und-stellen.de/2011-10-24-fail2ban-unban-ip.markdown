@@ -4,7 +4,7 @@ date: 2011-10-24 18:57
 comments: true
 layout: post
 
-categories: [notes, external,server]
+categories: [english, notes, external,server]
 ---
 Sometimes, due to testing, fail2ban blocks an IP from me. To unblock me (and not wait 10 minutes):
 

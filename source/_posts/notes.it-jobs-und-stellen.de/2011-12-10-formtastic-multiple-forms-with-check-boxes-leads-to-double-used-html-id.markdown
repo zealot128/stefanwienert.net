@@ -4,7 +4,7 @@ date: 2011-12-10 16:06
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
  Problem: When creating muliple, similar structured forms with formtastic and using check boxes, then all the forms seems to be correlated: Checking a ```check_box``` of the ```check_boxes``` in one form, changes them in another, too. This is because they all used the same id for the check box input.
  One can change this, by using the option ```index => object.id``` in the semantic form for:

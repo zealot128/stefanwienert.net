@@ -3,7 +3,7 @@ layout: post
 title: Umgang und Mapping einer Legacy Datenbank mit Ruby (ohne Rails) mit abweichenenden
   Namenskonventionen mit Active Support
 enki_id: 26
-categories: [ruby, rails]
+categories: [german, ruby, rails]
 ---
 h3. Einleitung/Motivation
 

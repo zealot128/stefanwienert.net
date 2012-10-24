@@ -2,7 +2,7 @@
 layout: post
 title: ! '"Auf Antrag hin wurde Ihnen eine Aufenthaltserlaubnis erteilt"...'
 enki_id: 60
-categories: [china]
+categories: [german, China]
 ---
 Endlich ist es so weit, meine Frau hat eine Aufenthaltserlaubnis erhalten.
 

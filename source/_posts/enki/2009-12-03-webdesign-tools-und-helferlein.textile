@@ -2,7 +2,7 @@
 layout: post
 title: Webdesign Tools und Helferlein
 enki_id: 15
-categories: [css, tools]
+categories: [german, css, tools]
 ---
 Dank "Ruby on Rails":http://openbook.galileocomputing.de/ruby_on_rails/ (oder auch gerne "Django":http://openbook.galileocomputing.de/python/python_kapitel_25_003.htm oder jedes andere ausgereifte MVC) hat man schon einmal ein gutes Rückgrat für eigene Webprojekte.
 

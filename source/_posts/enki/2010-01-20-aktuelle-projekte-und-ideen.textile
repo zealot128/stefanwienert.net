@@ -2,7 +2,7 @@
 layout: post
 title: Aktuelle Projekte und Ideen
 enki_id: 29
-categories: [ruby, drupal]
+categories: [german, ruby, drupal]
 ---
 Wenn ich zur Zeit während meines Praktikums etwas Zeit habe, arbeite ich an ein paar Hobbyprojekten, die mir so in letzter so eingefallen sind:
 

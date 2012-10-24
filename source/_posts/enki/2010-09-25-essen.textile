@@ -2,7 +2,7 @@
 layout: post
 title: Essen
 enki_id: 64
-categories: [china]
+categories: [german, China]
 ---
 <a href="/images/blog/09/58719112_31e5d4024b.jpg"><img class="size-medium wp-image-25 " title="http://www.flickr.com/photos/jamesjin/58719112/" src="/images/blog/58719112_31e5d4024b-225x300.jpg" alt="" width="225" height="300" /></a>
 

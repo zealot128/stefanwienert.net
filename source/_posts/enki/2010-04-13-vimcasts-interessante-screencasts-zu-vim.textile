@@ -2,7 +2,7 @@
 layout: post
 title: Vimcasts - Interessante Screencasts zu Vim
 enki_id: 43
-categories: [vim, screencast]
+categories: [german, vim, screencast]
 ---
 Eine neulich gefunde Screencastseite will ich euch nicht vorenthalten. "Vimcasts":http://vimcasts.org/ ist ein hochqualitativer Screencast, der sich mit ... Überraschung!... Vim beschäftigt. Ich würde mal einordnen, dass es für Einsteiger (ca. nachdem sie "vimtutor" absolviert haben) bis leicht Fortgeschrittene gedacht ist (je nach Episode).
 Die Screencasts sind etwa auf dem Level von "railscasts":http://railscasts.com/, also kurz, prägnant und mit einem guten Mikrofon aufgenommen.

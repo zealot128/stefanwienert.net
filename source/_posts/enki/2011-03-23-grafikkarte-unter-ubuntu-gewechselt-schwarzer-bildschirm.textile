@@ -2,7 +2,7 @@
 layout: post
 title: Grafikkarte unter Ubuntu gewechselt - Schwarzer Bildschirm
 enki_id: 61
-categories: [linux, grafik]
+categories: [german, linux, grafik]
 ---
 Letztens gab es bei uns im Büro neue Grafikkarten mit Multimonitorunterstützung. 
 Leider waren 2 der Ubuntus davon wenig begeistert und landeten nach dem Booten in einem schwarzen Bildschirm ohne Möglichkeit eine Shell zu öffnen (Freeze?). Die Rettungskonsole im Sicheren Modus brachte auch nichts.

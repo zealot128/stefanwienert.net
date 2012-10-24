@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selbsterkennisse durch Auslandsbesuche - China vs. Deutschland
-categories:  [china, personal]
+categories:  [China, personal, german]
 ---
 Jeder, der einmal eine längere Zeit im Ausland gelebt hatte, also mehr als nur Hotel und Sightseeing gesehen hat, kann wohl darüber berichten: Das man einiges über sich selbst und die deutsche Kultur lernt. Insbesondere die vielen kleinen Dinge, an die man vorher gar nicht gedacht hatte, oder es für nicht möglich gehalten hätte, das man dies anders, als in Teutonien machen könnte.
 

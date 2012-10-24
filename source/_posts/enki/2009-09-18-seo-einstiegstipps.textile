@@ -2,7 +2,7 @@
 layout: post
 title: SEO - Einstiegstipps
 enki_id: 4
-categories: [seo]
+categories: [german, seo]
 ---
 Zur Zeit muss ich mich beruflich mit dem heißen Thema “Suchmaschinenoptimierung” herumschlagen. Dies ist keine richtige “Wissenschaft”, aber es haben sich ein paar Grundregeln herausgestellt, die, wenn man sie einhält, mit einer höheren Auffindung “belohnt” wird. Hier ein paar der wichtigsten:
 

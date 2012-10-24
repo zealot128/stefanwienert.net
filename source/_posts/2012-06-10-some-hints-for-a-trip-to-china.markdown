@@ -3,7 +3,7 @@ layout: post
 title: "Some hints for a trip to China"
 date: 2012-06-10 22:27
 comments: true
-categories: china
+categories: [China, english]
 ---
 During my trips to China, I gain some experience for surviving here, which I like to share to aspiring China travellers.
 

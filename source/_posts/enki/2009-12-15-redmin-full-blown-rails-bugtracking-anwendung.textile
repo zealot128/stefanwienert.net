@@ -2,7 +2,7 @@
 layout: post
 title: Redmin - Full Blown Rails Bugtracking Anwendung
 enki_id: 16
-categories: [rails]
+categories: [german, rails]
 ---
 Kürzlich war ich auf der Suche nach einer guten Bugtracking Anwendung. Über den Weg gelaufen sind mir dabei:
 

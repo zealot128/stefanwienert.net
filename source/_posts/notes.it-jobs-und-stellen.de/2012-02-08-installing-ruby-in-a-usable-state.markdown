@@ -4,7 +4,7 @@ date: 2012-02-08 22:08
 comments: true
 layout: post
 
-categories: [notes, external, ruby]
+categories: [english, notes, external, ruby]
 ---
  Here are some thoughts on how to install Ruby with rvm and most features on a Debian/Ubuntu plattform:
  <!-- more -->

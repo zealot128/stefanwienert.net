@@ -3,7 +3,7 @@ layout: post
 title: "Howto test (action) caching in Rails with Rspec"
 date: 2012-10-14 13:36
 comments: true
-categories: [Rails, Rspec]
+categories: [Rails, Rspec, english]
 ---
 
 Sooner or later, every Web-App will need caching. Rails has some good support with different caching strategies, but no way to test it OOTB. But when the generation of custom paths and cache conditions gets more complicated, the desire to test that behavior raises.

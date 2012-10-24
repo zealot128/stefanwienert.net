@@ -2,7 +2,7 @@
 layout: post
 title: OpenAccess Petition
 enki_id: 12
-categories: [politik]
+categories: [german, politik]
 ---
 !https://dl.dropbox.com/u/506026/oa-petition/150px-OA-Petition.png!:https://epetitionen.bundestag.de/index.php?action=petition%3bsa=details%3bpetition=7922 
 Auch wenn der letztendliche politische Erfolg der vorherigen e-Petition zum Thema Netzsperren leider wenig erfolgreich war, gibt es eine weitere interessante Petition zum Thema "Open Access":https://epetitionen.bundestag.de/index.php?action=petition%3bsa=details%3bpetition=7922. Ich persönlich finde das Anliegen, staatlich finanzierte Forschungsarbeiten öffentlich (kostenfrei) zu publizieren, absolut erstrebenswert, bin aber der Ansicht, dass es wiederum auf taube Ohren treffen wird.

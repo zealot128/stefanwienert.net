@@ -4,7 +4,7 @@ date: 2012-01-10 11:43
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
  Spree is a fantastic eCommerce Rails-Engine. To change it, to speak German, one has to:
 

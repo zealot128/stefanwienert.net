@@ -2,7 +2,7 @@
 layout: post
 title: Drupal Modulentwicklung - I - Einführung und Hello World
 enki_id: 53
-categories: [drupal, php]
+categories: [german, drupal, php]
 ---
 Beruflich habe ich recht viel mit Drupal zu tun, einem in PHP geschriebenem CMS. Das Plugin-System, Module genannt, ist recht umfangreich und bietet vielfältige Möglichkeiten, fast jede Stelle des CMS' anzupassen, ohne wirklich am Kerncode rumzuhacken.
 

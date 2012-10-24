@@ -2,7 +2,7 @@
 layout: post
 title: Beim nächsten mal im Einwohnermeldeamt...
 enki_id: 14
-categories: [politik, dresden]
+categories: [german, politik, dresden]
 ---
 Nicht vergessen, der automatisierten Weitergabe der persönlichen Daten an Dritte zu widersprechen!
 

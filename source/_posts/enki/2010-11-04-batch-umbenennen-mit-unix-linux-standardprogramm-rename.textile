@@ -2,7 +2,7 @@
 layout: post
 title: Batch umbenennen mit Unix/Linux Standardprogramm rename
 enki_id: 57
-categories: [linux, bash, server, tools]
+categories: [german, linux, bash, server, tools]
 ---
 Was ist erst vor kurzem erfahren habe: Linux bringt ein Programm "rename" zum umbenennen von vielen Dateien mittels Musters schon mit.
 

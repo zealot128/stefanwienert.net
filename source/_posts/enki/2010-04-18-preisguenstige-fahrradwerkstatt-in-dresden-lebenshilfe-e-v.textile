@@ -2,7 +2,7 @@
 layout: post
 title: Preisgünstige Fahrradwerkstatt in Dresden - Lebenshilfe e.V.
 enki_id: 44
-categories: [dresden]
+categories: [german, dresden]
 ---
 Letzte Woche habe ich mal meine Fahrräder beim "Lebenshilfe e.V.":http://www.lebenshilfe-dresden.de/wkst/arbeit/werkst_fahrrad.php reparieren lassen. Für extrem kleines Geld und sehr freundlich sind beide jetzt wieder in Ordnung gebracht.
 

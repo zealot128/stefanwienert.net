@@ -2,7 +2,7 @@
 layout: post
 title: Free Chinese learning app - Introduction of my Web app
 enki_id: 72
-categories: [china, rails]
+categories: [english, China, rails]
 ---
 Today, I want to introduce my online web-app for learning Chinese vocabulary. I wrote this some weeks ago, and until now I had a lot of fun, which I want to share with all the other Chinese learners.
 

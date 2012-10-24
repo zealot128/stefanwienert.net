@@ -2,7 +2,7 @@
 layout: post
 title: Design, CMS, Webentwickler Blogs
 enki_id: 18
-categories: [css, design]
+categories: [german, css, design]
 ---
 Um CSS-Technisch auf dem Laufenden zu bleiben, erstklassige Free-Icons abzugrasen und aktuelle Trends und Technologien nicht zu verpassen, habe ich einige interessante Blogs aggregiert, die mir zu dem Thema über den Weg gelaufen sind.
 

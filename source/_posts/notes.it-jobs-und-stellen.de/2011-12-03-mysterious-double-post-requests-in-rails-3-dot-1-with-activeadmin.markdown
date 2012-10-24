@@ -4,7 +4,7 @@ date: 2011-12-03 22:55
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
  Make sure to change application.js to not require the whole tree, because the activeadmin jquery files will get loaded. This will mess up your normal behaviour, especially because they will not have a CSRF Token.
 

@@ -3,7 +3,7 @@ layout: post
 title: "Top 20 Github Users in Dresden & Leipzig & Chemnitz"
 date: 2012-07-15 15:51
 comments: true
-categories: [github, ruby]
+categories: [github, ruby, english]
 ---
 
 Inspired by [ nodejitsu's Blog article ](http://blog.nodejitsu.com/most-influential-github-users-by-location), I started my own script for finding the most active/influencial users in Github for Dresden and Leipzig in Germany.

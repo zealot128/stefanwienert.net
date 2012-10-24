@@ -2,7 +2,7 @@
 layout: post
 title: Easy Website-Performance Tests mit ab
 enki_id: 56
-categories: [server, linux]
+categories: [german, server, linux]
 ---
 Mit dem Linux Standardprogramm "ab" Apache Bench kann man hervorragend Performance-Tests auf eine Website durchführen und seine DDos Strategie überprüfen.
 

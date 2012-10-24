@@ -2,7 +2,7 @@
 layout: post
 title: Code Katas - Training für den Software-Entwickler
 enki_id: 20
-categories: [ruby, screencast, vim, tdd]
+categories: [german, ruby, screencast, vim, tdd]
 ---
 Unter "http://katas.softwarecraftsmanship.org/":http://katas.softwarecraftsmanship.org/ habe ich ein paar interessante Kata-Screencasts, vornehmlich in Ruby, aber auch in "Exoten" wir Erlang oder Lua gefunden.
 

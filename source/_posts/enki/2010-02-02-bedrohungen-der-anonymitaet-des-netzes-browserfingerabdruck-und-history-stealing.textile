@@ -2,7 +2,7 @@
 layout: post
 title: Bedrohungen der Anonymität des Netzes - Browserfingerabdruck und History-Stealing
 enki_id: 30
-categories: [css, javascript]
+categories: [german, css, javascript]
 ---
 Jüngst "stieß ich bei Heise":http://www.heise.de/newsticker/meldung/EFF-demonstriert-den-Fingerabdruck-des-Browsers-918262.html auf "zwei Artikel":http://www.heise.de/security/meldung/Plaudertasche-Web-Browser-erleichtert-Deanonymisierung-919076.html, die die EFF beschreiben. Diese bieten einen Test an, ob man der bisher "einzige Nutzer mit seiner Browserspezifikation":http://panopticlick.eff.org/ ist. Dabei stieß (zumindest ich) auf interessante Erkenntnisse, dass nicht nur einer, sondern gleich mehrere Faktoren mich eindeutig identifizierbar mach(t)en:
  * HTTP ACCEPT Headers: Komischerweise ist dieser schon eindeutig

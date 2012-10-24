@@ -5,7 +5,7 @@ date: 2012-02-13 16:46
 comments: true
 layout: post
 
-categories: [notes, external, rails, sphinx]
+categories: [english, notes, external, rails, sphinx]
 ---
 Using and installing the Sphinx Search Daemon with a wide range of stemmer, not only English
 <!-- more -->

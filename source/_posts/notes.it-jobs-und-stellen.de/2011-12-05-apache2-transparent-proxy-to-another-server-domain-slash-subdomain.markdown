@@ -4,7 +4,7 @@ date: 2011-12-05 11:53
 comments: true
 layout: post
 
-categories: [notes, external, server]
+categories: [english, notes, external, server]
 ---
  Aim: Typing notes.pludoni.de in browser shows the same page as notes.it-jobs-und-stellen.de.
 

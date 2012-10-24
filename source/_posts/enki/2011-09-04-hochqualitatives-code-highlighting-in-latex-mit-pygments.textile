@@ -2,7 +2,7 @@
 layout: post
 title: Hochqualitatives Code Highlighting in Latex mit Pygments
 enki_id: 73
-categories: [latex]
+categories: [german, latex]
 ---
 Beim Erstellen meiner Diplomarbeit bin ich grad am Tüffteln, wie die Code-Beispiele schöner gemacht werden könnten. Die bekannten Listings sind relativ beschränkt und sehen auch nicht so umwerfend aus.
 

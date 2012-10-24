@@ -4,7 +4,7 @@ date: 2012-02-07 11:53
 comments: true
 layout: post
 
-categories: [notes, external, apache]
+categories: [english, notes, external, apache]
 ---
 When the underlying server is not reachable, Apache generates an ugly 503 Status message. To change that and inform the users that our server will be up soon again (due to a deployment):
 <!-- more -->

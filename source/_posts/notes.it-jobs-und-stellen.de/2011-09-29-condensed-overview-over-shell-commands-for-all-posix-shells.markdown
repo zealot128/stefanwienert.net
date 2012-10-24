@@ -4,7 +4,7 @@ date: 2011-09-29 18:17
 comments: true
 layout: post
 
-categories: [notes, external,bash]
+categories: [english, notes, external,bash]
 ---
  Condensed overview over shell commands for all POSIX Shells.
 Useful for all POSIX Shells, bash, zsh, dash etc.

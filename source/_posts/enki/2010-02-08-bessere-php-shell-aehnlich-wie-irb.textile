@@ -2,7 +2,7 @@
 layout: post
 title: Bessere PHP Shell, ähnlich wie Rubys irb
 enki_id: 33
-categories: [php, ubuntu]
+categories: [german, php, ubuntu]
 ---
 Nachdem ich bei Ruby von der recht mächtigen und gut tunebaren Interactive Ruby Shell ("HIRB":http://tagaholic.me/2009/03/13/hirb-irb-on-the-good-stuff.html und "Wirble":http://www.rubyinside.com/wirble-tab-completion-and-syntax-coloring-for-irb-336.html seien hier anzumerken) verwöhnt wurde, war ich auf der Suche nach einer ähnlichen Lösung für PHP.
 Leider ist die eingebaute CLI Shell mit "php -a" relativ nutzlos, da man Output selbst ausgeben muss, es keine Autocomplete gibt usw.

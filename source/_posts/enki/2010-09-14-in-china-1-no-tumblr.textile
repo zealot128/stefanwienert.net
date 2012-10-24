@@ -2,7 +2,7 @@
 layout: post
 title: In China 1 - no tumblr
 enki_id: 54
-categories: [china, peking]
+categories: [german, China, peking]
 ---
 Ich bin jetzt seit fast einer Woche hier in China. Leider gibts doch relativ viele geblockte Sites, inklusive von **tumblr**. Proxyverbindungen sind nur fuer Momente funktionsfaehig. Daher werde ich meinen Plan, eigentlich einen Bild- und Videoblog ueber ein paar meiner Erlebnisse hier zu fuehren, aendern muessen und in naechster Zeit einen eigenen wordpress-Blog hosten. 
 Dieser Railsblog "kann" noch keine Videos/Bilder, jdf. nicht sehr effektiv. Und ich habe auch keine grosse Zeit das hier zu implementieren. 

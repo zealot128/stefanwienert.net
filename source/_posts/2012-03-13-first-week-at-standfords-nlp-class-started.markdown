@@ -3,7 +3,7 @@ layout: post
 title: "First week at Standford's NLP class started"
 date: 2012-03-13 14:58
 comments: true
-categories: [screencast]
+categories: [screencast,english]
 ---
 
 Standford University's teacher Dan Jurafsky and Chris Manning offer a public eLearning lecture about **Natural Language Processing** (NLP). NLP is about computers reading and understanding human language.

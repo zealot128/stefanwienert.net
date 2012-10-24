@@ -4,7 +4,7 @@ date: 2011-11-20 21:29
 comments: true
 layout: post
 
-categories: [notes, external, ubuntu]
+categories: [english, notes, external, ubuntu]
 ---
  When using Guake/Yakuake often, one easily tempted to use the key F12 in Windows… and nothing happens!
 Now, I am using Autohotkey to open my VM instead – and there I usually have a beautiful yakuake with 256 colors, instead of an ugly cmd or putty.

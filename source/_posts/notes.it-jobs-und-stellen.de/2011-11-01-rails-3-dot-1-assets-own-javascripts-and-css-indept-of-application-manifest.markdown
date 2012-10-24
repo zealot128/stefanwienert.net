@@ -4,7 +4,7 @@ date: 2011-11-01 10:39
 comments: true
 layout: post
 
-categories: [notes, external]
+categories: [english, notes, external]
 ---
  Sometimes, one want to use seperate stylesheets or javascript independent of the asset-manifest, e.g. to only include specific js on some pages. Working well in development, turns out in production the files are not compiled and provided (404 Error).
  To fix this, include the files explicitly in ```config/application.rb``` or ```config/environments/production.rb``` like this:

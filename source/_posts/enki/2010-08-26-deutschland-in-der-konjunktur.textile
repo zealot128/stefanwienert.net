@@ -2,7 +2,7 @@
 layout: post
 title: Deutschland in der Konjunktur
 enki_id: 52
-categories: [politik]
+categories: [german, politik]
 ---
 Mit Deutschland geht es nach neuesten Wirtschaftsstudien wieder bergauf.
 Soweit, dass die Bundesregierung, allen vorran Merkel "vom Spiegel sogar gelobt wird.":http://forum.spiegel.de/showthread.php?t=19867.

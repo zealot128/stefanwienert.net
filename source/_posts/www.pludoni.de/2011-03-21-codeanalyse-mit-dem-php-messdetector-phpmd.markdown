@@ -4,7 +4,7 @@ date: 2011-03-21 12:10
 comments: true
 layout: post
 
-categories: [pludoni, external,php]
+categories: [pludoni, external,php, german]
 ---
  Um einen groben Überblick über die Codequalität zu erhalten, verwenden wir den PHP Messdetector. Dieser lässt sich per PHP PEAR recht leicht installieren, wie hier beschrieben.
 

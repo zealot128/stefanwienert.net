@@ -2,7 +2,7 @@
 layout: post
 title: Umstellung auf "www.stefanwienert.net" und Passenger mit apache mod userdir
 enki_id: 41
-categories: [rails, server, debian]
+categories: [german, rails, server, debian]
 ---
 Diejenigen, die meinen Feed abonniert haben, haben es wahrscheinlich schon gemerkt, da die ganzen Items als ungelesen markiert sein könnten.
 Da ich passenger verwende, aber gleichzeitig noch apache mit mod_userdir nutzen möchte, blieb mir nichts anderes übrig als den Hauptteil der Site auf eine Subdomain zu legen. Aus irgendwelchen unerfindlichen Gründen hatte ich damals "site.stefanwienert.net" genommen. Jetzt ist mir mal aufgefallen, dass die Wahl der Subdomain "www." deutlich klüger gewesen wäre.

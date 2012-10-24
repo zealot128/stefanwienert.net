@@ -4,7 +4,7 @@ date: 2011-12-12 17:46
 comments: true
 layout: post
 
-categories: [notes, external, javascript, ruby]
+categories: [english, notes, external, javascript, ruby]
 ---
  If you want to load the GoogleMaps from Javascript, instead standard in-head-script-tag, you have to use a callback-function. Otherwise the maps is not loaded completly.
 

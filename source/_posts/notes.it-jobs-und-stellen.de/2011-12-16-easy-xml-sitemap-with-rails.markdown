@@ -4,7 +4,7 @@ date: 2011-12-16 22:08
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
  Rails is too custom, to provide a generic sitemap as a gem for any situation. But it ist not too hard anyway! Here is a frame how to make one:
 

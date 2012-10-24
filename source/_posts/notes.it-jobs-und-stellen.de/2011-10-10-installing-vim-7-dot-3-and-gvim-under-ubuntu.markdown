@@ -4,7 +4,7 @@ date: 2011-10-10 04:43
 comments: true
 layout: post
 
-categories: [notes, external, vim, linux]
+categories: [english, notes, external, vim, linux]
 ---
 Always comes in handy...
 This builds Vim with most features, including ruby-support.

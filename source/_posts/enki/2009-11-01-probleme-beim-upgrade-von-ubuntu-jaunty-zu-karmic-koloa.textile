@@ -2,7 +2,7 @@
 layout: post
 title: Probleme beim Upgrade von Ubuntu Jaunty zu Karmic Koloa
 enki_id: 9
-categories: [ubuntu]
+categories: [german, ubuntu]
 ---
 Heute habe ich meinen Rechner angemacht, und siehe da: Kein Sound.
 

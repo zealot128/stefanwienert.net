@@ -4,7 +4,7 @@ date: 2011-12-16 21:35
 comments: true
 layout: post
 
-categories: [notes, external, ruby]
+categories: [english, notes, external, ruby]
 ---
  Yes I know, tagclouds are deprecated. Nevertheless, sometimes required. To not always start from the beginning for this task, here an idea, how to make a tagcloud with variable formular, given as a block. This script does not generate the cloud by itself, but only calculates weights/sizes. But I also included a full usage example in the Readme.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Notenübersichts-Bot in PHP
 enki_id: 6
-categories: [php]
+categories: [german, php]
 ---
 Vor zwei Wochen kam mir beim Überprüfen der aktuellen Notenergebnisse die Idee in den Sinn, das Ganze zu automatisieren und als Feed zur Verfügung zu stellen, um es in meinen Feedreader mit einzubinden und so immer auf dem aktuellen Stand sein zu können ;).
 

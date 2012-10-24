@@ -4,7 +4,7 @@ date: 2011-10-18 10:51
 comments: true
 layout: post
 
-categories: [notes, external, rails]
+categories: [english, notes, external, rails]
 ---
 ```
 ActiveRecord::DangerousAttributeError: changed?

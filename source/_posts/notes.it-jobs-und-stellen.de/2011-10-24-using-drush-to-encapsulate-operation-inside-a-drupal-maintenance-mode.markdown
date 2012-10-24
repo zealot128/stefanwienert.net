@@ -4,7 +4,7 @@ date: 2011-10-24 18:22
 comments: true
 layout: post
 
-categories: [notes, external,drupal]
+categories: [english, notes, external,drupal]
 ---
  Using drush is a convenient way to deploy bigger DB-changes without giving the users a glitch. Instead they will see a maintenance mode page.
 

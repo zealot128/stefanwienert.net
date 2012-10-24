@@ -5,7 +5,7 @@ date: 2011-10-25 11:18
 comments: true
 layout: post
 
-categories: [notes, external,plesk]
+categories: [english, notes, external,plesk]
 ---
 Installing plesk manually results in an error.
 Fixed this, by changing the group and uid from 110 to something else in /etc/passwd

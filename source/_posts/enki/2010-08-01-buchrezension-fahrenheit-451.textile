@@ -2,7 +2,7 @@
 layout: post
 title: Buchrezension Fahrenheit 451
 enki_id: 51
-categories: [buch]
+categories: [german, buch]
 ---
 <img src="http://upload.wikimedia.org/wikipedia/en/7/75/Farneheit_451.jpg" style="float:left; margin: 0 10px 0 0; width:120px" alt="Wikicommons"/>
 

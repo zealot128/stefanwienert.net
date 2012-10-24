@@ -2,7 +2,7 @@
 layout: post
 title: Gedit Syntax Erweiterungen - YAML, SASS, Moinmoin-Wiki, HAML
 enki_id: 7
-categories: [gedit, ruby]
+categories: [german, gedit, ruby]
 ---
 "hier":http://groups.google.com/group/haml/msg/b5100d80d9182c71 gibts eine Anleitung, wie man gedit dazu bringt, SASS, HAML und YAML zu unterstützen.
 

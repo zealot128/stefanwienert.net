@@ -4,7 +4,7 @@ date: 2011-10-26 10:45
 comments: true
 layout: post
 
-categories: [notes, external,ruby]
+categories: [english, notes, external,ruby]
 ---
 
 

@@ -2,7 +2,7 @@
 layout: post
 title: Vorlesungsmitschnitte
 enki_id: 3
-categories: [screencast]
+categories: [german, screencast]
 ---
 Falls mal Langeweile aufkommt, hier ein paar Vorlesungsaufzeichnungen, die ich mir momentan reinzieh :)
 

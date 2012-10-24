@@ -4,7 +4,7 @@ date: 2011-10-12 05:29
 comments: true
 layout: post
 
-categories: [notes, external,ruby]
+categories: [english, notes, external,ruby]
 ---
  When using capistrano, we ran into several issues:
 ## Bundler git old repos

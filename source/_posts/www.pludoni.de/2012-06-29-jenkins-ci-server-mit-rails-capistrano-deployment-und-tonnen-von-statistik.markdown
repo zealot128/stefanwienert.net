@@ -4,7 +4,7 @@ date: 2012-06-29 19:38
 comments: true
 layout: post
 
-categories: [pludoni, external]
+categories: [pludoni, external, german]
 ---
 
 {% img left /images/jenkins.png %}

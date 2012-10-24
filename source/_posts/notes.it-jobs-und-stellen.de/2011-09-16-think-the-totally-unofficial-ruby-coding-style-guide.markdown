@@ -4,7 +4,7 @@ date: 2011-09-16 19:55
 comments: true
 layout: post
 
-categories: [notes, external,ruby, rails]
+categories: [english, notes, external,ruby, rails]
 ---
 also applies for pludoni Team
 

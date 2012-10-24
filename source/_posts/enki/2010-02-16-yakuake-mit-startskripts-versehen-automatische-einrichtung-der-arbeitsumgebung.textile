@@ -2,7 +2,7 @@
 layout: post
 title: Yakuake mit Startskripts versehen - Automatische Einrichtung der Arbeitsumgebung
 enki_id: 34
-categories: [ruby, ubuntu, bash]
+categories: [german, ruby, ubuntu, bash]
 ---
 Diejenigen von euch, die eine KDE Umgebung unter Linux verwenden, kennen vielleicht yakuake, ein Terminalprogramm mit etwas EyeCandy, welches bei Druck von F12 aus dem oberen Bildschirmrand herausfährt.
 Ich selbst nutze zwar Gnome, nehme aber als priorisiertes Terminalprogramm trotzdem yakuake, da ich finde, dass das Farbschema "Dunkle Pasteltöne" einfach gut aussieht, und man die Shell, egal auf welchem Virtuellem Desktop man sich befindet, nie aus den Augen verliert (F12 und sie ist wieder da).

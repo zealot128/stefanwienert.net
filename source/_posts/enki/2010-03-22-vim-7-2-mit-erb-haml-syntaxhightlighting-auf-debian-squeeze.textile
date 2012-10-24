@@ -2,7 +2,7 @@
 layout: post
 title: ! 'Vim 7.2 mit ERB HAML .. Syntaxhightlighting auf Debian Squeeze '
 enki_id: 39
-categories: [vim, debian, linux, rails]
+categories: [german, vim, debian, linux, rails]
 ---
 Wer sein Rails Projekt auf Debian laufen hat, und seine Minichanges mit VIM macht, der kennt vielleicht das Problem, dass bei Vim 7.1 keine Syntax Beschreibungen fuer ERB und HAML (z.B.) dabei sind.
 

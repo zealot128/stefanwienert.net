@@ -3,7 +3,7 @@ layout: post
 title: "Linux Mint Debian - no GUI after dist-upgrade in Virtualbox"
 date: 2012-04-24 12:26
 comments: true
-categories: [linux]
+categories: [linux,english]
 ---
 I just made a complete upgrade/dist-upgrade of my Linux Mint Debian. After rebooting, I was prompted to shell login tty1 without a GUI/Gnome on tty7 running.
 

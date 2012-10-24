@@ -3,7 +3,7 @@ layout: post
 title: "Easy css vendor prefix mixin for SASS"
 date: 2012-05-18 12:26
 comments: true
-categories: [css]
+categories: [css,english]
 ---
 
 With Sass, one of the aspiring preprocessors for CSS, one can easily automate menial tasks with mixins (user defined functions for css). For example, one common task ist to define one css-attribute in all vendor-specific prefixes (-moz, -webkit, -o, -ms) until that feature becomes css standard.

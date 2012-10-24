@@ -2,7 +2,7 @@
 layout: post
 title: Rails for Zombies - Braaainz
 enki_id: 70
-categories: [ruby, screencast]
+categories: [english, ruby, screencast]
 ---
 Wer schon immer mal Ruby on Rails lernen wollte, aber nie den Einstieg oder die Zeit gefunden hatte, für den gibt es jetzt *Rails for Zombies*.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Essen II
 enki_id: 65
-categories: [china]
+categories: [german, China]
 ---
 <a href="/images/blog/dragonfriuit1.jpg"><img class="size-medium wp-image-36" title="Drachenfrucht" src="/images/blog/dragonfriuit1-300x225.jpg" alt="" width="300" height="225" /></a>
 

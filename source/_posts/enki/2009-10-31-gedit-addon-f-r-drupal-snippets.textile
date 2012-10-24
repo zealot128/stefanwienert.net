@@ -2,7 +2,7 @@
 layout: post
 title: Gedit Addon für Drupal + Issue [SOLVED]
 enki_id: 8
-categories: [drupal, gedit]
+categories: [german, drupal, gedit]
 ---
 Wer viel mit drupal arbeitet und gerne gedit nehmen möchte, sollte sich mal diese Snippet und Mimitype Collection "auf github anschauen":http://github.com/mavimo/gedit-drupal.
 

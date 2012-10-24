@@ -3,7 +3,7 @@ layout: post
 title: "Local mirror of Ubuntu for installing multiple computers (or offline)"
 date: 2012-08-06 20:17
 comments: true
-categories: [linux]
+categories: [linux, english]
 ---
 We needed a usefuel way to install and setup a bunch of ubuntu/debian pc's which are not connected to the internet, yet.  One good solution for that is to set up a local deb-mirror inside the LAN of that computers.
 

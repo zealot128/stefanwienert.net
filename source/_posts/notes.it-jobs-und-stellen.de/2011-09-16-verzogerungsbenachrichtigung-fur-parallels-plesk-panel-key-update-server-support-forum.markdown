@@ -5,7 +5,7 @@ date: 2011-09-16 05:56
 comments: true
 layout: post
 
-categories: [notes, external,plesk]
+categories: [english, notes, external,plesk]
 ---
  Plesk kann nicht updaten, da es ein Problem mit CURL und SSL gibt (Debian 5).
 Lösung:
