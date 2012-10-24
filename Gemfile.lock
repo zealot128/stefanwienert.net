@@ -1,12 +1,3 @@
-PATH
-  remote: /home/stefan/repos/jekyll-reposter
-  specs:
-    jekyll-reposter (0.1.8)
-      curb (~> 0.8)
-      feedzirra
-      sanitize
-      stringex
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -15,7 +6,7 @@ GEM
       open4
     Platform (0.4.0)
     RedCloth (4.2.8)
-    activesupport (3.2.1)
+    activesupport (3.2.8)
       i18n (~> 0.6)
       multi_json (~> 1.0)
     albino (1.3.3)
@@ -24,7 +15,7 @@ GEM
     blankslate (2.1.2.4)
     bourbon (1.3.6)
       sass (>= 3.1)
-    builder (3.0.0)
+    builder (3.1.4)
     chunky_png (1.2.1)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
@@ -37,7 +28,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    curb (0.8.0)
+    curb (0.8.1)
     directory_watcher (1.4.0)
     execjs (1.3.0)
       multi_json (~> 1.0)
@@ -55,7 +46,7 @@ GEM
       json
       rest-client (~> 1.6.1)
     haml (3.1.2)
-    i18n (0.6.0)
+    i18n (0.6.1)
     jammit (0.6.5)
       yui-compressor (>= 0.9.3)
     jekyll (0.11.0)
@@ -65,10 +56,15 @@ GEM
       kramdown (>= 0.13.2)
       liquid (>= 1.9.0)
       maruku (>= 0.5.9)
+    jekyll-reposter (0.1.8)
+      curb (~> 0.8)
+      feedzirra
+      sanitize
+      stringex
     json (1.6.5)
     kramdown (0.13.3)
     liquid (2.2.2)
-    loofah (1.2.0)
+    loofah (1.2.1)
       nokogiri (>= 1.4.4)
     maruku (0.6.0)
       syntax (>= 1.0.0)
@@ -134,7 +130,7 @@ DEPENDENCIES
   haml (>= 3.1)
   jammit
   jekyll
-  jekyll-reposter!
+  jekyll-reposter
   liquid (= 2.2.2)
   mysql
   nokogiri
