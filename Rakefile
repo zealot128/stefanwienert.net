@@ -28,6 +28,7 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
+url             = "http://stefanwienert.net/"
 
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
@@ -222,8 +223,32 @@ task :deploy do
   Rake::Task["#{deploy_default}"].execute
 end
 
+desc 'Notify Google of the new sitemap'
+task :sitemap do
+  begin
+    require 'net/http'
+    require 'uri'
+    puts '* Pinging Google about our sitemap'
+    sitemap_url = URI.escape(URI.join(url, "sitemap.xml").to_s)
+    Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + sitemap_url )
+
+    puts '* Pinging BING'
+    Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + sitemap_url )
+  rescue LoadError
+    puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
+  end
+
+  begin
+    require 'xmlrpc/client'
+    puts '* Pinging ping-o-matic'
+    XMLRPC::Client.new('rpc.pingomatic.com', '/').call('weblogUpdates.extendedPing', 'StefanWienert.net' , url, URI.join(url, "atom.xml").to_s)
+  rescue LoadError
+    puts '! Could not ping ping-o-matic, because XMLRPC::Client could not be found.'
+  end
+end
+
 desc "Generate website and deploy"
-task :gen_deploy => [:integrate, :generate, :deploy] do
+task :gen_deploy => [:integrate, :generate, :deploy, :sitemap] do
 end
 
 desc "copy dot files for deployment"
