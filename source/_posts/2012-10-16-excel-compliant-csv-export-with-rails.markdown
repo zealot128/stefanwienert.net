@@ -3,7 +3,7 @@ layout: post
 title: "Excel compliant csv export with Rails"
 date: 2012-10-16 14:46
 comments: true
-categories: [Rails, english]
+categories: [rails, english]
 ---
 CSV is a non-standard filetype. Almost every program defines it's own. So does Excel.
 
@@ -35,18 +35,18 @@ def MyController < ApplicationController
         csv << job.values
       end
     end
-      
+
     send_data resp.encode(Encoding::ISO_8859_1, :undef => :replace),
       :type => 'text/csv; charset=iso-8859-1; header=present',
       :disposition => "attachment; filename=#{filename}.csv"
-  end 
+  end
 ```
 Important aspects:
 
 * semicolon as column seperator
 * forced Encoding of Latin1/ISO
 * type and disposition, otherwise Rails will make something up (and recode everything to UTF-8...)
- 
+
 
 *Potential search keywords (which I used) :)*
 

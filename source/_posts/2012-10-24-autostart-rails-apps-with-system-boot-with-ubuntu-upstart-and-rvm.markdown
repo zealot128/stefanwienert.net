@@ -3,7 +3,7 @@ layout: post
 title: "Autostart Rails apps with system boot with Ubuntu Upstart and RVM"
 date: 2012-10-24 12:43
 comments: true
-categories: [Rails, english]
+categories: [rails, english]
 ---
 
 After deploying apps, it is nice to have them automatically started after the boot process of the production system. Using RVM, we came to the following working startup script with the "new" Ubuntu upstart system, which is quite a progress to the hand-tailored init.d-scripts IMO.
