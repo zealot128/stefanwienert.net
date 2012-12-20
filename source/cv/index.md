@@ -7,9 +7,10 @@ sharing: true
 footer: true
 ---
 
-I am a web developer, living in Dresden, Germany and working as the lead developer at pludoni GmbH. With my [team][], I plan, create and maintain several web-applications for our company.
+I am a Web developer, currently living in Dresden, Germany and working as the lead developer at pludoni GmbH. With my [team][], I plan, create and maintain several web-applications for our company.
 
 [team]: http://www.pludoni.de/team
+
 
 ## Skills
 
@@ -61,15 +62,15 @@ The flexibility to leave my workspace on the server release me from a fixed loca
 
 <ul class='skills'>
 <li><strong><a href='http://pics.stefanwienert.de'>SimpleGallery - powerful image gallery</a></strong>Appealed by the new Google+ Image upload, I was looking for better solutions while keeping the ownership of my photos. I found a Android App which can automatically post all made photos to a HTTP-endpoint, so I programmed that gallery. In the meantime, that gallery is more powerful, with sharing and blogging capabilities, as well as a fresh (bootstrap-based) layout. Rails gave me the tools to build such a powerful and fast way in just about 400 LOCs of Ruby-Code (excluding frontend or view code)</li>
-<li><strong><a href='http://shufa.stefanwienert.net'>ShuFaZipPin</a></strong>Chinese learning supplemental App - Vocabulary learning app for learning Chinese characters  with a staged learning system and a huge database of characters and translation. In the meanwhile, I found a webservice, <a href='http://www.memrise.com'>memrise.com</a>, which does this, but plenty more.
-</li>
+<li><strong><a href='http://shufa.stefanwienert.net'>ShuFaZipPin</a></strong>Chinese learning supplemental App - Vocabulary learning app for learning Chinese characters  with a staged learning system and a huge database of characters and translation. In the meanwhile, I found a webservice, <a href='http://www.memrise.com'>memrise.com</a>, which does this, but plenty more.  </li>
 <li><strong><a href='https://github.com/zealot128/jekyll-reposter'>Jekyll-Reposter</a></strong>
-Addon for the blogging framework Jekyll/Octopress for semi-automatically re-blog posts from other blogs through Atom/RSS.
-</li>
-<li><strong><a href='https://github.com/zealot128/attribute_imagifiable.git'>Attribute imagifiable</a>A small Railstie that enables a model to save some of it's attributes as as image, e.g. generation of the telephone number to increase crawler difficulty</strong></li>
-<li><strong><a href='https://github.com/zealot128/ruby-habtm-generator'>HABTM Migration generator</a></strong>Rails does not ship with a generator for the habtm migrations. And I also could never remember the excact naming conventions. So I developed this.</li>
-
-<li><strong><a href='https://github.com/zealot128/fontsquirrel-download'>Rails Font-Squirrel Downloader</a></strong>Rails asset pipeline is nice. Font-Squirrel is a very great service for finding and downloading free-to-use fonts. Unfortunately, both folder structures are tedious to synchronize. So I made the downloader, which downloads, unzips, converts css to sass and provides the fonts in app/assets/fonts.</li>
+Addon for the blogging framework Jekyll/Octopress for semi-automatically re-blog posts from other blogs through Atom/RSS.  </li>
+<li><strong><a href='https://github.com/zealot128/attribute_imagifiable.git'>Attribute imagifiable</a></strong>
+A small Railstie that enables a model to save some of it's attributes as as image, e.g. generation of the telephone number to increase crawler difficulty</li>
+<li><strong><a href='https://github.com/zealot128/ruby-habtm-generator'>HABTM Migration generator</a></strong>
+Rails does not ship with a generator for the habtm migrations. And I also could never remember the excact naming conventions. So I developed this.</li>
+<li><strong><a href='https://github.com/zealot128/fontsquirrel-download'>Rails Font-Squirrel Downloader</a></strong>
+Rails asset pipeline is nice. Font-Squirrel is a very great service for finding and downloading free-to-use fonts. Unfortunately, both folder structures are tedious to synchronize. So I made the downloader, which downloads, unzips, converts css to sass and provides the fonts in app/assets/fonts.</li>
 <li><strong>Websites</strong>
 I also support people with the creation of websites, based on Drupal. Normally, this includes consulting, provision of a (development) server, installation, basic configuration, addon choosing and customization/module development.
 
