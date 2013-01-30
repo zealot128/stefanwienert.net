@@ -6,6 +6,8 @@ comments: true
 categories: [xing,ruby,english]
 ---
 
+**Update:** Meanwhile, there is a Omniauth provider for the XING-API, which much easen the process describes below.
+
 Recently, the Social Network XING.com released it's public (closed) beta to API developers. The API uses OAuth for Authentication and REST for the URL design.
 Here, I want to show, how you make basic requests via XING API. For this example, I will query the user's profile information (education, professional background etc.)
 

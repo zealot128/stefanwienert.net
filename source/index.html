@@ -17,7 +17,7 @@ sidebar: false
 <div id="tag-cloud">{% tag_cloud %}</div>
   <p>Most recently, about: </p>
 <section role='recent-posts' id='blog-archives'>
-    {% for post in site.posts limit: site.recent_posts %}
+    {% for post in site.posts limit: 15 %}
     <article>
       {% include archive_post.html %}
       </article>
