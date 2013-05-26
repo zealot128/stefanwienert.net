@@ -1,0 +1,71 @@
+---
+layout: page
+title: Public Online Stream
+date: 2013-05-25 19:04
+comments: false
+sharing: true
+footer: true
+---
+
+Powered by "jQuery Lifestream":http://christianv.github.io/jquery-lifestream/me/.
+
+<div id='lifestream'>Loading...</div>
+<noscript>Lifestream required Javascript enabled</noscript>
+
+
+<link href="{{ root_url }}/stylesheets/lifestream.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type='text/javascript'>
+$j = jQuery.noConflict();
+jQuery = $j;
+</script>
+<script src="https://raw.github.com/christianv/jquery-lifestream/master/jquery.lifestream.min.js"></script>
+
+<script type='text/javascript'>
+$j("#lifestream").lifestream({
+  limit: 500,
+  list:[ {
+    service: "github",
+    user: "zealot128"
+  }, {
+    service: "twitter",
+    user: "stefanwienert"
+  }, {
+    service: "disqus",
+    user: "stefanwienert"
+  }, {
+    service: "googleplus",
+    user: "108424489606851844704"
+  }, {
+    service: "stackoverflow",
+    user: "220292"
+  }, {
+    service: "lastfm",
+    user: "zealot128"
+  }, {
+    service: "youtube",
+    user: "stefanwienert"
+  }, {
+    service: "rss",
+    user: "http://f.stefanwienert.de/public.php?op=rss&id=-1&key=3e064d9acac316bcd152eb9d2f161e2986726190",
+    template: {
+      posted: 'recommend <a href="${link}">${title}</a>'
+    }
+  }, {
+    service: "rss",
+    user: "http://www.pludoni.de/devs-on-coffee/rss",
+    template: {
+      posted: 'wrote <a href="${link}">${title}</a> on pludoni corporate blog'
+    }
+  }, {
+    service: "rss",
+    user: "http://pics.stefanwienert.de/pages/index.atom",
+    template: {
+      posted: 'shared a picture <a href="${link}">${title}</a>'
+    }
+  }
+
+  ]
+});
+</script>
