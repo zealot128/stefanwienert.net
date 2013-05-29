@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chinesische Shopping Kultur
-categories: China
+categories: china
 ---
 Nach mehreren Shopping-Touren bin ich doch zu dem Schluß gekommen, dass sich chinesische Shoppingkultur von unsriger unterscheidet.### [![](http://news.xinhuanet.com/english/2008-07/30/xinsrc_352070530153454618211.jpg "Wangfujing ")](http://news.xinhuanet.com/english/2008-07/30/content_8857533.htm)Laden-Landschaft
 Fast alle Läden hier sind in der Größe, wie wir sie als Einzelhändler bezeichnen würden. Kleine, einräumige Läden, mit 1-2 Mitarbeitern, oft in Familienbesitz. Man findet wenig große Läden, wie wir das etwa von den großen Ketten C&amp;A oder MediaMarkt gewöhnt sind. Sogar viele der Elektronikmärkte hier sind nichts anderes als große Markthallen mit jeweils vielen kleinen Einzelhändlern die teilweise ein sehr deckungsgleiches Angebot haben. Als Ausländer "laowei" wird man natürlich besonders aggressiv angesprochen, in einer Situation rannte ein Verkäufer vor mir her und versuchte, mir einen Laptop in die Hand zu drücken.### Feilschen

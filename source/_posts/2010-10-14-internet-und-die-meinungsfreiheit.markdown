@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Internet und die Meinungsfreiheit
-categories: China
+categories: china
 ---
 Die Great Firewall of China, oft GWC genannt, ist nach meiner Information das modernste Filter- und Blockingsystem weltweit. Laut Verfassung und Aussage des Premier, ist die Meinungsfreiheit in China vorhanden und das Internet frei. In der Realität aber gibt es bei sehr vielen westlichen Seiten unterschiedliche Ergebnisse:- Facebook ist gesperrt (Timeout)
 - Twitter ist gesperrt (Timeout)

@@ -3,7 +3,7 @@ layout: post
 title: "Just integrated my (Social) Media stream into my website"
 date: 2013-05-26 03:24
 comments: true
-categories: [Javascript, Personal]
+categories: [javascript, personal, english]
 ---
 
 I added a subpage [Stream](/stream) to my website, which includes the great [jQuery Lifestream Plugin](https://github.com/christianv/jquery-lifestream).

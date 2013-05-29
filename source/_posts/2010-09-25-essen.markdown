@@ -3,7 +3,7 @@ layout: post
 title: Essen
 wordpress_id: 9
 wordpress_url: http://stefanwienert.net/~zealot128/chinablog/?p=9
-categories: China
+categories: china
 ---
 Die chinesische Küche kennt 4 bzw. 8 verschiedene Hauptgeschmacksrichtungen, nach deren Herkunftsprovinzen benannt:- <span>Szechuan ( <span class="mw-redirect">Sichuan</span> ),</span>
 - <span>Huai Yang ( <span class="mw-redirect">Jiangsu</span> ),</span>
