@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "rails.vim new feature - custom gem projections for faster navigation - resque"
+title: "rails.vim new feature - custom gem projections for faster navigation - resque, activeadmin, carrierwave, cells. draper"
 date: 2013-05-29 22:43
 comments: true
 categories: [vim, rails, english]

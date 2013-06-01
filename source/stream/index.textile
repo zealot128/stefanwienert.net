@@ -24,7 +24,7 @@ jQuery = $j;
 
 <script type='text/javascript'>
 $j("#lifestream").lifestream({
-  limit: 500,
+  limit: 1000,
   list:[ {
     service: "github",
     user: "zealot128"

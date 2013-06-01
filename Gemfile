@@ -16,7 +16,7 @@ group :development do
   gem "nokogiri"
   gem "sequel"
   gem "sqlite3"
-  gem "mysql"
+  # gem "mysql"
 end
 
 gem 'sinatra', '1.2.6'
@@ -24,10 +24,8 @@ gem "rb-inotify"
 
 gem "coffee-script"
 gem "pry"
-gem "pry-nav"
-gem "pry-stack_explorer"
 gem "jammit"
 gem "uglifier"
 gem "google_plus"
-gem "jekyll-reposter", :path => "/home/stefan/repos/jekyll-reposter/"
+gem "jekyll-reposter"#, :path => "/home/stefan/repos/jekyll-reposter/"
 gem "bourbon"
